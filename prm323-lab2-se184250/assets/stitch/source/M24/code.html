@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_stack" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100%;margin:0;padding:0;}body{overscroll-behavior-y:none;-webkit-tap-highlight-color:transparent;}.pb-safe{padding-bottom:calc(env(safe-area-inset-bottom,0px) + 1.5rem);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "on-error": "#ffffff", "surface-tint": "#006d3a", "surface-dim": "#d9dad8", "on-error-container": "#93000a", "on-background": "#191c1b", "on-primary-container": "#f6fff4", "primary": "#006a39", "on-primary": "#ffffff", "primary-fixed": "#8ff8b0", "error-container": "#ffdad6", "surface-container-highest": "#e1e3e1", "secondary-fixed": "#9ef5bf", "error": "#ba1a1a", "secondary": "#096c42", "background": "#f9faf8", "secondary-container": "#9ef5bf", "tertiary-fixed-dim": "#bccac1", "surface-variant": "#e1e3e1", "surface-container-low": "#f3f4f2", "on-secondary-container": "#157348", "on-tertiary-fixed": "#121e19", "on-tertiary-fixed-variant": "#3d4a43", "on-secondary-fixed-variant": "#005230", "primary-container": "#09864a", "tertiary-container": "#6a7870", "outline-variant": "#bdcabd", "on-surface-variant": "#3e4a40", "on-secondary-fixed": "#002110", "surface-container": "#edeeec", "on-primary-fixed-variant": "#00522b", "surface-container-lowest": "#ffffff", "on-secondary": "#ffffff", "on-surface": "#191c1b", "surface": "#f9faf8", "inverse-primary": "#73db96", "surface-container-high": "#e7e8e6", "inverse-on-surface": "#f0f1ef", "tertiary": "#525f58", "primary-fixed-dim": "#73db96", "on-primary-fixed": "#00210e", "surface-bright": "#f9faf8", "tertiary-fixed": "#d8e6dd", "on-tertiary": "#ffffff", "secondary-fixed-dim": "#83d8a4", "inverse-surface": "#2e3130", "on-tertiary-container": "#f5fff8", "outline": "#6e7a6f" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "gutter": "0.75rem", "space-xs": "0.25rem", "space-sm": "0.5rem", "space-lg": "1rem", "space-xl": "1.5rem", "space-md": "0.75rem", "margin": "1rem" }, "fontFamily": { "headline-md": ["Inter"], "headline-lg": ["Inter"], "headline-xl": ["Inter"], "body-md": ["Inter"], "body-sm": ["Inter"], "body-lg": ["Inter"], "caption": ["Inter"], "label-sm": ["Inter"], "title-sm": ["Inter"], "label-md": ["Inter"] }, "fontSize": { "headline-md": ["18px", { "lineHeight": "24px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "headline-lg": ["22px", { "lineHeight": "28px", "letterSpacing": "-0.015em", "fontWeight": "600" }], "headline-xl": ["28px", { "lineHeight": "36px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "body-md": ["14px", { "lineHeight": "20px", "fontWeight": "400" }], "body-sm": ["13px", { "lineHeight": "18px", "fontWeight": "400" }], "body-lg": ["16px", { "lineHeight": "24px", "fontWeight": "400" }], "caption": ["11px", { "lineHeight": "14px", "letterSpacing": "0.02em", "fontWeight": "500" }], "label-sm": ["12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "500" }], "title-sm": ["16px", { "lineHeight": "22px", "letterSpacing": "-0.005em", "fontWeight": "600" }], "label-md": ["14px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600" }] } } } };</script><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface text-on-surface antialiased flex flex-col min-h-screen"><header class="fixed top-0 w-full z-50 pt-safe bg-surface/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.03)]"><div class="h-14 px-margin flex items-center justify-between"><div class="flex items-center gap-space-xs"><button aria-label="Go back" class="w-11 h-11 flex items-center justify-center rounded-full text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low transition-colors active:scale-95" onclick="history.back()" type="button"><span class="material-symbols-outlined text-[22px]">arrow_back</span></button><h1 class="font-title-sm text-title-sm text-on-surface select-none">Focus Analytics Insights</h1></div><div class="flex items-center gap-space-xs"><button aria-label="Options" class="w-11 h-11 flex items-center justify-center rounded-full text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low transition-colors active:scale-95" type="button"><span class="material-symbols-outlined text-[20px]">more_horiz</span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center ml-space-xs shadow-sm"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="flex flex-col relative w-full pt-14 pb-safe bg-surface px-margin min-h-screen"><div class="flex flex-col w-full pb-28">
+<!-- Sub-header Quick Summary Widget -->
+<section class="mt-space-md mb-space-lg">
+<div class="relative overflow-hidden rounded-xl bg-surface-container-low p-space-lg shadow-sm">
+<div class="flex items-center justify-between">
+<div class="flex flex-col gap-space-xs">
+<span class="font-label-sm text-label-sm text-tertiary">Tổng quan tuần này</span>
+<div class="flex items-baseline gap-space-xs">
+<span class="font-headline-xl text-headline-xl text-on-surface">113</span>
+<span class="font-body-sm text-body-sm text-primary font-medium">phút tập trung</span>
+</div>
+</div>
+<!-- Circular mini progress illustration -->
+<div class="relative w-14 h-14 flex items-center justify-center">
+<svg class="w-full h-full -rotate-90 transform" viewbox="0 0 48 48">
+<circle class="text-surface-container-highest" cx="24" cy="24" fill="none" r="20" stroke="currentColor" stroke-width="4"></circle>
+<circle class="text-primary transition-all duration-700" cx="24" cy="24" fill="none" r="20" stroke="currentColor" stroke-dasharray="125.6" stroke-dashoffset="31.4" stroke-linecap="round" stroke-width="4"></circle>
+</svg>
+<span class="material-symbols-outlined text-primary text-[20px] absolute" style="font-variation-settings: 'FILL' 1;">spa</span>
+</div>
+</div>
+<div class="mt-space-md flex items-center gap-space-lg text-tertiary">
+<div class="flex items-center gap-space-xs font-caption text-caption">
+<span class="w-2 h-2 rounded-full bg-primary"></span>
+<span>4 Phiên đạt chuẩn</span>
+</div>
+<div class="flex items-center gap-space-xs font-caption text-caption">
+<span class="w-2 h-2 rounded-full bg-secondary-fixed-dim"></span>
+<span>1 Ngắt quãng nhẹ</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Horizontal Filter Chips -->
+<section class="mb-space-xl overflow-x-auto -mx-margin px-margin flex items-center gap-space-sm no-scrollbar py-1">
+<button class="filter-chip active flex items-center gap-space-xs px-space-md py-2 rounded-full font-label-md text-label-md transition-all shrink-0 bg-primary text-on-primary shadow-sm" data-filter="all" type="button">
+<span>Tất cả</span>
+<span class="w-5 h-5 rounded-full bg-on-primary/20 text-on-primary text-[11px] flex items-center justify-center font-bold">5</span>
+</button>
+<button class="filter-chip flex items-center gap-space-xs px-space-md py-2 rounded-full font-label-md text-label-md transition-all shrink-0 bg-surface-container-low text-on-surface-variant hover:bg-surface-container" data-filter="completed" type="button">
+<span class="material-symbols-outlined text-[16px] text-primary" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span>Hoàn thành</span>
+</button>
+<button class="filter-chip flex items-center gap-space-xs px-space-md py-2 rounded-full font-label-md text-label-md transition-all shrink-0 bg-surface-container-low text-on-surface-variant hover:bg-surface-container" data-filter="early" type="button">
+<span class="material-symbols-outlined text-[16px] text-tertiary">timelapse</span>
+<span>Dừng sớm</span>
+</button>
+<button class="filter-chip flex items-center gap-space-xs px-space-md py-2 rounded-full font-label-md text-label-md transition-all shrink-0 bg-surface-container-low text-on-surface-variant hover:bg-surface-container" data-filter="journal" type="button">
+<span class="material-symbols-outlined text-[16px] text-secondary">auto_stories</span>
+<span>Có nhật ký</span>
+</button>
+</section>
+<!-- Timeline Flow Container -->
+<div class="flex flex-col gap-space-xl">
+<!-- Group: Hôm nay -->
+<section class="session-group flex flex-col gap-space-md" data-day="today">
+<!-- Section Date Marker -->
+<div class="flex items-center justify-between px-space-xs">
+<div class="flex items-center gap-space-xs">
+<div class="w-2.5 h-2.5 rounded-full bg-primary ring-4 ring-secondary-container/40"></div>
+<h2 class="font-title-sm text-title-sm text-on-surface">Hôm nay, 11/10/2026</h2>
+</div>
+<span class="font-caption text-caption text-tertiary">2 phiên • 43 phút</span>
+</div>
+<!-- Card #142 -->
+<article class="session-card relative bg-surface-container-lowest rounded-xl p-space-lg shadow-sm hover:shadow-md transition-all active:scale-[0.99] flex flex-col gap-space-md" data-has-journal="true" data-status="completed">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex flex-col gap-space-xs min-w-0">
+<div class="flex items-center gap-space-xs">
+<span class="font-caption text-caption text-primary font-bold bg-secondary-container/50 px-space-xs py-0.5 rounded">#142</span>
+<span class="font-caption text-caption text-tertiary">07:00 – 07:25</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface truncate">Đọc 20 trang sách</h3>
+</div>
+<span class="inline-flex items-center gap-space-xs px-2.5 py-1 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm shrink-0">
+<span class="material-symbols-outlined text-[14px]" style="font-variation-settings: 'FILL' 1;">verified</span>
+            100%
+          </span>
+</div>
+<div class="flex items-center justify-between text-tertiary font-body-sm text-body-sm pt-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[18px] text-primary">hourglass_bottom</span>
+<span class="text-on-surface font-medium">25 phút</span>
+<span class="text-tertiary">• Sách Tâm Lý</span>
+</div>
+<span class="material-symbols-outlined text-[18px] text-outline-variant">chevron_right</span>
+</div>
+<!-- Attached Journal Artifact Pill -->
+<div class="mt-space-xs flex items-center justify-between bg-surface-container-low/70 rounded-lg p-space-sm gap-space-sm">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="w-10 h-10 rounded-lg overflow-hidden shrink-0 relative shadow-sm">
+<img class="w-full h-full object-cover" data-alt="Warm aesthetic morning light hitting an open paperback book on a wooden desk with a gentle cup of chamomile tea, soft calm tones, natural ambient lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD5hO81Sznp2M3Cok1ZYRL4qWbSV_I4LWqoOxtRMmxKkHDJVoN0lKLVqjfe8Frq4-F7HtKolmQHK3Cf0OFboneaRUw0DcBDBXdQrChNa5EymTTHOmyCidwzNcQcoAdGIVKMvYTqrV4daADguy2WNWbSLEKU4Kh8hEO_0g8CbAtd7XuAnwIAVIZaObBbB1bt3wX4y0kkh-6-EzPB6aSSK0Yaes70q55viTplA-nVB3cQGf8dkdqid66h"/>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[14px]">photo_camera</span>
+<span class="font-label-sm text-label-sm text-on-surface truncate">Nhật ký trang 48</span>
+</div>
+<p class="font-caption text-caption text-tertiary truncate">"Tâm trí lắng xuống sau từng trang..."</p>
+</div>
+</div>
+<button aria-label="Xem nhật ký M22" class="px-space-sm py-1.5 rounded-lg bg-surface-container-lowest text-on-secondary-container font-label-sm text-label-sm hover:bg-secondary-container transition-colors shrink-0 shadow-sm flex items-center gap-0.5" type="button">
+<span>Xem</span>
+<span class="material-symbols-outlined text-[14px]">arrow_outward</span>
+</button>
+</div>
+</article>
+<!-- Card #141 -->
+<article class="session-card relative bg-surface-container-lowest rounded-xl p-space-lg shadow-sm hover:shadow-md transition-all active:scale-[0.99] flex flex-col gap-space-md" data-has-journal="false" data-status="early">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex flex-col gap-space-xs min-w-0">
+<div class="flex items-center gap-space-xs">
+<span class="font-caption text-caption text-tertiary font-bold bg-surface-container-high px-space-xs py-0.5 rounded">#141</span>
+<span class="font-caption text-caption text-tertiary">09:30 – 09:48</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface truncate">Luyện hợp âm Guitar</h3>
+</div>
+<span class="inline-flex items-center gap-space-xs px-2.5 py-1 rounded-full bg-error-container/60 text-on-error-container font-label-sm text-label-sm shrink-0">
+<span class="material-symbols-outlined text-[14px]">schedule</span>
+            Dừng sớm
+          </span>
+</div>
+<div class="flex items-center justify-between text-tertiary font-body-sm text-body-sm pt-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[18px] text-tertiary">timer</span>
+<span class="text-on-surface font-medium">18 phút</span>
+<span class="text-tertiary">• Mục tiêu 30p</span>
+</div>
+<span class="material-symbols-outlined text-[18px] text-outline-variant">chevron_right</span>
+</div>
+<div class="flex items-center gap-space-xs text-tertiary font-caption text-caption bg-surface-container-low/40 rounded-lg px-space-sm py-1.5">
+<span class="material-symbols-outlined text-[14px] text-on-surface-variant">info</span>
+<span>Có cuộc gọi đột xuất • Đã lưu thời lượng</span>
+</div>
+</article>
+</section>
+<!-- Group: Hôm qua -->
+<section class="session-group flex flex-col gap-space-md" data-day="yesterday">
+<!-- Section Date Marker -->
+<div class="flex items-center justify-between px-space-xs">
+<div class="flex items-center gap-space-xs">
+<div class="w-2.5 h-2.5 rounded-full bg-outline-variant"></div>
+<h2 class="font-title-sm text-title-sm text-on-surface">Hôm qua, 10/10/2026</h2>
+</div>
+<span class="font-caption text-caption text-tertiary">2 phiên • 70 phút</span>
+</div>
+<!-- Card #140 -->
+<article class="session-card relative bg-surface-container-lowest rounded-xl p-space-lg shadow-sm hover:shadow-md transition-all active:scale-[0.99] flex flex-col gap-space-md" data-has-journal="false" data-status="completed">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex flex-col gap-space-xs min-w-0">
+<div class="flex items-center gap-space-xs">
+<span class="font-caption text-caption text-primary font-bold bg-secondary-container/50 px-space-xs py-0.5 rounded">#140</span>
+<span class="font-caption text-caption text-tertiary">15:10 – 15:35</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface truncate">Đọc 20 trang sách</h3>
+</div>
+<span class="inline-flex items-center gap-space-xs px-2.5 py-1 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm shrink-0">
+<span class="material-symbols-outlined text-[14px]" style="font-variation-settings: 'FILL' 1;">check</span>
+            Hoàn thành
+          </span>
+</div>
+<div class="flex items-center justify-between text-tertiary font-body-sm text-body-sm">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[18px] text-primary">hourglass_bottom</span>
+<span class="text-on-surface font-medium">25 phút</span>
+<span class="text-tertiary">• Sách Tâm Lý</span>
+</div>
+<span class="material-symbols-outlined text-[18px] text-outline-variant">chevron_right</span>
+</div>
+</article>
+<!-- Card #139 -->
+<article class="session-card relative bg-surface-container-lowest rounded-xl p-space-lg shadow-sm hover:shadow-md transition-all active:scale-[0.99] flex flex-col gap-space-md" data-has-journal="true" data-status="completed">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex flex-col gap-space-xs min-w-0">
+<div class="flex items-center gap-space-xs">
+<span class="font-caption text-caption text-primary font-bold bg-secondary-container/50 px-space-xs py-0.5 rounded">#139</span>
+<span class="font-caption text-caption text-tertiary">20:00 – 20:45</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface truncate">Vẽ màu nước</h3>
+</div>
+<span class="inline-flex items-center gap-space-xs px-2.5 py-1 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm shrink-0">
+<span class="material-symbols-outlined text-[14px]" style="font-variation-settings: 'FILL' 1;">check</span>
+            Hoàn thành
+          </span>
+</div>
+<div class="flex items-center justify-between text-tertiary font-body-sm text-body-sm">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[18px] text-primary">palette</span>
+<span class="text-on-surface font-medium">45 phút</span>
+<span class="text-tertiary">• Bầu trời hoàng hôn</span>
+</div>
+<span class="material-symbols-outlined text-[18px] text-outline-variant">chevron_right</span>
+</div>
+<!-- Attached Journal Artifact Pill -->
+<div class="mt-space-xs flex items-center justify-between bg-surface-container-low/70 rounded-lg p-space-sm gap-space-sm">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="w-10 h-10 rounded-lg overflow-hidden shrink-0 relative shadow-sm">
+<img class="w-full h-full object-cover" data-alt="A delicate botanical watercolor painting of eucalyptus leaves on textured cotton paper, artistic brush strokes, serene sage and earthy palette, minimalist studio table." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDeYXKF4GROKbUkYpvRSA_XxLkW2Y6eSRz0I4AjOR9DsIxWdJ8x5QRsQV8RsPes1NRRI-obgKWllXSlV2mG-p_hcTCEg8s-_T-wFo1w1oTSJkFp128XDqrb0T-fFBKeVwiDAEEaYhc0GF2-eYfR80I1C0nyhkl4zQEMYeFl74Oh5KZXtyDpv57U8jy9omR0n9pHXY7vJN-4hcRoKz7mtS0zEJ2Wv8YWNlZevVhwjlCTKwpfwOV2Pl1N"/>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[14px]">brush</span>
+<span class="font-label-sm text-label-sm text-on-surface truncate">Bức tranh hoàng hôn</span>
+</div>
+<p class="font-caption text-caption text-tertiary truncate">Đã ghi chép cảm xúc tĩnh tại</p>
+</div>
+</div>
+<button aria-label="Xem tác phẩm M22" class="px-space-sm py-1.5 rounded-lg bg-surface-container-lowest text-on-secondary-container font-label-sm text-label-sm hover:bg-secondary-container transition-colors shrink-0 shadow-sm flex items-center gap-0.5" type="button">
+<span>Xem</span>
+<span class="material-symbols-outlined text-[14px]">arrow_outward</span>
+</button>
+</div>
+</article>
+</section>
+<!-- Empty State Container (Hidden by default, triggered when filter has no items) -->
+<div class="hidden flex-col items-center justify-center p-space-xl text-center my-space-lg bg-surface-container-low/50 rounded-xl" id="filter-empty-state">
+<div class="w-14 h-14 rounded-full bg-secondary-container/60 flex items-center justify-center mb-space-md text-primary">
+<span class="material-symbols-outlined text-[28px]">nature</span>
+</div>
+<h3 class="font-title-sm text-title-sm text-on-surface mb-space-xs">Không có phiên nào</h3>
+<p class="font-body-sm text-body-sm text-tertiary">Chưa có phiên tập trung nào khớp với bộ lọc bạn đã chọn.</p>
+</div>
+</div>
+<!-- Bottom Action Section: Biểu đồ thống kê M23 -->
+<section class="mt-space-xl pt-space-md">
+<button class="w-full h-12 rounded-xl bg-primary text-on-primary font-label-md text-label-md flex items-center justify-center gap-space-sm shadow-md active:scale-[0.98] transition-all hover:bg-primary-container" id="btn-stats-m23" type="button">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">insights</span>
+<span>Xem biểu đồ thống kê tổng thể (M23)</span>
+<span class="material-symbols-outlined text-[18px]">trending_up</span>
+</button>
+<p class="text-center font-caption text-caption text-tertiary mt-space-sm">Phân tích chuỗi ngày và nhịp tập trung sinh học</p>
+</section>
+</div>
+<script>
+  (function() {
+    const chips = document.querySelectorAll('.filter-chip');
+    const cards = document.querySelectorAll('.session-card');
+    const groups = document.querySelectorAll('.session-group');
+    const emptyState = document.getElementById('filter-empty-state');
+
+    chips.forEach(chip => {
+      chip.addEventListener('click', () => {
+        // Active visual state toggle
+        chips.forEach(c => {
+          c.classList.remove('active', 'bg-primary', 'text-on-primary', 'shadow-sm');
+          c.classList.add('bg-surface-container-low', 'text-on-surface-variant');
+        });
+        chip.classList.add('active', 'bg-primary', 'text-on-primary', 'shadow-sm');
+        chip.classList.remove('bg-surface-container-low', 'text-on-surface-variant');
+
+        const filterType = chip.getAttribute('data-filter');
+        let visibleCount = 0;
+
+        cards.forEach(card => {
+          let show = false;
+          if (filterType === 'all') {
+            show = true;
+          } else if (filterType === 'completed' && card.dataset.status === 'completed') {
+            show = true;
+          } else if (filterType === 'early' && card.dataset.status === 'early') {
+            show = true;
+          } else if (filterType === 'journal' && card.dataset.hasJournal === 'true') {
+            show = true;
+          }
+
+          if (show) {
+            card.style.display = 'flex';
+            visibleCount++;
+          } else {
+            card.style.display = 'none';
+          }
+        });
+
+        // Hide empty date headers
+        groups.forEach(group => {
+          const visibleInGroup = group.querySelectorAll('.session-card:not([style*="display: none"])').length;
+          group.style.display = visibleInGroup > 0 ? 'flex' : 'none';
+        });
+
+        // Toggle Empty state visibility
+        if (visibleCount === 0) {
+          emptyState.classList.remove('hidden');
+          emptyState.classList.add('flex');
+        } else {
+          emptyState.classList.add('hidden');
+          emptyState.classList.remove('flex');
+        }
+      });
+    });
+
+    // Touch Feedback for individual items
+    cards.forEach(card => {
+      card.addEventListener('click', (e) => {
+        if (!e.target.closest('button')) {
+          card.classList.add('ring-2', 'ring-primary/20');
+          setTimeout(() => {
+            card.classList.remove('ring-2', 'ring-primary/20');
+          }, 350);
+        }
+      });
+    });
+  })();
+</script></main></body></html>

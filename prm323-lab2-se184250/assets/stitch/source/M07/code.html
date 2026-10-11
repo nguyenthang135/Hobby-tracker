@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_stack" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "on-primary-fixed-variant": "#00522b", "secondary-fixed": "#9ef5bf", "tertiary-container": "#6a7870", "on-tertiary-fixed": "#121e19", "inverse-surface": "#2e3130", "surface-variant": "#e1e3e1", "secondary-container": "#9ef5bf", "on-secondary-fixed-variant": "#005230", "on-tertiary": "#ffffff", "on-primary-container": "#f6fff4", "on-tertiary-container": "#f5fff8", "outline": "#6e7a6f", "on-background": "#191c1b", "on-tertiary-fixed-variant": "#3d4a43", "primary-fixed": "#8ff8b0", "on-secondary-fixed": "#002110", "background": "#f9faf8", "on-primary-fixed": "#00210e", "on-surface-variant": "#3e4a40", "on-surface": "#191c1b", "tertiary": "#525f58", "outline-variant": "#bdcabd", "surface-dim": "#d9dad8", "error-container": "#ffdad6", "surface-container-lowest": "#ffffff", "inverse-primary": "#73db96", "secondary-fixed-dim": "#83d8a4", "tertiary-fixed-dim": "#bccac1", "on-error": "#ffffff", "inverse-on-surface": "#f0f1ef", "surface-bright": "#f9faf8", "surface-container-low": "#f3f4f2", "tertiary-fixed": "#d8e6dd", "secondary": "#096c42", "on-secondary": "#ffffff", "surface-container-high": "#e7e8e6", "primary": "#006a39", "error": "#ba1a1a", "on-secondary-container": "#157348", "surface-container": "#edeeec", "on-error-container": "#93000a", "primary-container": "#09864a", "surface-container-highest": "#e1e3e1", "on-primary": "#ffffff", "primary-fixed-dim": "#73db96", "surface": "#f9faf8", "surface-tint": "#006d3a" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "space-xl": "1.5rem", "margin": "1rem", "space-xs": "0.25rem", "gutter": "0.75rem", "space-md": "0.75rem", "space-sm": "0.5rem", "space-lg": "1rem" }, "fontFamily": { "label-sm": ["Inter"], "headline-md": ["Inter"], "label-md": ["Inter"], "headline-lg": ["Inter"], "body-sm": ["Inter"], "body-lg": ["Inter"], "headline-xl": ["Inter"], "body-md": ["Inter"], "title-sm": ["Inter"], "caption": ["Inter"] }, "fontSize": { "label-sm": ["12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "500" }], "headline-md": ["18px", { "lineHeight": "24px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "label-md": ["14px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600" }], "headline-lg": ["22px", { "lineHeight": "28px", "letterSpacing": "-0.015em", "fontWeight": "600" }], "body-sm": ["13px", { "lineHeight": "18px", "fontWeight": "400" }], "body-lg": ["16px", { "lineHeight": "24px", "fontWeight": "400" }], "headline-xl": ["28px", { "lineHeight": "36px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "body-md": ["14px", { "lineHeight": "20px", "fontWeight": "400" }], "title-sm": ["16px", { "lineHeight": "22px", "letterSpacing": "-0.005em", "fontWeight": "600" }], "caption": ["11px", { "lineHeight": "14px", "letterSpacing": "0.02em", "fontWeight": "500" }] } } } };</script><style>@layer base{html,body{margin:0;padding:0;background-color:#f9faf8;}body{overscroll-behavior-y:none;-webkit-tap-highlight-color:transparent;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}}::-webkit-scrollbar{display:none;}</style><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface font-body-md text-on-surface flex flex-col min-h-screen"><header class="fixed top-0 w-full z-50 pt-safe bg-surface/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="w-full max-w-[390px] mx-auto"><div class="h-11 px-margin flex items-center justify-between text-on-surface"><span class="font-label-md text-label-md font-semibold tracking-tight">09:41</span><div class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-[16px]">signal_cellular_alt</span><span class="material-symbols-outlined text-[16px]">wifi</span><span class="material-symbols-outlined text-[18px]">battery_full</span></div></div><div class="h-14 px-margin flex items-center justify-between gap-space-sm"><div class="flex items-center gap-space-sm flex-1 min-w-0"><button aria-label="Go back" class="w-11 h-11 flex items-center justify-center rounded-full text-on-surface hover:bg-surface-container-high transition-colors -ml-space-xs" onclick="history.back()"><span class="material-symbols-outlined text-[24px]">arrow_back</span></button><h1 class="font-title-sm text-title-sm text-on-surface truncate">New Task Entry</h1></div><div class="flex items-center gap-space-xs"><button aria-label="Contextual action" class="w-11 h-11 flex items-center justify-center rounded-full text-on-surface-variant hover:bg-surface-container-high transition-colors"><span class="material-symbols-outlined text-[22px]">more_vert</span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center ml-space-xs"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></div></header><main class="flex flex-col relative w-full max-w-[390px] mx-auto px-margin pt-[100px] pb-safe bg-surface"><div class="flex flex-col w-full pb-12">
+<!-- Inner Header Context Bar -->
+<div class="flex items-center justify-between mb-space-md py-space-xs">
+<button class="flex items-center gap-space-xs text-on-surface-variant hover:text-on-surface transition-colors" onclick="history.back()" type="button">
+<span class="material-symbols-outlined text-[20px]">chevron_left</span>
+<span class="font-label-md text-label-md font-medium">Quay lại</span>
+</button>
+<button class="font-label-md text-label-md text-tertiary hover:text-on-surface transition-colors px-space-xs py-space-xs" onclick="history.back()" type="button">
+      Hủy
+    </button>
+</div>
+<!-- Main Card Container -->
+<div class="bg-surface-container-lowest rounded-[20px] p-space-lg shadow-sm flex flex-col gap-space-xl">
+<!-- 1. Tên sở thích -->
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<label class="font-label-md text-label-md text-on-surface font-semibold flex items-center gap-1.5" for="hobby-name">
+<span class="material-symbols-outlined text-primary text-[18px]">edit</span>
+          Tên sở thích
+        </label>
+<span class="font-caption text-caption text-tertiary" id="char-counter">0/40</span>
+</div>
+<div class="relative flex items-center">
+<input class="w-full h-12 bg-surface-container-low rounded-[14px] px-space-lg pr-10 text-on-surface font-body-md text-body-md placeholder:text-tertiary-fixed-dim focus:outline-none focus:bg-surface-container-lowest transition-all" id="hobby-name" maxlength="40" placeholder="Ví dụ: Học Piano, Vẽ màu nước..." type="text"/>
+<span class="material-symbols-outlined absolute right-3 text-tertiary text-[20px] pointer-events-none">palette</span>
+</div>
+<p class="font-caption text-caption text-secondary flex items-center gap-1 mt-0.5" id="name-hint">
+<span class="material-symbols-outlined text-[13px]">info</span>
+        Tên ngắn gọn, tối đa 40 ký tự giúp bạn dễ ghi nhớ.
+      </p>
+</div>
+<!-- 2. Chọn Danh mục -->
+<div class="flex flex-col gap-space-sm">
+<label class="font-label-md text-label-md text-on-surface font-semibold flex items-center gap-1.5">
+<span class="material-symbols-outlined text-primary text-[18px]">category</span>
+        Chọn Danh mục
+      </label>
+<div class="flex flex-wrap gap-space-xs" id="category-group">
+<button class="category-chip active flex items-center gap-1.5 px-3 py-2 rounded-full font-label-sm text-label-sm transition-all bg-secondary text-on-secondary shadow-sm" data-cat="tri-tue" type="button">
+<span class="material-symbols-outlined text-[16px]">psychology</span>
+          Trí tuệ
+        </button>
+<button class="category-chip flex items-center gap-1.5 px-3 py-2 rounded-full font-label-sm text-label-sm transition-all bg-surface-container-high text-on-surface hover:bg-surface-variant" data-cat="suc-khoe" type="button">
+<span class="material-symbols-outlined text-[16px] text-primary">favorite</span>
+          Sức khỏe
+        </button>
+<button class="category-chip flex items-center gap-1.5 px-3 py-2 rounded-full font-label-sm text-label-sm transition-all bg-surface-container-high text-on-surface hover:bg-surface-variant" data-cat="nghe-thuat" type="button">
+<span class="material-symbols-outlined text-[16px] text-tertiary">brush</span>
+          Nghệ thuật
+        </button>
+<button class="category-chip flex items-center gap-1.5 px-3 py-2 rounded-full font-label-sm text-label-sm transition-all bg-surface-container-high text-on-surface hover:bg-surface-variant" data-cat="ky-nang" type="button">
+<span class="material-symbols-outlined text-[16px] text-secondary">extension</span>
+          Kỹ năng
+        </button>
+<button class="category-chip flex items-center gap-1.5 px-3 py-2 rounded-full font-label-sm text-label-sm transition-all bg-surface-container-high text-on-surface hover:bg-surface-variant" data-cat="thu-gian" type="button">
+<span class="material-symbols-outlined text-[16px] text-primary-container">spa</span>
+          Thư giãn
+        </button>
+</div>
+</div>
+<!-- 3. Biểu tượng & Màu chủ đạo -->
+<div class="flex flex-col gap-space-md">
+<div>
+<label class="font-label-md text-label-md text-on-surface font-semibold flex items-center gap-1.5 mb-2">
+<span class="material-symbols-outlined text-primary text-[18px]">auto_awesome</span>
+          Biểu tượng đại diện
+        </label>
+<div class="grid grid-cols-6 gap-2" id="icon-picker">
+<button class="icon-btn active flex items-center justify-center w-11 h-11 rounded-[14px] bg-secondary-container text-on-secondary-container transition-all" data-icon="menu_book" type="button">
+<span class="material-symbols-outlined text-[22px]">menu_book</span>
+</button>
+<button class="icon-btn flex items-center justify-center w-11 h-11 rounded-[14px] bg-surface-container-low text-tertiary transition-all hover:bg-surface-container" data-icon="piano" type="button">
+<span class="material-symbols-outlined text-[22px]">piano</span>
+</button>
+<button class="icon-btn flex items-center justify-center w-11 h-11 rounded-[14px] bg-surface-container-low text-tertiary transition-all hover:bg-surface-container" data-icon="directions_run" type="button">
+<span class="material-symbols-outlined text-[22px]">directions_run</span>
+</button>
+<button class="icon-btn flex items-center justify-center w-11 h-11 rounded-[14px] bg-surface-container-low text-tertiary transition-all hover:bg-surface-container" data-icon="draw" type="button">
+<span class="material-symbols-outlined text-[22px]">draw</span>
+</button>
+<button class="icon-btn flex items-center justify-center w-11 h-11 rounded-[14px] bg-surface-container-low text-tertiary transition-all hover:bg-surface-container" data-icon="self_improvement" type="button">
+<span class="material-symbols-outlined text-[22px]">self_improvement</span>
+</button>
+<button class="icon-btn flex items-center justify-center w-11 h-11 rounded-[14px] bg-surface-container-low text-tertiary transition-all hover:bg-surface-container" data-icon="potted_plant" type="button">
+<span class="material-symbols-outlined text-[22px]">potted_plant</span>
+</button>
+</div>
+</div>
+<div>
+<label class="font-label-sm text-label-sm text-on-surface-variant font-medium flex items-center gap-1.5 mb-2">
+          Màu nền thẻ chủ đạo
+        </label>
+<div class="flex items-center gap-3" id="color-picker">
+<!-- Pastel Green -->
+<button class="color-btn active relative w-9 h-9 rounded-full bg-secondary-fixed flex items-center justify-center transition-transform hover:scale-105" data-color="green" type="button">
+<span class="material-symbols-outlined text-[16px] text-on-secondary-fixed-variant check-indicator">check</span>
+</button>
+<!-- Pastel Yellow / Gold -->
+<button class="color-btn relative w-9 h-9 rounded-full bg-[#FFF4DC] flex items-center justify-center transition-transform hover:scale-105" data-color="yellow" type="button">
+<span class="material-symbols-outlined text-[16px] text-[#8A6100] check-indicator hidden">check</span>
+</button>
+<!-- Pastel Purple -->
+<button class="color-btn relative w-9 h-9 rounded-full bg-[#F1EAFC] flex items-center justify-center transition-transform hover:scale-105" data-color="purple" type="button">
+<span class="material-symbols-outlined text-[16px] text-[#5D3891] check-indicator hidden">check</span>
+</button>
+<!-- Pastel Blue -->
+<button class="color-btn relative w-9 h-9 rounded-full bg-[#E8F2FF] flex items-center justify-center transition-transform hover:scale-105" data-color="blue" type="button">
+<span class="material-symbols-outlined text-[16px] text-[#1D5D9B] check-indicator hidden">check</span>
+</button>
+</div>
+</div>
+</div>
+<!-- 4. Thiết lập Mục tiêu -->
+<div class="flex flex-col gap-space-md">
+<label class="font-label-md text-label-md text-on-surface font-semibold flex items-center gap-1.5">
+<span class="material-symbols-outlined text-primary text-[18px]">flag</span>
+        Thiết lập mục tiêu rèn luyện
+      </label>
+<!-- Target metric switch -->
+<div class="grid grid-cols-2 p-1 bg-surface-container-low rounded-[14px]">
+<button class="target-tab active py-2 text-center rounded-[10px] font-label-sm text-label-sm transition-all bg-surface-container-lowest text-secondary font-semibold shadow-xs" id="tab-time" type="button">
+          Thời gian (phút)
+        </button>
+<button class="target-tab py-2 text-center rounded-[10px] font-label-sm text-label-sm transition-all text-tertiary font-medium" id="tab-unit" type="button">
+          Số lần / Trang / Đơn vị
+        </button>
+</div>
+<!-- Target input -->
+<div class="flex items-center gap-2">
+<div class="flex-1 relative flex items-center">
+<input class="w-full h-12 bg-surface-container-low rounded-[14px] px-space-lg text-on-surface font-body-md text-body-md focus:outline-none focus:bg-surface-container-lowest transition-all" id="target-value" type="text" value="30 phút mỗi ngày"/>
+</div>
+</div>
+<!-- Weekday Selector -->
+<div class="flex flex-col gap-1.5">
+<div class="flex items-center justify-between">
+<span class="font-caption text-caption text-tertiary">Lặp lại các ngày:</span>
+<span class="font-caption text-caption text-secondary font-semibold" id="day-summary">Mỗi ngày (7 ngày)</span>
+</div>
+<div class="grid grid-cols-7 gap-1.5" id="weekday-group">
+<button class="day-chip active flex flex-col items-center justify-center h-10 rounded-[10px] font-label-sm text-label-sm transition-all bg-secondary text-on-secondary" data-day="T2" type="button">
+            T2
+          </button>
+<button class="day-chip active flex flex-col items-center justify-center h-10 rounded-[10px] font-label-sm text-label-sm transition-all bg-secondary text-on-secondary" data-day="T3" type="button">
+            T3
+          </button>
+<button class="day-chip active flex flex-col items-center justify-center h-10 rounded-[10px] font-label-sm text-label-sm transition-all bg-secondary text-on-secondary" data-day="T4" type="button">
+            T4
+          </button>
+<button class="day-chip active flex flex-col items-center justify-center h-10 rounded-[10px] font-label-sm text-label-sm transition-all bg-secondary text-on-secondary" data-day="T5" type="button">
+            T5
+          </button>
+<button class="day-chip active flex flex-col items-center justify-center h-10 rounded-[10px] font-label-sm text-label-sm transition-all bg-secondary text-on-secondary" data-day="T6" type="button">
+            T6
+          </button>
+<button class="day-chip active flex flex-col items-center justify-center h-10 rounded-[10px] font-label-sm text-label-sm transition-all bg-secondary text-on-secondary" data-day="T7" type="button">
+            T7
+          </button>
+<button class="day-chip active flex flex-col items-center justify-center h-10 rounded-[10px] font-label-sm text-label-sm transition-all bg-secondary text-on-secondary" data-day="CN" type="button">
+            CN
+          </button>
+</div>
+</div>
+</div>
+<!-- 5. Gợi ý sở thích phổ biến -->
+<div class="flex flex-col gap-space-sm pt-space-xs">
+<div class="flex items-center justify-between">
+<label class="font-label-md text-label-md text-on-surface font-semibold flex items-center gap-1.5">
+<span class="material-symbols-outlined text-primary text-[18px]">tips_and_updates</span>
+          Gợi ý sở thích phổ biến
+        </label>
+<span class="font-caption text-caption text-tertiary">Chạm để chọn nhanh</span>
+</div>
+<div class="grid grid-cols-2 gap-space-gutter">
+<!-- Suggestion 1 -->
+<button class="flex flex-col text-left p-3 rounded-[16px] bg-[#FFF4DC] hover:opacity-90 active:scale-[0.98] transition-all" onclick="applySuggestion('Viết nhật ký biết ơn', 'tri-tue', 'menu_book', 'yellow', '10 phút mỗi tối')" type="button">
+<div class="flex items-center gap-1.5 text-[#8A6100] mb-1">
+<span class="material-symbols-outlined text-[18px]">edit_note</span>
+<span class="font-label-sm text-label-sm font-semibold">Nhật ký</span>
+</div>
+<span class="font-body-sm text-body-sm text-[#8A6100] font-medium leading-snug">Viết nhật ký biết ơn</span>
+<span class="font-caption text-caption text-[#8A6100]/70 mt-1">10 phút mỗi ngày</span>
+</button>
+<!-- Suggestion 2 -->
+<button class="flex flex-col text-left p-3 rounded-[16px] bg-[#E8F6ED] hover:opacity-90 active:scale-[0.98] transition-all" onclick="applySuggestion('Thiền định tĩnh tâm', 'thu-gian', 'self_improvement', 'green', '10 phút mỗi sáng')" type="button">
+<div class="flex items-center gap-1.5 text-[#167348] mb-1">
+<span class="material-symbols-outlined text-[18px]">self_improvement</span>
+<span class="font-label-sm text-label-sm font-semibold">Tĩnh tại</span>
+</div>
+<span class="font-body-sm text-body-sm text-[#167348] font-medium leading-snug">Thiền định 10 phút</span>
+<span class="font-caption text-caption text-[#167348]/70 mt-1">Mỗi sáng thức dậy</span>
+</button>
+<!-- Suggestion 3 -->
+<button class="flex flex-col text-left p-3 rounded-[16px] bg-[#E8F2FF] hover:opacity-90 active:scale-[0.98] transition-all" onclick="applySuggestion('Đi bộ thư giãn', 'suc-khoe', 'directions_run', 'blue', '6.000 bước mỗi ngày')" type="button">
+<div class="flex items-center gap-1.5 text-[#1D5D9B] mb-1">
+<span class="material-symbols-outlined text-[18px]">directions_walk</span>
+<span class="font-label-sm text-label-sm font-semibold">Vận động</span>
+</div>
+<span class="font-body-sm text-body-sm text-[#1D5D9B] font-medium leading-snug">Đi bộ 6.000 bước</span>
+<span class="font-caption text-caption text-[#1D5D9B]/70 mt-1">Cải thiện sức khỏe</span>
+</button>
+<!-- Suggestion 4 -->
+<button class="flex flex-col text-left p-3 rounded-[16px] bg-[#F1EAFC] hover:opacity-90 active:scale-[0.98] transition-all" onclick="applySuggestion('Học từ vựng ngoại ngữ', 'ky-nang', 'draw', 'purple', '15 phút mỗi ngày')" type="button">
+<div class="flex items-center gap-1.5 text-[#5D3891] mb-1">
+<span class="material-symbols-outlined text-[18px]">translate</span>
+<span class="font-label-sm text-label-sm font-semibold">Kỹ năng</span>
+</div>
+<span class="font-body-sm text-body-sm text-[#5D3891] font-medium leading-snug">Học ngoại ngữ</span>
+<span class="font-caption text-caption text-[#5D3891]/70 mt-1">15 phút mỗi ngày</span>
+</button>
+</div>
+</div>
+<!-- 6. Nút CTA lớn -->
+<div class="pt-space-xs flex flex-col gap-2">
+<button class="w-full h-12 rounded-[16px] bg-secondary hover:bg-on-secondary-container active:scale-[0.98] text-on-secondary font-label-md text-label-md font-semibold flex items-center justify-center gap-2 shadow-sm transition-all" id="btn-create-hobby" type="button">
+<span class="material-symbols-outlined text-[20px]">add_task</span>
+        Tạo sở thích
+      </button>
+<span class="font-caption text-caption text-tertiary text-center">Bạn có thể điều chỉnh lại lịch trình bất kỳ lúc nào</span>
+</div>
+</div>
+<!-- Toast Notification element -->
+<div class="fixed bottom-6 left-1/2 -translate-x-1/2 max-w-[340px] w-full px-4 py-3 rounded-[16px] shadow-lg flex items-center gap-3 opacity-0 pointer-events-none transition-all duration-300 z-50" id="toast-notification">
+<span class="material-symbols-outlined text-[22px]" id="toast-icon">check_circle</span>
+<span class="font-body-sm text-body-sm font-medium flex-1" id="toast-message"></span>
+</div>
+</div>
+<script>
+  // DOM Elements
+  const hobbyNameInput = document.getElementById('hobby-name');
+  const charCounter = document.getElementById('char-counter');
+  const nameHint = document.getElementById('name-hint');
+  const btnCreateHobby = document.getElementById('btn-create-hobby');
+  const toastNotification = document.getElementById('toast-notification');
+  const toastMessage = document.getElementById('toast-message');
+  const toastIcon = document.getElementById('toast-icon');
+
+  // Character counter and validation microcopy
+  hobbyNameInput.addEventListener('input', (e) => {
+    const len = e.target.value.length;
+    charCounter.textContent = `${len}/40`;
+    if (len >= 38) {
+      charCounter.classList.add('text-error');
+      charCounter.classList.remove('text-tertiary');
+    } else {
+      charCounter.classList.remove('text-error');
+      charCounter.classList.add('text-tertiary');
+    }
+    if (len > 0) {
+      nameHint.innerHTML = '<span class="material-symbols-outlined text-[13px]">check_circle</span> Tên sở thích hợp lệ.';
+      nameHint.className = 'font-caption text-caption text-secondary flex items-center gap-1 mt-0.5';
+    } else {
+      nameHint.innerHTML = '<span class="material-symbols-outlined text-[13px]">info</span> Tên ngắn gọn, tối đa 40 ký tự giúp bạn dễ ghi nhớ.';
+      nameHint.className = 'font-caption text-caption text-tertiary flex items-center gap-1 mt-0.5';
+    }
+  });
+
+  // Category selection handler
+  const categoryChips = document.querySelectorAll('.category-chip');
+  categoryChips.forEach(chip => {
+    chip.addEventListener('click', () => {
+      categoryChips.forEach(c => {
+        c.className = 'category-chip flex items-center gap-1.5 px-3 py-2 rounded-full font-label-sm text-label-sm transition-all bg-surface-container-high text-on-surface hover:bg-surface-variant';
+      });
+      chip.className = 'category-chip active flex items-center gap-1.5 px-3 py-2 rounded-full font-label-sm text-label-sm transition-all bg-secondary text-on-secondary shadow-sm';
+    });
+  });
+
+  // Icon selector
+  const iconButtons = document.querySelectorAll('.icon-btn');
+  iconButtons.forEach(btn => {
+    btn.addEventListener('click', () => {
+      iconButtons.forEach(b => {
+        b.className = 'icon-btn flex items-center justify-center w-11 h-11 rounded-[14px] bg-surface-container-low text-tertiary transition-all hover:bg-surface-container';
+      });
+      btn.className = 'icon-btn active flex items-center justify-center w-11 h-11 rounded-[14px] bg-secondary-container text-on-secondary-container transition-all';
+    });
+  });
+
+  // Color picker
+  const colorButtons = document.querySelectorAll('.color-btn');
+  colorButtons.forEach(btn => {
+    btn.addEventListener('click', () => {
+      colorButtons.forEach(b => {
+        b.classList.remove('scale-110');
+        const check = b.querySelector('.check-indicator');
+        if (check) check.classList.add('hidden');
+      });
+      btn.classList.add('scale-110');
+      const activeCheck = btn.querySelector('.check-indicator');
+      if (activeCheck) activeCheck.classList.remove('hidden');
+    });
+  });
+
+  // Target tabs
+  const tabTime = document.getElementById('tab-time');
+  const tabUnit = document.getElementById('tab-unit');
+  const targetValueInput = document.getElementById('target-value');
+
+  tabTime.addEventListener('click', () => {
+    tabTime.className = 'target-tab active py-2 text-center rounded-[10px] font-label-sm text-label-sm transition-all bg-surface-container-lowest text-secondary font-semibold shadow-xs';
+    tabUnit.className = 'target-tab py-2 text-center rounded-[10px] font-label-sm text-label-sm transition-all text-tertiary font-medium';
+    targetValueInput.value = '30 phút mỗi ngày';
+  });
+
+  tabUnit.addEventListener('click', () => {
+    tabUnit.className = 'target-tab active py-2 text-center rounded-[10px] font-label-sm text-label-sm transition-all bg-surface-container-lowest text-secondary font-semibold shadow-xs';
+    tabTime.className = 'target-tab py-2 text-center rounded-[10px] font-label-sm text-label-sm transition-all text-tertiary font-medium';
+    targetValueInput.value = '10 trang sách mỗi ngày';
+  });
+
+  // Weekday multiselect
+  const dayChips = document.querySelectorAll('.day-chip');
+  const daySummary = document.getElementById('day-summary');
+
+  dayChips.forEach(chip => {
+    chip.addEventListener('click', () => {
+      chip.classList.toggle('active');
+      if (chip.classList.contains('active')) {
+        chip.className = 'day-chip active flex flex-col items-center justify-center h-10 rounded-[10px] font-label-sm text-label-sm transition-all bg-secondary text-on-secondary';
+      } else {
+        chip.className = 'day-chip flex flex-col items-center justify-center h-10 rounded-[10px] font-label-sm text-label-sm transition-all bg-surface-container-low text-tertiary hover:bg-surface-container';
+      }
+      updateDaySummary();
+    });
+  });
+
+  function updateDaySummary() {
+    const activeDays = document.querySelectorAll('.day-chip.active');
+    const count = activeDays.length;
+    if (count === 7) {
+      daySummary.textContent = 'Mỗi ngày (7 ngày)';
+    } else if (count === 5 && !document.querySelector('[data-day="T7"]').classList.contains('active') && !document.querySelector('[data-day="CN"]').classList.contains('active')) {
+      daySummary.textContent = 'Ngày trong tuần (T2 - T6)';
+    } else if (count === 0) {
+      daySummary.textContent = 'Chưa chọn ngày nào';
+    } else {
+      daySummary.textContent = `${count} ngày mỗi tuần`;
+    }
+  }
+
+  // Pre-fill suggestion handler
+  function applySuggestion(name, cat, icon, color, goal) {
+    hobbyNameInput.value = name;
+    hobbyNameInput.dispatchEvent(new Event('input'));
+    
+    // Select category
+    categoryChips.forEach(c => {
+      if (c.getAttribute('data-cat') === cat) {
+        c.click();
+      }
+    });
+
+    // Select icon
+    iconButtons.forEach(b => {
+      if (b.getAttribute('data-icon') === icon) {
+        b.click();
+      }
+    });
+
+    // Select color
+    colorButtons.forEach(cb => {
+      if (cb.getAttribute('data-color') === color) {
+        cb.click();
+      }
+    });
+
+    // Goal
+    targetValueInput.value = goal;
+
+    showToast(`Đã áp dụng mẫu: "${name}"`, 'success');
+  }
+
+  // Toast System
+  let toastTimeout;
+  function showToast(message, type = 'success') {
+    clearTimeout(toastTimeout);
+    toastMessage.textContent = message;
+    
+    if (type === 'success') {
+      toastNotification.className = 'fixed bottom-6 left-1/2 -translate-x-1/2 max-w-[340px] w-full px-4 py-3 rounded-[16px] shadow-lg flex items-center gap-3 bg-secondary text-on-secondary opacity-100 translate-y-0 transition-all duration-300 z-50';
+      toastIcon.textContent = 'check_circle';
+    } else {
+      toastNotification.className = 'fixed bottom-6 left-1/2 -translate-x-1/2 max-w-[340px] w-full px-4 py-3 rounded-[16px] shadow-lg flex items-center gap-3 bg-error text-on-error opacity-100 translate-y-0 transition-all duration-300 z-50';
+      toastIcon.textContent = 'error';
+    }
+
+    toastTimeout = setTimeout(() => {
+      toastNotification.classList.remove('opacity-100', 'translate-y-0');
+      toastNotification.classList.add('opacity-0', 'pointer-events-none');
+    }, 2800);
+  }
+
+  // CTA Submit
+  btnCreateHobby.addEventListener('click', () => {
+    const val = hobbyNameInput.value.trim();
+    if (!val) {
+      showToast('Vui lòng nhập tên sở thích của bạn!', 'error');
+      hobbyNameInput.focus();
+      hobbyNameInput.classList.add('bg-error-container/20');
+      setTimeout(() => {
+        hobbyNameInput.classList.remove('bg-error-container/20');
+      }, 1000);
+      return;
+    }
+
+    showToast('Tạo sở thích thành công! Đang chuyển hướng...', 'success');
+    btnCreateHobby.disabled = true;
+    btnCreateHobby.classList.add('opacity-80');
+    
+    // Smooth transition simulation to M08
+    setTimeout(() => {
+      window.location.hash = '#m08';
+    }, 1200);
+  });
+</script></main></body></html>

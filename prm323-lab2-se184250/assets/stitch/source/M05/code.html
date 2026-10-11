@@ -1,0 +1,266 @@
+<!DOCTYPE html><html lang="vi"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"><meta content="mobile_tab" name="shell-type"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><style>@layer base{html,body{width:100vw;margin:0;padding:0;background-color:#f9faf8;}body{overscroll-behavior:none;-webkit-tap-highlight-color:transparent;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "on-primary-fixed-variant": "#00522b", "on-background": "#191c1b", "on-primary-fixed": "#00210e", "on-tertiary-fixed-variant": "#3d4a43", "on-primary": "#ffffff", "surface": "#f9faf8", "tertiary-fixed": "#d8e6dd", "primary-fixed-dim": "#73db96", "surface-variant": "#e1e3e1", "on-tertiary-fixed": "#121e19", "outline-variant": "#bdcabd", "primary-fixed": "#8ff8b0", "surface-container-high": "#e7e8e6", "secondary-fixed-dim": "#83d8a4", "on-secondary-fixed": "#002110", "surface-container-highest": "#e1e3e1", "surface-bright": "#f9faf8", "outline": "#6e7a6f", "surface-container-low": "#f3f4f2", "on-error-container": "#93000a", "tertiary": "#525f58", "on-primary-container": "#f6fff4", "inverse-surface": "#2e3130", "inverse-primary": "#73db96", "on-tertiary-container": "#f5fff8", "on-tertiary": "#ffffff", "tertiary-container": "#6a7870", "error": "#ba1a1a", "primary": "#006a39", "on-secondary-container": "#157348", "background": "#f9faf8", "surface-tint": "#006d3a", "on-secondary-fixed-variant": "#005230", "inverse-on-surface": "#f0f1ef", "secondary-container": "#9ef5bf", "secondary": "#096c42", "error-container": "#ffdad6", "on-secondary": "#ffffff", "surface-container-lowest": "#ffffff", "primary-container": "#09864a", "secondary-fixed": "#9ef5bf", "surface-dim": "#d9dad8", "on-surface-variant": "#3e4a40", "on-surface": "#191c1b", "on-error": "#ffffff", "surface-container": "#edeeec", "tertiary-fixed-dim": "#bccac1" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "space-xl": "1.5rem", "space-md": "0.75rem", "space-sm": "0.5rem", "gutter": "0.75rem", "margin": "1rem", "space-lg": "1rem", "space-xs": "0.25rem" }, "fontFamily": { "body-lg": ["Inter"], "caption": ["Inter"], "label-sm": ["Inter"], "headline-xl": ["Inter"], "title-sm": ["Inter"], "headline-lg": ["Inter"], "label-md": ["Inter"], "body-md": ["Inter"], "headline-md": ["Inter"], "body-sm": ["Inter"] }, "fontSize": { "body-lg": ["16px", { "lineHeight": "24px", "fontWeight": "400" }], "caption": ["11px", { "lineHeight": "14px", "letterSpacing": "0.02em", "fontWeight": "500" }], "label-sm": ["12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "500" }], "headline-xl": ["28px", { "lineHeight": "36px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "title-sm": ["16px", { "lineHeight": "22px", "letterSpacing": "-0.005em", "fontWeight": "600" }], "headline-lg": ["22px", { "lineHeight": "28px", "letterSpacing": "-0.015em", "fontWeight": "600" }], "label-md": ["14px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600" }], "body-md": ["14px", { "lineHeight": "20px", "fontWeight": "400" }], "headline-md": ["18px", { "lineHeight": "24px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "body-sm": ["13px", { "lineHeight": "18px", "fontWeight": "400" }] } } } };</script><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface text-on-surface flex flex-col min-h-screen"><header class="fixed top-0 w-full z-50 pt-safe bg-surface/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.03)]"><div class="h-14 px-margin flex items-center justify-between"><div class="flex items-center gap-space-sm"><div class="w-9 h-9 rounded-full bg-secondary-container/50 flex items-center justify-center text-primary"><span class="material-symbols-outlined text-[20px]">spa</span></div><h1 class="font-headline-md text-headline-md text-on-surface font-semibold tracking-tight">Cá Nhân</h1></div><div class="flex items-center gap-space-xs"><button aria-label="Thông báo" class="w-11 h-11 flex items-center justify-center text-on-surface-variant hover:text-primary transition-colors"><span class="material-symbols-outlined text-[22px]">notifications</span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="flex flex-col relative w-full pt-14 pb-[112px] bg-surface min-h-screen"><div class="flex flex-col w-full">
+<!-- Profile Header Banner & Avatar Section -->
+<div class="relative w-full px-margin pt-space-md">
+<!-- Quick Actions Bar (Settings Icon linked to M40) -->
+<div class="flex items-center justify-between mb-space-sm">
+<span class="font-label-sm text-label-sm text-tertiary">Hồ sơ cá nhân</span>
+<a aria-label="Cài đặt hệ thống" class="w-10 h-10 rounded-full bg-surface-container-lowest shadow-sm flex items-center justify-center text-on-surface-variant hover:text-primary active:scale-95 transition-all" href="#M40">
+<span class="material-symbols-outlined text-[20px]">settings</span>
+</a>
+</div>
+<!-- Cover & Avatar Card -->
+<div class="relative rounded-[24px] bg-secondary-fixed/30 overflow-hidden shadow-sm p-space-lg flex flex-col items-center text-center">
+<!-- Ambient organic background shape -->
+<div class="absolute -top-12 -right-12 w-44 h-44 rounded-full bg-secondary-container/40 blur-2xl pointer-events-none"></div>
+<div class="absolute -bottom-8 -left-8 w-36 h-36 rounded-full bg-primary-fixed/20 blur-xl pointer-events-none"></div>
+<!-- Avatar with subtle elevation -->
+<div class="relative z-10 -mt-1 mb-space-md">
+<div class="w-24 h-24 rounded-full p-1 bg-surface-container-lowest shadow-md">
+<img class="w-full h-full object-cover rounded-full" data-alt="A warm, cinematic portrait photo of a cheerful young Vietnamese man in his late 20s named Minh Hoang, wearing a minimalist sage green linen shirt. Warm natural soft morning sunlight, lush green indoor plants softly blurred in the background, gentle peaceful smile, earthy aesthetic, high resolution photography." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA8-d9YrldsMoTQd7EuFGm5al3JJnKO3hxMMxTuY1EZsS6KCIeIWa6DNFIcRjSOq2eNtg_P0VP-qIBh6HEE8ffkfgt6x8Kgj506bHPHjTsh1DwWFVYmFz8ThIxoS5ocVUAZu-4G7HK-JqPBZgdTKLkBDh7ndBpSqNMOfbca_ufyLfw-eqbM7pJS3vgWXf9OR-9Lz_cDI5jg4_CvUg1KysMDi1sGTULd-BT8gXCKw5ik9QeQP73oGTWC">
+</div>
+<div class="absolute bottom-1 right-1 w-6 h-6 rounded-full bg-primary flex items-center justify-center text-on-primary shadow-sm">
+<span class="material-symbols-outlined text-[13px]" style="font-variation-settings: 'FILL' 1;">eco</span>
+</div>
+</div>
+<!-- Name & Bio -->
+<div class="relative z-10 flex flex-col items-center">
+<div class="flex items-center gap-space-xs">
+<h2 class="font-headline-md text-headline-md text-on-surface font-semibold tracking-tight">Minh Hoàng</h2>
+<span class="material-symbols-outlined text-primary text-[18px]" style="font-variation-settings: 'FILL' 1;">verified</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1 max-w-[280px]">
+          Sống chậm, tập trung và kiên định mỗi ngày ✨
+        </p>
+</div>
+<!-- Edit Profile Action Button (M38) -->
+<a class="relative z-10 mt-space-md inline-flex items-center gap-space-xs px-space-lg h-9 rounded-full bg-surface-container-lowest text-primary font-label-sm text-label-sm shadow-sm hover:shadow active:scale-95 transition-all" href="#M38">
+<span class="material-symbols-outlined text-[16px]">edit</span>
+<span class="">Chỉnh sửa hồ sơ</span>
+</a>
+</div>
+</div>
+<!-- Key Metrics & Insights Section -->
+<div class="px-margin mt-space-xl flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<span class="font-title-sm text-title-sm text-on-surface">Chỉ số tích lũy</span>
+<a class="inline-flex items-center gap-0.5 text-primary font-label-sm text-label-sm hover:underline" href="#M23">
+<span class="">Chi tiết</span>
+<span class="material-symbols-outlined text-[16px]">chevron_right</span>
+</a>
+</div>
+<!-- 3 Stat Tiles Grid -->
+<div class="grid grid-cols-3 gap-gutter">
+<!-- Stat 1: Total Focus -->
+<div class="bg-surface-container-lowest rounded-[20px] p-space-md shadow-sm flex flex-col items-center text-center justify-between">
+<div class="w-8 h-8 rounded-full bg-secondary-container/40 flex items-center justify-center text-secondary mb-1">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">hourglass_top</span>
+</div>
+<div>
+<span class="font-headline-md text-headline-md text-on-surface font-bold">128</span>
+<span class="font-caption text-caption text-tertiary block -mt-0.5">Giờ tập trung</span>
+</div>
+<span class="font-caption text-caption text-secondary font-medium mt-1">+12% tuần này</span>
+</div>
+<!-- Stat 2: Active Habits -->
+<div class="bg-surface-container-lowest rounded-[20px] p-space-md shadow-sm flex flex-col items-center text-center justify-between">
+<div class="w-8 h-8 rounded-full bg-tertiary-fixed flex items-center justify-center text-on-tertiary-fixed-variant mb-1">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">spa</span>
+</div>
+<div>
+<span class="font-headline-md text-headline-md text-on-surface font-bold">5</span>
+<span class="font-caption text-caption text-tertiary block -mt-0.5">Sở thích duy trì</span>
+</div>
+<span class="font-caption text-caption text-primary font-medium mt-1">Đều đặn mỗi ngày</span>
+</div>
+<!-- Stat 3: Sessions Done -->
+<div class="bg-surface-container-lowest rounded-[20px] p-space-md shadow-sm flex flex-col items-center text-center justify-between">
+<div class="w-8 h-8 rounded-full bg-secondary-fixed/50 flex items-center justify-center text-primary mb-1">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">task_alt</span>
+</div>
+<div>
+<span class="font-headline-md text-headline-md text-on-surface font-bold">142</span>
+<span class="font-caption text-caption text-tertiary block -mt-0.5">Phiên hoàn thành</span>
+</div>
+<span class="font-caption text-caption text-secondary font-medium mt-1">Kỷ lục: 28 chuỗi</span>
+</div>
+</div>
+</div>
+<!-- Current Challenge Progress Card -->
+<div class="px-margin mt-space-xl">
+<div class="bg-surface-container-lowest rounded-[22px] p-space-lg shadow-sm">
+<div class="flex items-start justify-between mb-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-2xl bg-secondary-container/50 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[22px]" style="font-variation-settings: 'FILL' 1;">auto_stories</span>
+</div>
+<div>
+<span class="font-caption text-caption text-tertiary uppercase tracking-wider">Tiến độ thử thách</span>
+<h3 class="font-title-sm text-title-sm text-on-surface">Thử thách Đọc sách</h3>
+</div>
+</div>
+<div class="px-space-sm py-1 rounded-full bg-secondary-container text-on-secondary-container font-caption text-caption font-semibold">
+          18 / 21 ngày
+        </div>
+</div>
+<!-- Progress bar -->
+<div class="w-full bg-surface-container-high rounded-full h-2.5 overflow-hidden mb-space-sm">
+<div class="bg-primary h-full rounded-full transition-all duration-500" style="width: 85%;"></div>
+</div>
+<!-- Bottom reward info -->
+<div class="flex items-center justify-between pt-space-xs">
+<div class="flex items-center gap-space-xs text-on-surface-variant font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-[16px] text-primary" style="font-variation-settings: 'FILL' 1;">military_tech</span>
+<span class="">Huy hiệu sắp mở: <strong class="text-on-surface font-semibold">Tri Thức Tĩnh Tại</strong></span>
+</div>
+<span class="font-caption text-caption text-primary font-semibold">Còn 3 ngày</span>
+</div>
+</div>
+</div>
+<!-- My Hobbies (3 Cards + Action) -->
+<div class="px-margin mt-space-xl flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div>
+<h3 class="font-title-sm text-title-sm text-on-surface">Sở thích của tôi</h3>
+<p class="font-caption text-caption text-tertiary">3 thói quen nuôi dưỡng tâm trí</p>
+</div>
+<a class="inline-flex items-center gap-0.5 text-primary font-label-sm text-label-sm hover:underline" href="#M06">
+<span class="">Quản lý</span>
+<span class="material-symbols-outlined text-[16px]">tune</span>
+</a>
+</div>
+<!-- 3 Horizontal Hobby Cards -->
+<div class="grid grid-cols-1 gap-space-sm">
+<!-- Hobby 1: Reading -->
+<div class="bg-surface-container-lowest rounded-[20px] p-space-md shadow-sm flex items-center justify-between">
+<div class="flex items-center gap-space-md">
+<div class="w-12 h-12 rounded-2xl overflow-hidden bg-surface-container-high shrink-0">
+<img class="w-full h-full object-cover" data-alt="Close up warm aesthetic shot of an open vintage book with delicate green botanical bookmarks on a rustic light oak coffee table, soft morning window light, high details." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDsET9ZdxzuPZorpR_vBlzOu5hE0KZx5R_bCh2cYrUp8yIHgUJUTZCycQFptjqKWy-nbt2pBB6-BYaKQjPoPykI8cQ4EG5PlxartEHUK-eMGL6MNoGQGy_Z-UN6C-899p8NdSwvKmhHPtFwC-Ggp6xx316PqZqxmyzwQLzPxpYCgpNTka2HvJJrguJ4qevk3DUdVt_QjiwdXMqzR0kbwvahPkqt7m9Nr-IBCu6NIg6_TSaESXloROJE">
+</div>
+<div class="min-w-0">
+<h4 class="font-label-md text-label-md text-on-surface truncate">Đọc sách phát triển</h4>
+<p class="font-caption text-caption text-tertiary">Mục tiêu: 30 phút / ngày • Đạt 94%</p>
+</div>
+</div>
+<div class="w-8 h-8 rounded-full bg-secondary-container/30 flex items-center justify-center text-primary shrink-0">
+<span class="material-symbols-outlined text-[18px]">check_circle</span>
+</div>
+</div>
+<!-- Hobby 2: Guitar -->
+<div class="bg-surface-container-lowest rounded-[20px] p-space-md shadow-sm flex items-center justify-between">
+<div class="flex items-center gap-space-md">
+<div class="w-12 h-12 rounded-2xl overflow-hidden bg-surface-container-high shrink-0">
+<img class="w-full h-full object-cover" data-alt="Aesthetic detail shot of an acoustic guitar leaning against a cozy cream armchair next to a lush Monstera plant, sunny soft room ambience, calm lifestyle aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDPTUviCcjxH06il3sUBzcZ5dGrZl1-9mZi3yBdyu4ujTUA4sSmSMp1WTt2On-L9pmcdypx5frDFLqN06oKLXq_JYfp7l7FxZeoyahJT_cw1XMHanO6d3EP0mFo12zOG8TaWeNNgZ2xLeeX0LPYlt1eWotBWGjcHhfF1nDnN164o2vaBk2lYhOu6rSanLZJp86-KbuA2tg-uDNmhFv_lRy3CFuq3LjpdoDea78a3RnoD3jmV5uPUDjE">
+</div>
+<div class="min-w-0">
+<h4 class="font-label-md text-label-md text-on-surface truncate">Luyện đàn Acoustic Guitar</h4>
+<p class="font-caption text-caption text-tertiary">Mục tiêu: 20 phút / ngày • Đạt 82%</p>
+</div>
+</div>
+<div class="w-8 h-8 rounded-full bg-secondary-container/30 flex items-center justify-center text-primary shrink-0">
+<span class="material-symbols-outlined text-[18px]">music_note</span>
+</div>
+</div>
+<!-- Hobby 3: Meditation -->
+<div class="bg-surface-container-lowest rounded-[20px] p-space-md shadow-sm flex items-center justify-between">
+<div class="flex items-center gap-space-md">
+<div class="w-12 h-12 rounded-2xl overflow-hidden bg-surface-container-high shrink-0">
+<img class="w-full h-full object-cover" data-alt="Minimalist meditation corner with an organic woven zafu cushion, small ceramic incense burner emitting subtle aromatic smoke, bamboo elements, peaceful Zen vibe." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCgwtuimqYF961htCIM5wxHtYNU7y0GebHfVDoHq4rYS0oTz85ofOIvRWvfkJvT_wxVNcGkdik3xjdQMLaCRps1g5KXDlIMB8Vq2Yqa97HA5G1g3S9jkcpGJQuHvnVDhwcfQ1wKg-rgKm-Go15gzzWQLTux1c2mTnRE6aUPfhRivV5TjnpYbUISAFe2fUQKZFI_NzH8U-nXLw8zMX9B-2IIXX06yBIbKieBiEOv24n_LoXLnsFNpgUp">
+</div>
+<div class="min-w-0">
+<h4 class="font-label-md text-label-md text-on-surface truncate">Thiền chánh niệm &amp; Hơi thở</h4>
+<p class="font-caption text-caption text-tertiary">Mục tiêu: 15 phút / sáng • Đạt 100%</p>
+</div>
+</div>
+<div class="w-8 h-8 rounded-full bg-secondary-container/30 flex items-center justify-center text-primary shrink-0">
+<span class="material-symbols-outlined text-[18px]">self_improvement</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Utility & Settings Navigation List -->
+<div class="px-margin mt-space-xl mb-space-md flex flex-col gap-space-sm">
+<span class="font-title-sm text-title-sm text-on-surface">Tiện ích &amp; Quản lý</span>
+<div class="bg-surface-container-lowest rounded-[22px] shadow-sm overflow-hidden flex flex-col">
+<!-- Item 1: Memories & Saved Moments (M21) -->
+<a class="flex items-center justify-between p-space-md hover:bg-surface-container-low transition-colors active:bg-surface-container" href="#M21">
+<div class="flex items-center gap-space-md min-w-0">
+<div class="w-10 h-10 rounded-full bg-secondary-container/40 flex items-center justify-center text-primary shrink-0">
+<span class="material-symbols-outlined text-[20px]">photo_library</span>
+</div>
+<div class="min-w-0">
+<span class="font-label-md text-label-md text-on-surface block truncate">Kỷ niệm &amp; Khoảnh khắc đã lưu</span>
+<span class="font-caption text-caption text-tertiary">38 ghi chú tâm đắc</span>
+</div>
+</div>
+<div class="flex items-center gap-space-xs text-tertiary">
+<span class="w-2 h-2 rounded-full bg-primary"></span>
+<span class="material-symbols-outlined text-[18px]">chevron_right</span>
+</div>
+</a>
+<!-- Item 2: Achievements & Badges (M39) -->
+<a class="flex items-center justify-between p-space-md hover:bg-surface-container-low transition-colors active:bg-surface-container" href="#M39">
+<div class="flex items-center gap-space-md min-w-0">
+<div class="w-10 h-10 rounded-full bg-tertiary-fixed flex items-center justify-center text-on-tertiary-fixed-variant shrink-0">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">emoji_events</span>
+</div>
+<div class="min-w-0">
+<span class="font-label-md text-label-md text-on-surface block truncate">Thành tích &amp; Huy hiệu</span>
+<span class="font-caption text-caption text-tertiary">14 huy hiệu đã đạt</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-[18px] text-tertiary">chevron_right</span>
+</a>
+<!-- Item 3: Notification Settings (M42) -->
+<a class="flex items-center justify-between p-space-md hover:bg-surface-container-low transition-colors active:bg-surface-container" href="#M42">
+<div class="flex items-center gap-space-md min-w-0">
+<div class="w-10 h-10 rounded-full bg-surface-container-high flex items-center justify-center text-on-surface-variant shrink-0">
+<span class="material-symbols-outlined text-[20px]">notifications_active</span>
+</div>
+<div class="min-w-0">
+<span class="font-label-md text-label-md text-on-surface block truncate">Cài đặt thông báo</span>
+<span class="font-caption text-caption text-tertiary">Nhắc nhở chuông nhẹ &amp; giờ thiền</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-[18px] text-tertiary">chevron_right</span>
+</a>
+<!-- Item 4: Privacy & Security (M43) -->
+<a class="flex items-center justify-between p-space-md hover:bg-surface-container-low transition-colors active:bg-surface-container" href="#M43">
+<div class="flex items-center gap-space-md min-w-0">
+<div class="w-10 h-10 rounded-full bg-surface-container-high flex items-center justify-center text-on-surface-variant shrink-0">
+<span class="material-symbols-outlined text-[20px]">shield</span>
+</div>
+<div class="min-w-0">
+<span class="font-label-md text-label-md text-on-surface block truncate">Quyền riêng tư &amp; Bảo mật</span>
+<span class="font-caption text-caption text-tertiary">Bảo vệ dữ liệu cục bộ</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-[18px] text-tertiary">chevron_right</span>
+</a>
+</div>
+</div>
+<!-- Micro-interaction / Active Tab State Script -->
+<script>
+    (function() {
+      // Highlight "Cá nhân" navigation item in the bottom shell
+      const bottomNavLinks = document.querySelectorAll('nav a[data-path="ca-nhan"]');
+      bottomNavLinks.forEach(link => {
+        link.classList.remove('text-tertiary');
+        link.classList.add('text-primary', 'font-semibold');
+        const icon = link.querySelector('.material-symbols-outlined');
+        if (icon) {
+          icon.style.fontVariationSettings = "'FILL' 1";
+        }
+      });
+    })();
+  </script>
+</div></main><div class="fixed bottom-0 w-full z-50 pointer-events-none pb-safe"><div class="px-3 pb-5 w-full max-w-[420px] mx-auto"><nav class="fixed bottom-5 left-3 right-3 h-16 bg-white/95 backdrop-blur-md rounded-full border border-gray-100 shadow-xl flex items-center px-2 z-50 pointer-events-auto" data-active-classes="text-primary font-semibold"><a class="flex-1 h-full flex flex-col items-center justify-center gap-0.5 text-tertiary transition-colors hover:text-on-surface" data-path="trang-chu" href="#"><span class="material-symbols-outlined text-[22px]">home</span><span class="font-caption text-caption">Trang chủ</span></a><a class="flex-1 h-full flex flex-col items-center justify-center gap-0.5 text-tertiary transition-colors hover:text-on-surface" data-path="lich-trinh" href="#"><span class="material-symbols-outlined text-[22px]">calendar_today</span><span class="font-caption text-caption">Lịch trình</span></a><a href="#focus" class="flex-1 flex flex-col items-center justify-center -mt-5 group focus:outline-none"><div class="w-12 h-12 rounded-full bg-[#167348] text-white flex items-center justify-center shadow-lg transform transition active:scale-95 group-hover:scale-105"><svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" stroke-width="2"></circle><polyline points="12 6 12 12 16 14" stroke-width="2"></polyline></svg></div><span class="text-[10px] font-medium text-[#717971] mt-0.5 tracking-tight">Tập trung</span></a><a class="flex-1 h-full flex flex-col items-center justify-center gap-0.5 text-tertiary transition-colors hover:text-on-surface" data-path="cong-dong" href="#"><span class="material-symbols-outlined text-[22px]">groups</span><span class="font-caption text-caption">Cộng đồng</span></a><a class="flex-1 h-full flex flex-col items-center justify-center gap-0.5 text-primary font-semibold transition-colors hover:text-on-surface" data-path="ca-nhan" href="#"><span class="material-symbols-outlined text-[22px]" style="font-variation-settings: 'FILL' 1;">person</span><span class="font-caption text-caption">Cá nhân</span></a></nav></div></div>
+
+
+
+</body></html>

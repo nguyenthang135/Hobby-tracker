@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "tertiary-fixed-dim": "#bccac1", "secondary-container": "#9ef5bf", "on-secondary": "#ffffff", "surface-container-highest": "#e1e3e1", "surface-container-lowest": "#ffffff", "surface": "#f9faf8", "on-error": "#ffffff", "surface-container-high": "#e7e8e6", "primary-fixed": "#8ff8b0", "surface-dim": "#d9dad8", "secondary": "#096c42", "surface-container": "#edeeec", "on-tertiary": "#ffffff", "on-secondary-fixed-variant": "#005230", "on-secondary-container": "#157348", "inverse-primary": "#73db96", "on-secondary-fixed": "#002110", "on-surface-variant": "#3e4a40", "tertiary-fixed": "#d8e6dd", "on-primary-container": "#f6fff4", "secondary-fixed-dim": "#83d8a4", "on-surface": "#191c1b", "outline": "#6e7a6f", "error-container": "#ffdad6", "background": "#f9faf8", "surface-tint": "#006d3a", "on-background": "#191c1b", "secondary-fixed": "#9ef5bf", "tertiary-container": "#6a7870", "primary": "#006a39", "tertiary": "#525f58", "on-tertiary-fixed-variant": "#3d4a43", "error": "#ba1a1a", "surface-container-low": "#f3f4f2", "surface-bright": "#f9faf8", "on-tertiary-fixed": "#121e19", "on-primary-fixed": "#00210e", "inverse-on-surface": "#f0f1ef", "on-primary": "#ffffff", "inverse-surface": "#2e3130", "on-error-container": "#93000a", "surface-variant": "#e1e3e1", "primary-fixed-dim": "#73db96", "on-primary-fixed-variant": "#00522b", "on-tertiary-container": "#f5fff8", "outline-variant": "#bdcabd", "primary-container": "#09864a" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "space-xl": "1.5rem", "margin": "1rem", "space-md": "0.75rem", "gutter": "0.75rem", "space-lg": "1rem", "space-xs": "0.25rem", "space-sm": "0.5rem" }, "fontFamily": { "body-lg": ["Inter"], "caption": ["Inter"], "title-sm": ["Inter"], "headline-xl": ["Inter"], "label-md": ["Inter"], "headline-lg": ["Inter"], "body-sm": ["Inter"], "label-sm": ["Inter"], "body-md": ["Inter"], "headline-md": ["Inter"] }, "fontSize": { "body-lg": ["16px", { "lineHeight": "24px", "fontWeight": "400" }], "caption": ["11px", { "lineHeight": "14px", "letterSpacing": "0.02em", "fontWeight": "500" }], "title-sm": ["16px", { "lineHeight": "22px", "letterSpacing": "-0.005em", "fontWeight": "600" }], "headline-xl": ["28px", { "lineHeight": "36px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "label-md": ["14px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600" }], "headline-lg": ["22px", { "lineHeight": "28px", "letterSpacing": "-0.015em", "fontWeight": "600" }], "body-sm": ["13px", { "lineHeight": "18px", "fontWeight": "400" }], "label-sm": ["12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "500" }], "body-md": ["14px", { "lineHeight": "20px", "fontWeight": "400" }], "headline-md": ["18px", { "lineHeight": "24px", "letterSpacing": "-0.01em", "fontWeight": "600" }] } } } };</script><style>@layer base{html,body{width:100%;margin:0;padding:0;background-color:#f9faf8;}body{overscroll-behavior-y:none;-webkit-tap-highlight-color:transparent;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface font-body-md text-body-md text-on-surface flex flex-col min-h-screen antialiased"><header class="fixed top-0 w-full z-50 pt-safe bg-surface/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-16 px-margin flex items-center justify-between"><div class="flex items-center gap-space-sm"><div class="w-9 h-9 rounded-full bg-secondary-container/50 flex items-center justify-center text-secondary"><span class="material-symbols-outlined text-[20px]">spa</span></div><h1 class="font-headline-md text-headline-md text-on-surface font-semibold tracking-tight">Saved Discussions</h1></div><div class="flex items-center gap-space-xs"><button class="w-11 h-11 flex items-center justify-center text-on-surface-variant hover:text-on-surface rounded-full transition-colors"><span class="material-symbols-outlined text-[22px]">notifications</span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center ml-space-xs"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="flex-1 flex flex-col relative w-full px-margin pt-16 pb-[108px] bg-surface"><div class="flex flex-col w-full gap-space-lg">
+<!-- Toast Notification Alert (Micro-interaction) -->
+<div class="fixed top-20 left-1/2 -translate-x-1/2 z-50 transition-all duration-300 opacity-0 pointer-events-none translate-y-[-8px] flex items-center gap-space-sm px-space-md py-space-sm rounded-full bg-inverse-surface text-inverse-on-surface shadow-lg text-label-sm font-label-sm" id="saveToast">
+<span class="material-symbols-outlined text-[18px] text-primary-fixed">check_circle</span>
+<span id="toastMessage">Đã cập nhật bài lưu</span>
+</div>
+<!-- Top Navigation & Action Strip -->
+<div class="flex items-center justify-between w-full">
+<div class="flex items-center gap-space-sm">
+<button aria-label="Quay lại" class="w-10 h-10 rounded-full flex items-center justify-center bg-surface-container-low text-on-surface hover:bg-surface-container transition-colors active:scale-95" onclick="history.back()">
+<span class="material-symbols-outlined text-[20px]">arrow_back</span>
+</button>
+<div class="flex flex-col">
+<h2 class="font-headline-md text-headline-md text-on-surface tracking-tight">Bài đã lưu</h2>
+<span class="font-caption text-caption text-tertiary">18 bài viết được lưu trữ</span>
+</div>
+</div>
+<div class="flex items-center gap-space-xs">
+<button aria-label="Tìm kiếm" class="w-10 h-10 rounded-full flex items-center justify-center bg-surface-container-low text-on-surface-variant hover:text-on-surface transition-colors active:scale-95" id="searchBtn">
+<span class="material-symbols-outlined text-[20px]">search</span>
+</button>
+<button aria-label="Lọc" class="w-10 h-10 rounded-full flex items-center justify-center bg-surface-container-low text-on-surface-variant hover:text-on-surface transition-colors active:scale-95">
+<span class="material-symbols-outlined text-[20px]">tune</span>
+</button>
+</div>
+</div>
+<!-- Search Bar (Collapsible / Dynamic) -->
+<div class="hidden w-full transition-all duration-200" id="searchBar">
+<div class="relative w-full">
+<input class="w-full h-12 pl-11 pr-4 rounded-[14px] bg-surface-container-lowest text-on-surface font-body-md text-body-md placeholder:text-outline focus:outline-none focus:ring-2 focus:ring-primary/20 shadow-sm transition-all" placeholder="Tìm kiếm trong bài đã lưu..." type="text"/>
+<span class="material-symbols-outlined text-[20px] text-outline absolute left-3.5 top-3.5 pointer-events-none">search</span>
+</div>
+</div>
+<!-- Category Filter Slider -->
+<div class="w-full -mx-margin px-margin overflow-x-auto no-scrollbar py-0.5">
+<div class="flex items-center gap-space-xs min-w-max">
+<button class="filter-chip active px-4 py-2 rounded-full font-label-sm text-label-sm bg-primary text-on-primary shadow-sm flex items-center gap-1.5 transition-all active:scale-95">
+<span>Tất cả</span>
+<span class="px-1.5 py-0.2 rounded-full bg-on-primary/20 text-on-primary text-[10px]">18</span>
+</button>
+<button class="filter-chip px-4 py-2 rounded-full font-label-sm text-label-sm bg-surface-container-lowest text-on-surface-variant hover:bg-surface-container-low flex items-center gap-1.5 transition-all active:scale-95 shadow-sm">
+<span>Làm vườn</span>
+<span class="px-1.5 py-0.2 rounded-full bg-surface-container-high text-tertiary text-[10px]">8</span>
+</button>
+<button class="filter-chip px-4 py-2 rounded-full font-label-sm text-label-sm bg-surface-container-lowest text-on-surface-variant hover:bg-surface-container-low flex items-center gap-1.5 transition-all active:scale-95 shadow-sm">
+<span>Hội họa</span>
+<span class="px-1.5 py-0.2 rounded-full bg-surface-container-high text-tertiary text-[10px]">4</span>
+</button>
+<button class="filter-chip px-4 py-2 rounded-full font-label-sm text-label-sm bg-surface-container-lowest text-on-surface-variant hover:bg-surface-container-low flex items-center gap-1.5 transition-all active:scale-95 shadow-sm">
+<span>Âm nhạc</span>
+<span class="px-1.5 py-0.2 rounded-full bg-surface-container-high text-tertiary text-[10px]">3</span>
+</button>
+<button class="filter-chip px-4 py-2 rounded-full font-label-sm text-label-sm bg-surface-container-lowest text-on-surface-variant hover:bg-surface-container-low flex items-center gap-1.5 transition-all active:scale-95 shadow-sm">
+<span>Khác</span>
+<span class="px-1.5 py-0.2 rounded-full bg-surface-container-high text-tertiary text-[10px]">3</span>
+</button>
+</div>
+</div>
+<!-- Warm Mindfulness Banner -->
+<div class="w-full p-space-md rounded-[19px] bg-secondary-fixed/30 relative overflow-hidden flex items-start gap-space-md">
+<div class="w-10 h-10 rounded-full bg-surface-container-lowest flex items-center justify-center shrink-0 shadow-sm text-secondary">
+<span class="material-symbols-outlined text-[22px]" style="font-variation-settings: 'FILL' 1;">lightbulb</span>
+</div>
+<div class="flex-1 pr-1">
+<h3 class="font-label-md text-label-md text-on-secondary-fixed-variant leading-snug">Kho tàng cảm hứng bạn đã tích lũy</h3>
+<p class="font-body-sm text-body-sm text-on-secondary-container mt-1">Hãy chọn một bài và biến thành hoạt động thực tế hôm nay!</p>
+</div>
+<div class="absolute -right-3 -bottom-3 w-16 h-16 rounded-full bg-secondary-container/40 pointer-events-none blur-xl"></div>
+</div>
+<!-- Bookmarked Articles List -->
+<div class="flex flex-col gap-space-lg w-full" id="bookmarkList">
+<!-- Card 1: Chăm sóc sen đá -->
+<article class="w-full bg-surface-container-lowest rounded-[19px] p-space-md shadow-sm transition-all flex flex-col gap-space-md" id="card-post-1">
+<div class="flex items-start gap-space-md">
+<div class="relative w-24 h-24 rounded-[14px] overflow-hidden shrink-0 shadow-sm">
+<img class="w-full h-full object-cover" data-alt="Close up shot of vibrant green and pastel pink succulent rosette echeveria in a tiny terracotta pot bathed in warm gentle morning sunlight with soft organic indoor plant aesthetic" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBmHI-WiPnYx4hF73vdq6OJ7TR50uDHwQkM75Gfuq5tfoOCf2OLNn-Yr3vGNB7wSGw0q45CghMYu7zqmt26z5quo8vWeDV479Nw_OYIDH0m7yQJ83pwCosH7xLW7I3gnNSx8RYuxhxO1syzE_63YOLCTyumkwg45vEedN3kAr34HlQKTBBekZPJuw1_Lq1mVFqmwMKUe2Zc6TeP14RVj-XOH5iiglyaBURUmXBg1fNwSArlEa9ORYDH"/>
+<span class="absolute top-1.5 left-1.5 px-2 py-0.5 rounded-full bg-surface-container-lowest/90 backdrop-blur-sm text-secondary font-caption text-[10px] font-semibold">Làm vườn</span>
+</div>
+<div class="flex-1 min-w-0 flex flex-col justify-between h-24 py-0.5">
+<div>
+<div class="flex items-center justify-between gap-1">
+<span class="font-caption text-caption text-tertiary truncate">Lưu hôm qua</span>
+<button aria-label="Bỏ lưu bài viết" class="bookmark-btn text-primary hover:text-error transition-colors p-1 -mr-1" onclick="toggleBookmark('card-post-1', '5 bước chăm sóc sen đá mọng nước')">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">bookmark</span>
+</button>
+</div>
+<h4 class="font-title-sm text-title-sm text-on-surface line-clamp-2 leading-snug mt-0.5">5 bước chăm sóc sen đá mọng nước cho người mới bắt đầu</h4>
+</div>
+<div class="flex items-center gap-space-xs text-tertiary font-caption text-caption">
+<span class="material-symbols-outlined text-[14px]">account_circle</span>
+<span class="truncate">Minh Thảo</span>
+</div>
+</div>
+</div>
+<div class="flex items-center justify-between pt-space-xs">
+<span class="font-caption text-caption text-outline flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">schedule</span> 5 phút đọc
+        </span>
+<a class="inline-flex items-center gap-1 font-label-sm text-label-sm text-primary hover:text-secondary font-semibold transition-colors active:scale-95" href="#M35">
+<span>Mở bài viết</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+</article>
+<!-- Card 2: Kỹ thuật Wet-on-wet -->
+<article class="w-full bg-surface-container-lowest rounded-[19px] p-space-md shadow-sm transition-all flex flex-col gap-space-md" id="card-post-2">
+<div class="flex items-start gap-space-md">
+<div class="relative w-24 h-24 rounded-[14px] overflow-hidden shrink-0 shadow-sm">
+<img class="w-full h-full object-cover" data-alt="Top down aesthetic view of an artist watercolor palette with blending turquoise and amber pigment puddle wet on textured cold press cotton paper with a soft brush nearby" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDTwYOwYAYvBzut0rjyma73mkw2P1dYJZJqPQ6T58BZX8fmS3e25-ZZw0uyX2QGKCeYHVBKUhbLdL-UXC0uPAr92_N3FVEMZEfWClqenf0y0-RYFNEBvlHPG2IGGyQifmgyrHcoEdT2UeOS2eAbKQM_kid1T2dxFfhP6HjBjnUiCMfJ0DpB02VvdCinNnGFcCoTbYC8cTmwTEGeGc23DA1VRVNS5iBWgi0s2RgNcYDR-N1ycIY7_nBn"/>
+<span class="absolute top-1.5 left-1.5 px-2 py-0.5 rounded-full bg-surface-container-lowest/90 backdrop-blur-sm text-secondary font-caption text-[10px] font-semibold">Hội họa</span>
+</div>
+<div class="flex-1 min-w-0 flex flex-col justify-between h-24 py-0.5">
+<div>
+<div class="flex items-center justify-between gap-1">
+<span class="font-caption text-caption text-tertiary truncate">Lưu 3 ngày trước</span>
+<button aria-label="Bỏ lưu bài viết" class="bookmark-btn text-primary hover:text-error transition-colors p-1 -mr-1" onclick="toggleBookmark('card-post-2', 'Kỹ thuật pha màu nước Wet-on-wet cơ bản')">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">bookmark</span>
+</button>
+</div>
+<h4 class="font-title-sm text-title-sm text-on-surface line-clamp-2 leading-snug mt-0.5">Kỹ thuật pha màu nước Wet-on-wet cơ bản</h4>
+</div>
+<div class="flex items-center gap-space-xs text-tertiary font-caption text-caption">
+<span class="material-symbols-outlined text-[14px]">account_circle</span>
+<span class="truncate">Hoàng Nam</span>
+</div>
+</div>
+</div>
+<div class="flex items-center justify-between pt-space-xs">
+<span class="font-caption text-caption text-outline flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">schedule</span> 8 phút đọc
+        </span>
+<div class="flex items-center gap-space-sm">
+<button class="font-label-sm text-label-sm text-outline hover:text-error transition-colors" onclick="toggleBookmark('card-post-2', 'Kỹ thuật pha màu nước Wet-on-wet cơ bản')">
+            Bỏ lưu
+          </button>
+<a class="inline-flex items-center gap-1 font-label-sm text-label-sm text-primary hover:text-secondary font-semibold transition-colors active:scale-95" href="#M35">
+<span>Xem chi tiết</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+</div>
+</article>
+<!-- Card 3: Bấm hợp âm F Guitar -->
+<article class="w-full bg-surface-container-lowest rounded-[19px] p-space-md shadow-sm transition-all flex flex-col gap-space-md" id="card-post-3">
+<div class="flex items-start gap-space-md">
+<div class="relative w-24 h-24 rounded-[14px] overflow-hidden shrink-0 shadow-sm">
+<img class="w-full h-full object-cover" data-alt="Musician hands gently pressing acoustic wooden guitar fretboard frets forming an F barre chord in a warm sunny music room with golden daylight soft bokeh background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBsSIPPBd2oIn-FjhvTNiGaiMlhBcGnu1mzttDhYYOWKUy9CLVxvq_pO5LOpfONWkzlJYRWKblpoEAXwjF03OTDORP5aY0CKItsa6n_MDzHnC1QGZ8a6UgIhQXPjaLHbcEgdq7U37KOUvEiPLeoPB2VZM2su7HdczdSDWmlpLCUZDAYqLdQxbC8RXSQoLJyf20mZots0eA8HimL6Ydvq_aa8qP85dknbHeATMmwnYzvAbp3LjCOZvTl"/>
+<span class="absolute top-1.5 left-1.5 px-2 py-0.5 rounded-full bg-surface-container-lowest/90 backdrop-blur-sm text-secondary font-caption text-[10px] font-semibold">Âm nhạc</span>
+</div>
+<div class="flex-1 min-w-0 flex flex-col justify-between h-24 py-0.5">
+<div>
+<div class="flex items-center justify-between gap-1">
+<span class="font-caption text-caption text-tertiary truncate">Lưu 1 tuần trước</span>
+<button aria-label="Bỏ lưu bài viết" class="bookmark-btn text-primary hover:text-error transition-colors p-1 -mr-1" onclick="toggleBookmark('card-post-3', 'Cách bấm hợp âm F chặn không bị tịt dây')">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">bookmark</span>
+</button>
+</div>
+<h4 class="font-title-sm text-title-sm text-on-surface line-clamp-2 leading-snug mt-0.5">Cách bấm hợp âm F chặn không bị tịt dây cho Guitarist mới</h4>
+</div>
+<div class="flex items-center gap-space-xs text-tertiary font-caption text-caption">
+<span class="material-symbols-outlined text-[14px]">account_circle</span>
+<span class="truncate">Tuấn Kiệt</span>
+</div>
+</div>
+</div>
+<div class="flex items-center justify-between pt-space-xs">
+<span class="font-caption text-caption text-outline flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">schedule</span> 6 phút đọc
+        </span>
+<a class="inline-flex items-center gap-1 font-label-sm text-label-sm text-primary hover:text-secondary font-semibold transition-colors active:scale-95" href="#M35">
+<span>Mở bài viết</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+</article>
+</div>
+<!-- Bottom Inspiration & Discovery Card -->
+<section class="w-full mt-space-xs p-space-lg rounded-[19px] bg-gradient-to-br from-surface-container-lowest to-surface-container-low shadow-sm flex flex-col items-center text-center gap-space-md">
+<div class="w-12 h-12 rounded-full bg-secondary-container/50 flex items-center justify-center text-secondary shadow-sm">
+<span class="material-symbols-outlined text-[26px]">compost</span>
+</div>
+<div class="flex flex-col gap-1">
+<h3 class="font-title-sm text-title-sm text-on-surface">Muốn tìm thêm nguồn cảm hứng mới?</h3>
+<p class="font-body-sm text-body-sm text-tertiary px-space-sm">Hàng ngàn chia sẻ thực tế từ cộng đồng đang chờ đón bạn trải nghiệm.</p>
+</div>
+<a class="w-full h-12 rounded-[14px] bg-primary text-on-primary font-label-md text-label-md flex items-center justify-center gap-2 shadow-sm transition-all active:scale-[0.98] hover:bg-secondary" href="#M04">
+<span class="material-symbols-outlined text-[18px]">explore</span>
+<span>Khám phá cộng đồng</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</a>
+</section>
+</div>
+<script>
+  // Simple Micro-interactions for Bookmarks
+  function showToast(msg) {
+    const toast = document.getElementById('saveToast');
+    const msgEl = document.getElementById('toastMessage');
+    if (!toast || !msgEl) return;
+    msgEl.textContent = msg;
+    toast.classList.remove('opacity-0', 'pointer-events-none', 'translate-y-[-8px]');
+    toast.classList.add('opacity-100', 'translate-y-0');
+    setTimeout(() => {
+      toast.classList.add('opacity-0', 'pointer-events-none', 'translate-y-[-8px]');
+      toast.classList.remove('opacity-100', 'translate-y-0');
+    }, 2400);
+  }
+
+  function toggleBookmark(cardId, title) {
+    const card = document.getElementById(cardId);
+    if (!card) return;
+    
+    // Smooth dismiss transition
+    card.style.transition = 'all 0.3s ease-out';
+    card.style.opacity = '0';
+    card.style.transform = 'scale(0.95)';
+    
+    setTimeout(() => {
+      card.classList.add('hidden');
+      showToast(`Đã bỏ lưu: "${title.slice(0, 22)}..."`);
+    }, 280);
+  }
+
+  // Toggle Search Bar
+  const searchBtn = document.getElementById('searchBtn');
+  const searchBar = document.getElementById('searchBar');
+  if (searchBtn && searchBar) {
+    searchBtn.addEventListener('click', () => {
+      searchBar.classList.toggle('hidden');
+      if (!searchBar.classList.contains('hidden')) {
+        const input = searchBar.querySelector('input');
+        if (input) input.focus();
+      }
+    });
+  }
+
+  // Filter Chips interactive state
+  const chips = document.querySelectorAll('.filter-chip');
+  chips.forEach(chip => {
+    chip.addEventListener('click', () => {
+      chips.forEach(c => {
+        c.classList.remove('bg-primary', 'text-on-primary');
+        c.classList.add('bg-surface-container-lowest', 'text-on-surface-variant');
+        const badge = c.querySelector('span:last-child');
+        if (badge) {
+          badge.classList.remove('bg-on-primary/20', 'text-on-primary');
+          badge.classList.add('bg-surface-container-high', 'text-tertiary');
+        }
+      });
+      chip.classList.add('bg-primary', 'text-on-primary');
+      chip.classList.remove('bg-surface-container-lowest', 'text-on-surface-variant');
+      const badge = chip.querySelector('span:last-child');
+      if (badge) {
+        badge.classList.add('bg-on-primary/20', 'text-on-primary');
+        badge.classList.remove('bg-surface-container-high', 'text-tertiary');
+      }
+    });
+  });
+</script></main><div class="fixed bottom-0 w-full z-50 pointer-events-none pb-[20px] px-margin"><nav class="pointer-events-auto h-16 w-full max-w-[390px] mx-auto rounded-full bg-white/90 backdrop-blur-xl shadow-[0_10px_28px_rgba(25,33,28,0.08)] flex items-center justify-around px-space-xs relative" data-active-classes="text-primary font-semibold"><a class="flex flex-col items-center justify-center min-w-[56px] min-h-[44px] text-tertiary transition-colors" data-path="home-community" href="#"><span class="material-symbols-outlined text-[22px]">nature_people</span><span class="font-caption text-caption mt-[2px]">Home</span></a><a class="flex flex-col items-center justify-center min-w-[56px] min-h-[44px] text-tertiary transition-colors" data-path="explore-topics" href="#"><span class="material-symbols-outlined text-[22px]">explore</span><span class="font-caption text-caption mt-[2px]">Explore</span></a><div class="relative -top-3"><a class="w-[49px] h-[49px] rounded-full bg-primary text-on-primary flex items-center justify-center shadow-[0_8px_18px_rgba(39,150,88,0.4)] border-[3px] border-surface-container-lowest transition-transform active:scale-95" data-path="quick-create" href="#"><span class="material-symbols-outlined text-[24px]">add</span></a></div><a aria-current="page" class="flex flex-col items-center justify-center min-w-[56px] min-h-[44px] transition-colors text-primary font-semibold" data-path="saved-discussions" href="#"><span class="material-symbols-outlined text-[22px]">bookmark_border</span><span class="font-caption text-caption mt-[2px]">Saved</span></a><a class="flex flex-col items-center justify-center min-w-[56px] min-h-[44px] text-tertiary transition-colors" data-path="member-profile" href="#"><span class="material-symbols-outlined text-[22px]">person_outline</span><span class="font-caption text-caption mt-[2px]">Profile</span></a></nav></div></body></html>

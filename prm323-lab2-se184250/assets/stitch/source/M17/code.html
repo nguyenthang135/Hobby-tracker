@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_stack" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100%;margin:0;padding:0;}body{overscroll-behavior-y:none;-webkit-tap-highlight-color:transparent;}.pb-safe{padding-bottom:calc(env(safe-area-inset-bottom,0px) + 1.5rem);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "on-error": "#ffffff", "surface-tint": "#006d3a", "surface-dim": "#d9dad8", "on-error-container": "#93000a", "on-background": "#191c1b", "on-primary-container": "#f6fff4", "primary": "#006a39", "on-primary": "#ffffff", "primary-fixed": "#8ff8b0", "error-container": "#ffdad6", "surface-container-highest": "#e1e3e1", "secondary-fixed": "#9ef5bf", "error": "#ba1a1a", "secondary": "#096c42", "background": "#f9faf8", "secondary-container": "#9ef5bf", "tertiary-fixed-dim": "#bccac1", "surface-variant": "#e1e3e1", "surface-container-low": "#f3f4f2", "on-secondary-container": "#157348", "on-tertiary-fixed": "#121e19", "on-tertiary-fixed-variant": "#3d4a43", "on-secondary-fixed-variant": "#005230", "primary-container": "#09864a", "tertiary-container": "#6a7870", "outline-variant": "#bdcabd", "on-surface-variant": "#3e4a40", "on-secondary-fixed": "#002110", "surface-container": "#edeeec", "on-primary-fixed-variant": "#00522b", "surface-container-lowest": "#ffffff", "on-secondary": "#ffffff", "on-surface": "#191c1b", "surface": "#f9faf8", "inverse-primary": "#73db96", "surface-container-high": "#e7e8e6", "inverse-on-surface": "#f0f1ef", "tertiary": "#525f58", "primary-fixed-dim": "#73db96", "on-primary-fixed": "#00210e", "surface-bright": "#f9faf8", "tertiary-fixed": "#d8e6dd", "on-tertiary": "#ffffff", "secondary-fixed-dim": "#83d8a4", "inverse-surface": "#2e3130", "on-tertiary-container": "#f5fff8", "outline": "#6e7a6f" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "gutter": "0.75rem", "space-xs": "0.25rem", "space-sm": "0.5rem", "space-lg": "1rem", "space-xl": "1.5rem", "space-md": "0.75rem", "margin": "1rem" }, "fontFamily": { "headline-md": ["Inter"], "headline-lg": ["Inter"], "headline-xl": ["Inter"], "body-md": ["Inter"], "body-sm": ["Inter"], "body-lg": ["Inter"], "caption": ["Inter"], "label-sm": ["Inter"], "title-sm": ["Inter"], "label-md": ["Inter"] }, "fontSize": { "headline-md": ["18px", { "lineHeight": "24px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "headline-lg": ["22px", { "lineHeight": "28px", "letterSpacing": "-0.015em", "fontWeight": "600" }], "headline-xl": ["28px", { "lineHeight": "36px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "body-md": ["14px", { "lineHeight": "20px", "fontWeight": "400" }], "body-sm": ["13px", { "lineHeight": "18px", "fontWeight": "400" }], "body-lg": ["16px", { "lineHeight": "24px", "fontWeight": "400" }], "caption": ["11px", { "lineHeight": "14px", "letterSpacing": "0.02em", "fontWeight": "500" }], "label-sm": ["12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "500" }], "title-sm": ["16px", { "lineHeight": "22px", "letterSpacing": "-0.005em", "fontWeight": "600" }], "label-md": ["14px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600" }] } } } };</script><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface text-on-surface antialiased flex flex-col min-h-screen"><header class="fixed top-0 w-full z-50 pt-safe bg-surface/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.03)]"><div class="h-14 px-margin flex items-center justify-between"><div class="flex items-center gap-space-xs"><button aria-label="Go back" class="w-11 h-11 flex items-center justify-center rounded-full text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low transition-colors active:scale-95" onclick="history.back()" type="button"><span class="material-symbols-outlined text-[22px]">arrow_back</span></button><h1 class="font-title-sm text-title-sm text-on-surface select-none">Ambient Soundscapes Picker</h1></div><div class="flex items-center gap-space-xs"><button aria-label="Options" class="w-11 h-11 flex items-center justify-center rounded-full text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low transition-colors active:scale-95" type="button"><span class="material-symbols-outlined text-[20px]">more_horiz</span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center ml-space-xs shadow-sm"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="flex flex-col relative w-full pt-14 pb-safe bg-surface px-margin min-h-screen"><div class="flex flex-col w-full pb-28">
+<!-- Top Action & Status bar (Complementing shell with contextual 'Xong' action) -->
+<div class="flex items-center justify-between py-space-xs mb-space-sm">
+<div class="flex items-center gap-space-xs">
+<span class="inline-flex items-center justify-center w-2 h-2 rounded-full bg-primary animate-pulse"></span>
+<span class="font-caption text-caption text-on-surface-variant uppercase tracking-wider">Không gian thanh tịnh</span>
+</div>
+<button class="px-space-md py-1 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm active:scale-95 transition-transform" type="button">
+      Xong
+    </button>
+</div>
+<!-- 1. Thẻ âm thanh đang chọn (Active Soundscape Banner) -->
+<div class="relative overflow-hidden rounded-[19px] bg-surface-container-lowest p-space-lg shadow-sm transition-all duration-300" id="active-sound-card">
+<div class="absolute -right-10 -bottom-10 w-36 h-36 rounded-full bg-primary-fixed/30 blur-2xl pointer-events-none"></div>
+<div class="absolute -left-10 -top-10 w-28 h-28 rounded-full bg-secondary-fixed/20 blur-xl pointer-events-none"></div>
+<div class="relative z-10 flex flex-col gap-space-md">
+<div class="flex items-start justify-between">
+<div class="flex items-center gap-space-md">
+<div class="relative w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center text-primary flex-shrink-0">
+<span class="material-symbols-outlined text-[26px]" style="font-variation-settings: 'FILL' 1;">rainy</span>
+<span class="absolute -bottom-1 -right-1 w-3.5 h-3.5 bg-primary rounded-full flex items-center justify-center">
+<span class="material-symbols-outlined text-[10px] text-on-primary">graphic_eq</span>
+</span>
+</div>
+<div>
+<div class="flex items-center gap-space-xs">
+<span class="font-caption text-caption uppercase text-primary font-semibold tracking-wider">Đang phát trực tiếp</span>
+</div>
+<h2 class="font-title-sm text-title-sm text-on-surface" id="active-sound-title">Mưa rào rừng nhiệt đới</h2>
+<p class="font-caption text-caption text-on-surface-variant" id="active-sound-desc">Âm hưởng hữu cơ tự nhiên • Âm tần 432Hz</p>
+</div>
+</div>
+<button aria-label="Tạm dừng hoặc tiếp tục" class="w-10 h-10 rounded-full bg-primary text-on-primary flex items-center justify-center shadow-md active:scale-90 transition-transform" id="toggle-play-btn" type="button">
+<span class="material-symbols-outlined text-[20px]" id="play-pause-icon" style="font-variation-settings: 'FILL' 1;">pause</span>
+</button>
+</div>
+<!-- Sóng nhạc động (Animated Sound Waves) -->
+<div class="flex items-end justify-between h-8 px-space-xs bg-surface-container-low rounded-xl py-1.5">
+<span class="w-1 bg-primary rounded-full h-3 animate-[pulse_1.2s_ease-in-out_infinite]"></span>
+<span class="w-1 bg-primary rounded-full h-6 animate-[pulse_0.8s_ease-in-out_infinite]"></span>
+<span class="w-1 bg-primary rounded-full h-4 animate-[pulse_1.5s_ease-in-out_infinite]"></span>
+<span class="w-1 bg-primary rounded-full h-7 animate-[pulse_0.9s_ease-in-out_infinite]"></span>
+<span class="w-1 bg-primary rounded-full h-3 animate-[pulse_1.4s_ease-in-out_infinite]"></span>
+<span class="w-1 bg-primary rounded-full h-5 animate-[pulse_1.1s_ease-in-out_infinite]"></span>
+<span class="w-1 bg-primary rounded-full h-6 animate-[pulse_0.7s_ease-in-out_infinite]"></span>
+<span class="w-1 bg-primary rounded-full h-2 animate-[pulse_1.6s_ease-in-out_infinite]"></span>
+<span class="w-1 bg-primary rounded-full h-7 animate-[pulse_1.0s_ease-in-out_infinite]"></span>
+<span class="w-1 bg-primary rounded-full h-4 animate-[pulse_1.3s_ease-in-out_infinite]"></span>
+<span class="w-1 bg-primary rounded-full h-6 animate-[pulse_0.85s_ease-in-out_infinite]"></span>
+<span class="w-1 bg-primary rounded-full h-3 animate-[pulse_1.2s_ease-in-out_infinite]"></span>
+</div>
+<!-- Nút điều chỉnh âm lượng (Slider 0-100%) -->
+<div class="flex flex-col gap-space-xs pt-space-xs">
+<div class="flex items-center justify-between text-on-surface-variant">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[16px]">volume_down</span>
+<span class="font-caption text-caption">Âm lượng phát</span>
+</div>
+<span class="font-label-sm text-label-sm text-primary font-semibold" id="volume-indicator">68%</span>
+</div>
+<div class="relative w-full flex items-center h-6">
+<input aria-label="Âm lượng" class="w-full h-2 bg-surface-container rounded-lg appearance-none cursor-pointer accent-primary focus:outline-none" id="volume-slider" max="100" min="0" type="range" value="68"/>
+</div>
+</div>
+</div>
+</div>
+<!-- 2. Tab phân loại âm thanh (Horizontal Category Pill Carousel) -->
+<div class="my-space-lg">
+<div class="flex items-center gap-space-sm overflow-x-auto no-scrollbar py-0.5" role="tablist">
+<button aria-selected="true" class="cat-pill flex-shrink-0 px-space-md py-2 rounded-full bg-primary text-on-primary font-label-sm text-label-sm shadow-sm transition-colors" role="tab" type="button">
+        Tự nhiên &amp; Thư giãn
+      </button>
+<button aria-selected="false" class="cat-pill flex-shrink-0 px-space-md py-2 rounded-full bg-surface-container-lowest text-on-surface-variant font-label-sm text-label-sm hover:text-on-surface transition-colors" role="tab" type="button">
+        Bạch âm (White noise)
+      </button>
+<button aria-selected="false" class="cat-pill flex-shrink-0 px-space-md py-2 rounded-full bg-surface-container-lowest text-on-surface-variant font-label-sm text-label-sm hover:text-on-surface transition-colors" role="tab" type="button">
+        Kết nối Ngoài
+      </button>
+<button aria-selected="false" class="cat-pill flex-shrink-0 px-space-md py-2 rounded-full bg-surface-container-lowest text-on-surface-variant font-label-sm text-label-sm hover:text-on-surface transition-colors" role="tab" type="button">
+        Im lặng
+      </button>
+</div>
+</div>
+<!-- 3. Lưới các card âm thanh tự nhiên chất lượng cao -->
+<div class="flex flex-col gap-space-sm mb-space-xl">
+<div class="flex items-center justify-between">
+<h3 class="font-title-sm text-title-sm text-on-surface">Không gian nguyên bản</h3>
+<span class="font-caption text-caption text-on-surface-variant">5 cảnh âm</span>
+</div>
+<div class="grid grid-cols-2 gap-gutter">
+<!-- Item 1: Mưa rào rừng nhiệt đới (Active state) -->
+<button class="sound-card group relative flex flex-col text-left p-space-md rounded-[19px] bg-secondary-container/30 transition-all active:scale-[0.98]" onclick="selectSound('Mưa rào rừng nhiệt đới', 'rainy', 'Âm hưởng hữu cơ tự nhiên • Âm tần 432Hz')" type="button">
+<div class="absolute top-3 right-3 w-5 h-5 rounded-full bg-primary flex items-center justify-center shadow-xs">
+<span class="material-symbols-outlined text-[14px] text-on-primary">check</span>
+</div>
+<div class="w-10 h-10 rounded-xl bg-surface-container-lowest text-primary flex items-center justify-center mb-space-md shadow-xs">
+<span class="material-symbols-outlined text-[22px]" style="font-variation-settings: 'FILL' 1;">rainy</span>
+</div>
+<span class="font-label-md text-label-md text-on-surface line-clamp-1">Mưa rào nhiệt đới</span>
+<span class="font-caption text-caption text-on-surface-variant mt-0.5">Êm dịu • Rơi hạt</span>
+</button>
+<!-- Item 2: Sóng biển êm đềm -->
+<button class="sound-card group relative flex flex-col text-left p-space-md rounded-[19px] bg-surface-container-lowest hover:bg-surface-container-low transition-all active:scale-[0.98] shadow-xs" onclick="selectSound('Sóng biển êm đềm', 'waves', 'Thư giãn nhịp thở • Gió biển rì rào')" type="button">
+<div class="w-10 h-10 rounded-xl bg-surface-container-low text-secondary flex items-center justify-center mb-space-md">
+<span class="material-symbols-outlined text-[22px]">waves</span>
+</div>
+<span class="font-label-md text-label-md text-on-surface line-clamp-1">Sóng biển êm đềm</span>
+<span class="font-caption text-caption text-on-surface-variant mt-0.5">Sóng vỗ • Biển chiều</span>
+</button>
+<!-- Item 3: Lửa trại đêm đông -->
+<button class="sound-card group relative flex flex-col text-left p-space-md rounded-[19px] bg-surface-container-lowest hover:bg-surface-container-low transition-all active:scale-[0.98] shadow-xs" onclick="selectSound('Lửa trại đêm đông', 'local_fire_department', 'Ấm áp tĩnh lặng • Tiếng củi nổ lách tách')" type="button">
+<div class="w-10 h-10 rounded-xl bg-surface-container-low text-tertiary flex items-center justify-center mb-space-md">
+<span class="material-symbols-outlined text-[22px]">local_fire_department</span>
+</div>
+<span class="font-label-md text-label-md text-on-surface line-clamp-1">Lửa trại đêm đông</span>
+<span class="font-caption text-caption text-on-surface-variant mt-0.5">Củi nổ • Ấm cúng</span>
+</button>
+<!-- Item 4: Quán cà phê sáng sớm -->
+<button class="sound-card group relative flex flex-col text-left p-space-md rounded-[19px] bg-surface-container-lowest hover:bg-surface-container-low transition-all active:scale-[0.98] shadow-xs" onclick="selectSound('Quán cà phê sáng sớm', 'coffee', 'Tạp âm dịu nhẹ • Tập trung sáng tạo')" type="button">
+<div class="w-10 h-10 rounded-xl bg-surface-container-low text-secondary flex items-center justify-center mb-space-md">
+<span class="material-symbols-outlined text-[22px]">coffee</span>
+</div>
+<span class="font-label-md text-label-md text-on-surface line-clamp-1">Quán cà phê sáng</span>
+<span class="font-caption text-caption text-on-surface-variant mt-0.5">Tiếng cốc • Nhộn nhịp nhẹ</span>
+</button>
+<!-- Item 5: Tiếng suối róc rách (Spans 2 columns for asymmetric rhythm) -->
+<button class="sound-card col-span-2 group relative flex items-center justify-between p-space-md rounded-[19px] bg-surface-container-lowest hover:bg-surface-container-low transition-all active:scale-[0.98] shadow-xs" onclick="selectSound('Tiếng suối róc rách', 'water_drop', 'Năng lượng dòng chảy • Róc rách trong vắt')" type="button">
+<div class="flex items-center gap-space-md">
+<div class="w-10 h-10 rounded-xl bg-surface-container-low text-primary flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-[22px]">water_drop</span>
+</div>
+<div>
+<span class="font-label-md text-label-md text-on-surface block">Tiếng suối róc rách</span>
+<span class="font-caption text-caption text-on-surface-variant">Rừng tre xanh • Suối mát thiên nhiên</span>
+</div>
+</div>
+<span class="w-8 h-8 rounded-full bg-surface-container flex items-center justify-center text-on-surface-variant">
+<span class="material-symbols-outlined text-[16px]">play_arrow</span>
+</span>
+</button>
+</div>
+</div>
+<!-- 4. Khu vực liên kết dịch vụ (External Audio Integrations) -->
+<div class="flex flex-col gap-space-md mb-space-xl">
+<div class="flex items-center justify-between">
+<h3 class="font-title-sm text-title-sm text-on-surface">Dịch vụ âm nhạc liên kết</h3>
+<span class="font-caption text-caption text-primary">Tài khoản cá nhân</span>
+</div>
+<!-- Card Spotify: Đã kết nối -->
+<div class="rounded-[19px] bg-surface-container-lowest p-space-lg shadow-xs flex flex-col gap-space-md">
+<div class="flex items-start justify-between">
+<div class="flex items-center gap-space-md">
+<div class="w-11 h-11 rounded-xl bg-[#1DB954]/10 text-[#1DB954] flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-[24px]">library_music</span>
+</div>
+<div class="min-w-0">
+<div class="flex items-center gap-1.5">
+<span class="font-label-md text-label-md text-on-surface">Spotify</span>
+<span class="inline-flex items-center gap-0.5 px-1.5 py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-caption text-[10px]">
+<span class="material-symbols-outlined text-[10px]">check_circle</span> Đã kết nối
+              </span>
+</div>
+<p class="font-caption text-caption text-on-surface-variant truncate">Deep Focus Lofi Beats • Nghệ sĩ tuyển chọn</p>
+</div>
+</div>
+</div>
+<div class="flex items-center justify-between pt-space-xs bg-surface-container-low rounded-xl px-space-md py-2">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="w-7 h-7 rounded-lg bg-surface-container-highest flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[16px]">headphones</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface truncate">Lofi Sleep &amp; Calm Drift</span>
+</div>
+<div class="flex items-center gap-1">
+<button aria-label="Bài trước" class="w-8 h-8 rounded-full flex items-center justify-center text-on-surface-variant active:scale-90" type="button">
+<span class="material-symbols-outlined text-[18px]">skip_previous</span>
+</button>
+<button aria-label="Mở ứng dụng Spotify" class="px-space-sm py-1 rounded-full bg-surface-container-lowest text-on-surface font-caption text-caption shadow-xs hover:text-primary transition-colors" type="button">
+            Mở Spotify
+          </button>
+<button aria-label="Bài tiếp theo" class="w-8 h-8 rounded-full flex items-center justify-center text-on-surface-variant active:scale-90" type="button">
+<span class="material-symbols-outlined text-[18px]">skip_next</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Card YouTube Music: Chưa kết nối -->
+<div class="rounded-[19px] bg-surface-container-lowest p-space-lg shadow-xs flex items-center justify-between">
+<div class="flex items-center gap-space-md min-w-0">
+<div class="w-11 h-11 rounded-xl bg-error-container/40 text-error flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-[24px]">smart_display</span>
+</div>
+<div class="min-w-0">
+<div class="flex items-center gap-1.5">
+<span class="font-label-md text-label-md text-on-surface">YouTube Music</span>
+<span class="px-1.5 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-caption text-[10px]">
+              Chưa kết nối
+            </span>
+</div>
+<p class="font-caption text-caption text-on-surface-variant truncate">Đồng bộ playlist tập trung &amp; podcast</p>
+</div>
+</div>
+<a class="flex-shrink-0 px-space-md py-2 rounded-xl bg-surface-container-low text-primary font-label-sm text-label-sm active:scale-95 transition-transform flex items-center gap-1" href="#m41-integrations">
+<span>Liên kết</span>
+<span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- 5. Lựa chọn 'Tắt âm thanh' (Im lặng tuyệt đối) -->
+<div class="mb-space-xl">
+<button class="w-full text-left p-space-md rounded-[19px] bg-surface-container-lowest hover:bg-surface-container-low shadow-xs transition-all flex items-center justify-between" id="silent-mode-card" onclick="setSilentMode()" type="button">
+<div class="flex items-center gap-space-md">
+<div class="w-10 h-10 rounded-xl bg-surface-container-high text-tertiary flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-[22px]">volume_off</span>
+</div>
+<div>
+<span class="font-label-md text-label-md text-on-surface block">Im lặng tuyệt đối (Mute All)</span>
+<span class="font-caption text-caption text-on-surface-variant">Không nhạc nền, giữ không gian tĩnh lặng tĩnh tâm</span>
+</div>
+</div>
+<div class="w-5 h-5 rounded-md bg-surface-container flex items-center justify-center text-transparent transition-colors" id="silent-check">
+<span class="material-symbols-outlined text-[14px]">check</span>
+</div>
+</button>
+</div>
+<!-- Floating Sticky Action Button -->
+<div class="fixed bottom-6 left-margin right-margin z-40 max-w-[358px] mx-auto">
+<button class="w-full h-12 rounded-[14px] bg-primary text-on-primary font-label-md text-label-md shadow-[0_8px_20px_rgba(39,150,88,0.32)] active:bg-secondary flex items-center justify-center gap-space-xs transition-transform active:scale-[0.98]" id="apply-sound-btn" type="button">
+<span class="material-symbols-outlined text-[20px]">check_circle</span>
+<span>Áp dụng cho phiên này</span>
+</button>
+</div>
+</div>
+<script>
+  // Volume Slider Sync
+  const volumeSlider = document.getElementById('volume-slider');
+  const volumeIndicator = document.getElementById('volume-indicator');
+  if (volumeSlider && volumeIndicator) {
+    volumeSlider.addEventListener('input', (e) => {
+      volumeIndicator.textContent = e.target.value + '%';
+    });
+  }
+
+  // Play / Pause Toggle
+  let isPlaying = true;
+  const togglePlayBtn = document.getElementById('toggle-play-btn');
+  const playPauseIcon = document.getElementById('play-pause-icon');
+  if (togglePlayBtn && playPauseIcon) {
+    togglePlayBtn.addEventListener('click', () => {
+      isPlaying = !isPlaying;
+      playPauseIcon.textContent = isPlaying ? 'pause' : 'play_arrow';
+    });
+  }
+
+  // Sound Selector Handler
+  function selectSound(title, iconName, desc) {
+    const titleEl = document.getElementById('active-sound-title');
+    const descEl = document.getElementById('active-sound-desc');
+    const silentCheck = document.getElementById('silent-check');
+
+    if (titleEl) titleEl.textContent = title;
+    if (descEl) descEl.textContent = desc;
+
+    if (silentCheck) {
+      silentCheck.classList.remove('bg-primary', 'text-on-primary');
+      silentCheck.classList.add('bg-surface-container', 'text-transparent');
+    }
+  }
+
+  // Silent Mode Toggle
+  function setSilentMode() {
+    const titleEl = document.getElementById('active-sound-title');
+    const descEl = document.getElementById('active-sound-desc');
+    const silentCheck = document.getElementById('silent-check');
+
+    if (titleEl) titleEl.textContent = 'Im lặng hoàn toàn';
+    if (descEl) descEl.textContent = 'Không phát thanh âm • Tận hưởng sự tịch mịch';
+
+    if (silentCheck) {
+      silentCheck.classList.remove('bg-surface-container', 'text-transparent');
+      silentCheck.classList.add('bg-primary', 'text-on-primary');
+    }
+
+    if (volumeSlider) {
+      volumeSlider.value = 0;
+      volumeIndicator.textContent = '0%';
+    }
+  }
+
+  // Apply button micro-feedback
+  const applyBtn = document.getElementById('apply-sound-btn');
+  if (applyBtn) {
+    applyBtn.addEventListener('click', () => {
+      applyBtn.classList.add('scale-95');
+      setTimeout(() => {
+        applyBtn.classList.remove('scale-95');
+        if (window.history && window.history.length > 1) {
+          window.history.back();
+        }
+      }, 180);
+    });
+  }
+</script></main></body></html>

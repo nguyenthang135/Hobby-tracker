@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+
+<html lang="vi"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_stack" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "on-secondary-container": "#157348", "secondary-container": "#9ef5bf", "secondary-fixed-dim": "#83d8a4", "secondary-fixed": "#9ef5bf", "primary-fixed": "#8ff8b0", "surface-container-low": "#f3f4f2", "on-tertiary-fixed-variant": "#3d4a43", "inverse-primary": "#73db96", "inverse-surface": "#2e3130", "surface": "#f9faf8", "surface-tint": "#006d3a", "on-tertiary-container": "#f5fff8", "primary": "#006a39", "on-secondary": "#ffffff", "tertiary": "#525f58", "surface-bright": "#f9faf8", "surface-container": "#edeeec", "on-primary-container": "#f6fff4", "surface-variant": "#e1e3e1", "on-secondary-fixed-variant": "#005230", "on-error-container": "#93000a", "tertiary-fixed": "#d8e6dd", "error": "#ba1a1a", "surface-container-highest": "#e1e3e1", "on-secondary-fixed": "#002110", "on-tertiary-fixed": "#121e19", "surface-dim": "#d9dad8", "on-surface-variant": "#3e4a40", "on-primary-fixed": "#00210e", "tertiary-fixed-dim": "#bccac1", "inverse-on-surface": "#f0f1ef", "background": "#f9faf8", "primary-container": "#09864a", "error-container": "#ffdad6", "outline-variant": "#bdcabd", "on-error": "#ffffff", "surface-container-high": "#e7e8e6", "tertiary-container": "#6a7870", "on-primary-fixed-variant": "#00522b", "on-primary": "#ffffff", "on-background": "#191c1b", "on-surface": "#191c1b", "outline": "#6e7a6f", "on-tertiary": "#ffffff", "primary-fixed-dim": "#73db96", "surface-container-lowest": "#ffffff", "secondary": "#096c42" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "space-lg": "1rem", "space-sm": "0.5rem", "space-xl": "1.5rem", "space-xs": "0.25rem", "margin": "1rem", "space-md": "0.75rem", "gutter": "0.75rem" }, "fontFamily": { "caption": ["Inter"], "title-sm": ["Inter"], "body-md": ["Inter"], "headline-md": ["Inter"], "headline-lg": ["Inter"], "label-sm": ["Inter"], "body-sm": ["Inter"], "body-lg": ["Inter"], "headline-xl": ["Inter"], "label-md": ["Inter"] }, "fontSize": { "caption": ["11px", { "lineHeight": "14px", "letterSpacing": "0.02em", "fontWeight": "500" }], "title-sm": ["16px", { "lineHeight": "22px", "letterSpacing": "-0.005em", "fontWeight": "600" }], "body-md": ["14px", { "lineHeight": "20px", "fontWeight": "400" }], "headline-md": ["18px", { "lineHeight": "24px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "headline-lg": ["22px", { "lineHeight": "28px", "letterSpacing": "-0.015em", "fontWeight": "600" }], "label-sm": ["12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "500" }], "body-sm": ["13px", { "lineHeight": "18px", "fontWeight": "400" }], "body-lg": ["16px", { "lineHeight": "24px", "fontWeight": "400" }], "headline-xl": ["28px", { "lineHeight": "36px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "label-md": ["14px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600" }] } } } };</script><style>@layer base { html, body { width: 100%; margin: 0; padding: 0; background-color: #f9faf8; } body { overscroll-behavior-y: none; -webkit-tap-highlight-color: transparent; } .pb-safe { padding-bottom: env(safe-area-inset-bottom, 0px); } .pt-safe { padding-top: env(safe-area-inset-top, 0px); } main > :first-child { margin-top: 0 !important; } main > :last-child { margin-bottom: 0 !important; } } ::-webkit-scrollbar { display: none; }</style><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased min-h-screen flex flex-col selection:bg-secondary-container selection:text-on-secondary-container"><header class="fixed top-0 w-full z-50 pt-safe bg-surface/85 backdrop-blur-xl shadow-[0_4px_20px_-2px_rgba(25,33,28,0.03)]"><div class="h-16 px-margin flex items-center justify-between gap-space-sm"><div class="flex items-center gap-space-sm min-w-0 flex-1"><button aria-label="Quay lại" class="w-11 h-11 -ml-1.5 rounded-full flex items-center justify-center text-on-surface hover:bg-surface-container active:bg-surface-variant transition-colors flex-shrink-0" onclick="history.back()" type="button"><span class="material-symbols-outlined text-[24px]">arrow_back</span></button><h1 class="font-headline-md text-headline-md text-on-surface truncate tracking-tight">Quyen Rieng Tu Du Lieu</h1></div><div class="flex items-center gap-space-xs flex-shrink-0"><button aria-label="Tác vụ phụ" class="w-11 h-11 rounded-full flex items-center justify-center text-tertiary hover:text-on-surface hover:bg-surface-container active:bg-surface-variant transition-colors" type="button"><span class="material-symbols-outlined text-[22px]">more_vert</span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shadow-[0_2px_8px_rgba(0,106,57,0.2)] flex-shrink-0"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="flex-1 flex flex-col relative w-full pt-16 pb-safe px-margin bg-surface"><div class="flex flex-col w-full pb-32">
+<div class="flex items-center gap-space-sm bg-secondary-container/40 p-space-md rounded-xl mb-space-lg shadow-sm">
+<div class="w-10 h-10 rounded-full bg-surface flex items-center justify-center text-on-secondary-container shadow-sm flex-shrink-0">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">verified_user</span>
+</div>
+<div class="min-w-0 flex-1">
+<p class="font-label-md text-label-md text-on-secondary-container font-semibold">Bảo vệ quyền riêng tư cấp cao</p>
+<p class="font-body-sm text-body-sm text-tertiary">Mọi dữ liệu của bạn được mã hóa an toàn và kiểm soát tuyệt đối bởi bạn.</p>
+</div>
+</div>
+<section class="flex flex-col gap-space-sm mb-space-lg">
+<div class="flex items-center gap-space-xs px-space-xs">
+<span class="material-symbols-outlined text-primary text-[20px]">account_box</span>
+<h2 class="font-title-sm text-title-sm text-on-surface">Hiển thị hồ sơ cá nhân</h2>
+</div>
+<div class="bg-surface-container-lowest rounded-[19px] p-space-lg shadow-sm flex flex-col gap-space-md">
+<div>
+<label class="font-label-sm text-label-sm text-tertiary mb-space-sm block">Chế độ hiển thị trang cá nhân</label>
+<div class="grid grid-cols-3 gap-space-xs p-1 bg-surface-container-low rounded-xl" id="profile-visibility-group">
+<button class="visibility-btn flex flex-col items-center justify-center py-2 px-1 rounded-lg transition-all bg-surface-container-lowest text-primary shadow-sm font-semibold" data-visibility="public" onclick="selectVisibility(this)" type="button">
+<span class="material-symbols-outlined text-[20px] mb-0.5">public</span>
+<span class="font-caption text-caption">Công khai</span>
+</button>
+<button class="visibility-btn flex flex-col items-center justify-center py-2 px-1 rounded-lg transition-all text-tertiary hover:text-on-surface" data-visibility="friends" onclick="selectVisibility(this)" type="button">
+<span class="material-symbols-outlined text-[20px] mb-0.5">group</span>
+<span class="font-caption text-caption">Bạn bè</span>
+</button>
+<button class="visibility-btn flex flex-col items-center justify-center py-2 px-1 rounded-lg transition-all text-tertiary hover:text-on-surface" data-visibility="private" onclick="selectVisibility(this)" type="button">
+<span class="material-symbols-outlined text-[20px] mb-0.5">lock</span>
+<span class="font-caption text-caption">Riêng tư</span>
+</button>
+</div>
+<p class="font-caption text-caption text-tertiary mt-2" id="visibility-desc">Ai cũng có thể tìm thấy và xem toàn bộ hồ sơ của bạn.</p>
+</div>
+<div class="h-[1px] bg-surface-container-high w-full"></div>
+<div class="flex items-center justify-between gap-space-md">
+<div class="flex-1 pr-1">
+<p class="font-label-md text-label-md text-on-surface">Cho phép tìm thấy qua tên/email</p>
+<p class="font-body-sm text-body-sm text-tertiary">Người quen dễ dàng kết nối và tương tác</p>
+</div>
+<button aria-checked="true" class="switch-btn w-11 h-6 rounded-full bg-primary relative transition-colors duration-200 focus:outline-none flex-shrink-0" onclick="toggleSwitch(this)" role="switch" type="button">
+<span class="w-5 h-5 rounded-full bg-surface-container-lowest absolute top-0.5 right-0.5 shadow-sm transition-transform duration-200"></span>
+</button>
+</div>
+<div class="h-[1px] bg-surface-container-high w-full"></div>
+<div class="flex items-center justify-between gap-space-md">
+<div class="flex-1 pr-1">
+<p class="font-label-md text-label-md text-on-surface">Hiển thị huy hiệu và cấp độ</p>
+<p class="font-body-sm text-body-sm text-tertiary">Tỏa sáng thành tích trên bảng tin chung</p>
+</div>
+<button aria-checked="true" class="switch-btn w-11 h-6 rounded-full bg-primary relative transition-colors duration-200 focus:outline-none flex-shrink-0" onclick="toggleSwitch(this)" role="switch" type="button">
+<span class="w-5 h-5 rounded-full bg-surface-container-lowest absolute top-0.5 right-0.5 shadow-sm transition-transform duration-200"></span>
+</button>
+</div>
+</div>
+</section>
+<section class="flex flex-col gap-space-sm mb-space-lg">
+<div class="flex items-center gap-space-xs px-space-xs">
+<span class="material-symbols-outlined text-primary text-[20px]">edit_calendar</span>
+<h2 class="font-title-sm text-title-sm text-on-surface">Nhật ký &amp; Bài chia sẻ</h2>
+</div>
+<div class="bg-surface-container-lowest rounded-[19px] p-space-lg shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center justify-between gap-space-sm">
+<div class="flex-1">
+<p class="font-label-md text-label-md text-on-surface">Quyền riêng tư nhật ký mặc định</p>
+<p class="font-body-sm text-body-sm text-tertiary">Áp dụng cho mọi ghi chép nhật ký mới</p>
+</div>
+<div class="relative">
+<select class="appearance-none bg-surface-container-low text-on-surface font-label-sm text-label-sm py-2 pl-3 pr-8 rounded-lg outline-none cursor-pointer" id="diary-privacy">
+<option selected="" value="private">Chỉ mình tôi</option>
+<option value="public">Công khai</option>
+</select>
+<span class="material-symbols-outlined pointer-events-none absolute right-2 top-1/2 -translate-y-1/2 text-tertiary text-[18px]">expand_more</span>
+</div>
+</div>
+<div class="h-[1px] bg-surface-container-high w-full"></div>
+<div class="flex items-center justify-between gap-space-sm">
+<div class="flex-1">
+<p class="font-label-md text-label-md text-on-surface">Quyền riêng tư khi đăng bài</p>
+<p class="font-body-sm text-body-sm text-tertiary">Bài đăng lên cộng đồng hoạt động</p>
+</div>
+<div class="relative">
+<select class="appearance-none bg-surface-container-low text-on-surface font-label-sm text-label-sm py-2 pl-3 pr-8 rounded-lg outline-none cursor-pointer" id="post-privacy">
+<option selected="" value="group">Công khai trong nhóm</option>
+<option value="public">Tất cả mọi người</option>
+<option value="friends">Chỉ bạn bè</option>
+</select>
+<span class="material-symbols-outlined pointer-events-none absolute right-2 top-1/2 -translate-y-1/2 text-tertiary text-[18px]">expand_more</span>
+</div>
+</div>
+<div class="h-[1px] bg-surface-container-high w-full"></div>
+<div class="flex items-center justify-between gap-space-md">
+<div class="flex-1 pr-1">
+<p class="font-label-md text-label-md text-on-surface">Cho phép lưu ảnh từ nhật ký</p>
+<p class="font-body-sm text-body-sm text-tertiary">Người khác có thể tải ảnh chia sẻ về máy</p>
+</div>
+<button aria-checked="false" class="switch-btn w-11 h-6 rounded-full bg-surface-container-high relative transition-colors duration-200 focus:outline-none flex-shrink-0" onclick="toggleSwitch(this)" role="switch" type="button">
+<span class="w-5 h-5 rounded-full bg-surface-container-lowest absolute top-0.5 left-0.5 shadow-sm transition-transform duration-200"></span>
+</button>
+</div>
+</div>
+</section>
+<section class="flex flex-col gap-space-sm mb-space-lg">
+<div class="flex items-center gap-space-xs px-space-xs">
+<span class="material-symbols-outlined text-primary text-[20px]">database</span>
+<h2 class="font-title-sm text-title-sm text-on-surface">Dữ liệu cá nhân &amp; Tải về</h2>
+</div>
+<div class="bg-surface-container-lowest rounded-[19px] p-space-lg shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center justify-between gap-space-sm">
+<div class="flex-1">
+<p class="font-label-md text-label-md text-on-surface">Xuất dữ liệu lịch sử &amp; nhật ký</p>
+<p class="font-body-sm text-body-sm text-tertiary">Gói sao lưu định dạng JSON / CSV</p>
+</div>
+<button class="px-3.5 py-2 rounded-lg bg-surface-container-low text-primary hover:bg-secondary-container/50 font-label-sm text-label-sm flex items-center gap-1 transition-all flex-shrink-0 active:scale-95" onclick="triggerDownload(this)" type="button">
+<span class="material-symbols-outlined text-[18px]">download</span>
+<span>Tải xuống</span>
+</button>
+</div>
+<div class="h-[1px] bg-surface-container-high w-full"></div>
+<div class="flex items-center justify-between gap-space-sm">
+<div class="flex-1">
+<p class="font-label-md text-label-md text-on-surface">Xóa bộ nhớ đệm (Cache)</p>
+<p class="font-body-sm text-body-sm text-tertiary">Đang chiếm dụng: <span class="font-semibold text-on-surface" id="cache-size">48.2 MB</span></p>
+</div>
+<button class="px-3.5 py-2 rounded-lg bg-surface-container-low text-on-surface hover:bg-surface-container-high font-label-sm text-label-sm flex items-center gap-1 transition-all flex-shrink-0 active:scale-95" onclick="clearAppCache(this)" type="button">
+<span class="material-symbols-outlined text-[18px]">cleaning_services</span>
+<span>Dọn dẹp</span>
+</button>
+</div>
+</div>
+</section>
+<section class="mb-space-xl">
+<div class="bg-error-container/30 rounded-[19px] p-space-lg shadow-sm flex flex-col gap-space-md">
+<div class="flex items-start gap-space-sm">
+<div class="w-9 h-9 rounded-full bg-error-container text-error flex items-center justify-center flex-shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[20px]">warning</span>
+</div>
+<div class="flex-1">
+<p class="font-label-md text-label-md text-error font-semibold">Vùng thao tác nhạy cảm</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Hành động này không thể hoàn tác sau khi kích hoạt.</p>
+</div>
+</div>
+<button class="w-full py-3 px-space-md rounded-xl bg-surface-container-lowest text-error font-label-md text-label-md flex items-center justify-between active:bg-error-container/40 transition-colors" onclick="openDeleteDialogStep1()" type="button">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[20px]">delete_forever</span>
+<span>Xóa vĩnh viễn tài khoản &amp; dữ liệu</span>
+</div>
+<span class="material-symbols-outlined text-[18px] text-tertiary">chevron_right</span>
+</button>
+</div>
+</section>
+<div class="w-full">
+<button class="w-full h-12 rounded-[14px] bg-primary text-on-primary font-label-md text-label-md flex items-center justify-center gap-2 shadow-sm active:bg-primary-container transition-all active:scale-[0.99]" onclick="savePrivacySettings()" type="button">
+<span class="material-symbols-outlined text-[20px]">save</span>
+<span>Lưu thay đổi quyền riêng tư</span>
+</button>
+</div>
+<div class="fixed inset-0 z-50 bg-inverse-surface/40 backdrop-blur-sm hidden items-center justify-center p-margin transition-opacity" id="delete-modal-backdrop">
+<div class="bg-surface-container-lowest rounded-[19px] p-space-lg w-full max-w-sm shadow-xl flex flex-col gap-space-md" id="step-1">
+<div class="w-12 h-12 rounded-full bg-error-container text-error flex items-center justify-center mx-auto">
+<span class="material-symbols-outlined text-[26px]">delete_sweep</span>
+</div>
+<div class="text-center">
+<h3 class="font-headline-md text-headline-md text-on-surface">Bạn chắc chắn muốn xóa?</h3>
+<p class="font-body-sm text-body-sm text-tertiary mt-1">Toàn bộ lịch sử trải nghiệm, dữ liệu nhật ký và thành tích tích lũy sẽ bị hủy vĩnh viễn.</p>
+</div>
+<div class="flex gap-space-sm mt-2">
+<button class="flex-1 h-11 rounded-xl bg-surface-container-low text-tertiary font-label-md text-label-md hover:bg-surface-container transition-colors" onclick="closeDeleteDialog()" type="button">Hủy bỏ</button>
+<button class="flex-1 h-11 rounded-xl bg-error text-on-error font-label-md text-label-md hover:opacity-90 transition-opacity" onclick="nextDeleteStep()" type="button">Tiếp tục</button>
+</div>
+</div>
+<div class="bg-surface-container-lowest rounded-[19px] p-space-lg w-full max-w-sm shadow-xl hidden flex-col gap-space-md" id="step-2">
+<div class="text-center">
+<span class="material-symbols-outlined text-error text-[32px] mx-auto">lock_reset</span>
+<h3 class="font-title-sm text-title-sm text-on-surface mt-2">Bước xác nhận cuối cùng</h3>
+<p class="font-body-sm text-body-sm text-tertiary mt-1">Vui lòng nhập <strong class="text-error font-semibold">XACNHAN</strong> để chứng thực yêu cầu xóa vĩnh viễn này.</p>
+</div>
+<input class="h-11 px-space-md rounded-xl bg-surface-container-low text-on-surface font-body-md text-body-md outline-none text-center tracking-wider uppercase" id="confirm-delete-input" placeholder="Nhập XACNHAN" type="text"/>
+<div class="flex gap-space-sm mt-1">
+<button class="flex-1 h-11 rounded-xl bg-surface-container-low text-tertiary font-label-md text-label-md hover:bg-surface-container transition-colors" onclick="closeDeleteDialog()" type="button">Giữ lại</button>
+<button class="flex-1 h-11 rounded-xl bg-error text-on-error font-label-md text-label-md hover:opacity-90 transition-opacity" onclick="executeFinalDelete()" type="button">Xác nhận xóa</button>
+</div>
+</div>
+</div>
+<div class="fixed bottom-24 left-1/2 -translate-x-1/2 bg-inverse-surface text-inverse-on-surface px-4 py-2.5 rounded-full font-label-sm text-label-sm shadow-lg opacity-0 pointer-events-none transition-all duration-300 flex items-center gap-2 z-50" id="toast-msg">
+<span class="material-symbols-outlined text-[18px] text-inverse-primary">check_circle</span>
+<span id="toast-text">Đã lưu thay đổi thành công</span>
+</div>
+</div>
+<script>
+  function selectVisibility(button) {
+    const group = document.getElementById('profile-visibility-group');
+    const buttons = group.querySelectorAll('.visibility-btn');
+    buttons.forEach(btn => {
+      btn.classList.remove('bg-surface-container-lowest', 'text-primary', 'shadow-sm', 'font-semibold');
+      btn.classList.add('text-tertiary');
+    });
+    button.classList.remove('text-tertiary');
+    button.classList.add('bg-surface-container-lowest', 'text-primary', 'shadow-sm', 'font-semibold');
+
+    const desc = document.getElementById('visibility-desc');
+    const type = button.getAttribute('data-visibility');
+    if (type === 'public') {
+      desc.textContent = 'Ai cũng có thể tìm thấy và xem toàn bộ hồ sơ của bạn.';
+    } else if (type === 'friends') {
+      desc.textContent = 'Chỉ bạn bè trong danh sách mới có thể xem chi tiết hồ sơ.';
+    } else {
+      desc.textContent = 'Hồ sơ được ẩn hoàn toàn với mọi người, chỉ mình bạn xem được.';
+    }
+  }
+
+  function toggleSwitch(btn) {
+    const isChecked = btn.getAttribute('aria-checked') === 'true';
+    const thumb = btn.querySelector('span');
+    if (isChecked) {
+      btn.setAttribute('aria-checked', 'false');
+      btn.classList.remove('bg-primary');
+      btn.classList.add('bg-surface-container-high');
+      thumb.classList.remove('right-0.5');
+      thumb.classList.add('left-0.5');
+    } else {
+      btn.setAttribute('aria-checked', 'true');
+      btn.classList.remove('bg-surface-container-high');
+      btn.classList.add('bg-primary');
+      thumb.classList.remove('left-0.5');
+      thumb.classList.add('right-0.5');
+    }
+  }
+
+  function triggerDownload(btn) {
+    const originalText = btn.innerHTML;
+    btn.innerHTML = '<span class="material-symbols-outlined text-[18px] animate-spin">sync</span> Đang tạo...';
+    btn.disabled = true;
+    setTimeout(() => {
+      btn.innerHTML = originalText;
+      btn.disabled = false;
+      showToast('Tải gói dữ liệu thành công!');
+    }, 1200);
+  }
+
+  function clearAppCache(btn) {
+    const originalText = btn.innerHTML;
+    btn.innerHTML = '<span class="material-symbols-outlined text-[18px] animate-spin">sync</span> Đang xóa...';
+    btn.disabled = true;
+    setTimeout(() => {
+      document.getElementById('cache-size').textContent = '0.0 MB';
+      btn.innerHTML = '<span class="material-symbols-outlined text-[18px]">done</span> Hoàn tất';
+      showToast('Đã dọn dẹp bộ nhớ đệm!');
+    }, 1000);
+  }
+
+  function openDeleteDialogStep1() {
+    const backdrop = document.getElementById('delete-modal-backdrop');
+    const step1 = document.getElementById('step-1');
+    const step2 = document.getElementById('step-2');
+    step1.classList.remove('hidden');
+    step1.classList.add('flex');
+    step2.classList.add('hidden');
+    step2.classList.remove('flex');
+    backdrop.classList.remove('hidden');
+    backdrop.classList.add('flex');
+  }
+
+  function nextDeleteStep() {
+    const step1 = document.getElementById('step-1');
+    const step2 = document.getElementById('step-2');
+    step1.classList.add('hidden');
+    step1.classList.remove('flex');
+    step2.classList.remove('hidden');
+    step2.classList.add('flex');
+  }
+
+  function closeDeleteDialog() {
+    const backdrop = document.getElementById('delete-modal-backdrop');
+    backdrop.classList.add('hidden');
+    backdrop.classList.remove('flex');
+    document.getElementById('confirm-delete-input').value = '';
+  }
+
+  function executeFinalDelete() {
+    const input = document.getElementById('confirm-delete-input');
+    if (input.value.trim().toUpperCase() === 'XACNHAN') {
+      closeDeleteDialog();
+      showToast('Đã tiếp nhận yêu cầu xóa tài khoản');
+    } else {
+      input.classList.add('ring-2', 'ring-error');
+      setTimeout(() => input.classList.remove('ring-2', 'ring-error'), 1500);
+    }
+  }
+
+  function savePrivacySettings() {
+    showToast('Đã lưu thiết lập quyền riêng tư!');
+  }
+
+  function showToast(text) {
+    const toast = document.getElementById('toast-msg');
+    const toastText = document.getElementById('toast-text');
+    toastText.textContent = text;
+    toast.classList.remove('opacity-0', 'pointer-events-none');
+    toast.classList.add('opacity-100');
+    setTimeout(() => {
+      toast.classList.remove('opacity-100');
+      toast.classList.add('opacity-0', 'pointer-events-none');
+    }, 2500);
+  }
+</script></main></body></html>

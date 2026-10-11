@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_stack" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "tertiary-fixed-dim": "#bccac1", "secondary-container": "#9ef5bf", "on-secondary": "#ffffff", "surface-container-highest": "#e1e3e1", "surface-container-lowest": "#ffffff", "surface": "#f9faf8", "on-error": "#ffffff", "surface-container-high": "#e7e8e6", "primary-fixed": "#8ff8b0", "surface-dim": "#d9dad8", "secondary": "#096c42", "surface-container": "#edeeec", "on-tertiary": "#ffffff", "on-secondary-fixed-variant": "#005230", "on-secondary-container": "#157348", "inverse-primary": "#73db96", "on-secondary-fixed": "#002110", "on-surface-variant": "#3e4a40", "tertiary-fixed": "#d8e6dd", "on-primary-container": "#f6fff4", "secondary-fixed-dim": "#83d8a4", "on-surface": "#191c1b", "outline": "#6e7a6f", "error-container": "#ffdad6", "background": "#f9faf8", "surface-tint": "#006d3a", "on-background": "#191c1b", "secondary-fixed": "#9ef5bf", "tertiary-container": "#6a7870", "primary": "#006a39", "tertiary": "#525f58", "on-tertiary-fixed-variant": "#3d4a43", "error": "#ba1a1a", "surface-container-low": "#f3f4f2", "surface-bright": "#f9faf8", "on-tertiary-fixed": "#121e19", "on-primary-fixed": "#00210e", "inverse-on-surface": "#f0f1ef", "on-primary": "#ffffff", "inverse-surface": "#2e3130", "on-error-container": "#93000a", "surface-variant": "#e1e3e1", "primary-fixed-dim": "#73db96", "on-primary-fixed-variant": "#00522b", "on-tertiary-container": "#f5fff8", "outline-variant": "#bdcabd", "primary-container": "#09864a" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "space-xl": "1.5rem", "margin": "1rem", "space-md": "0.75rem", "gutter": "0.75rem", "space-lg": "1rem", "space-xs": "0.25rem", "space-sm": "0.5rem" }, "fontFamily": { "body-lg": ["Inter"], "caption": ["Inter"], "title-sm": ["Inter"], "headline-xl": ["Inter"], "label-md": ["Inter"], "headline-lg": ["Inter"], "body-sm": ["Inter"], "label-sm": ["Inter"], "body-md": ["Inter"], "headline-md": ["Inter"] }, "fontSize": { "body-lg": ["16px", { "lineHeight": "24px", "fontWeight": "400" }], "caption": ["11px", { "lineHeight": "14px", "letterSpacing": "0.02em", "fontWeight": "500" }], "title-sm": ["16px", { "lineHeight": "22px", "letterSpacing": "-0.005em", "fontWeight": "600" }], "headline-xl": ["28px", { "lineHeight": "36px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "label-md": ["14px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600" }], "headline-lg": ["22px", { "lineHeight": "28px", "letterSpacing": "-0.015em", "fontWeight": "600" }], "body-sm": ["13px", { "lineHeight": "18px", "fontWeight": "400" }], "label-sm": ["12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "500" }], "body-md": ["14px", { "lineHeight": "20px", "fontWeight": "400" }], "headline-md": ["18px", { "lineHeight": "24px", "letterSpacing": "-0.01em", "fontWeight": "600" }] } } } };</script><style>@layer base{html,body{width:100%;margin:0;padding:0;background-color:#f9faf8;}body{overscroll-behavior-y:none;-webkit-tap-highlight-color:transparent;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface font-body-md text-body-md text-on-surface flex flex-col min-h-screen antialiased"><header class="fixed top-0 w-full z-50 pt-safe bg-surface/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.03)]"><div class="h-14 px-margin flex items-center justify-between"><div class="flex items-center min-w-0 flex-1 pr-space-sm"><button aria-label="Go back" class="min-w-[44px] min-h-[44px] -ml-2 rounded-full flex items-center justify-center text-on-surface hover:bg-surface-container-high/60 active:scale-95 transition-all" onclick="history.back()"><span class="material-symbols-outlined text-[22px]">arrow_back</span></button><h1 class="font-headline-md text-headline-md text-on-surface font-semibold tracking-tight truncate ml-space-xs">Discussion Detail</h1></div><div class="flex items-center gap-space-xs shrink-0"><button aria-label="Bookmark" class="min-w-[44px] min-h-[44px] rounded-full flex items-center justify-center text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high/60 transition-colors"><span class="material-symbols-outlined text-[20px]">bookmark_border</span></button><button aria-label="More options" class="min-w-[44px] min-h-[44px] rounded-full flex items-center justify-center text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high/60 transition-colors"><span class="material-symbols-outlined text-[20px]">more_horiz</span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center ml-space-xs shrink-0"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="flex-1 flex flex-col relative w-full px-margin pt-14 pb-safe bg-surface"><div class="flex flex-col w-full pb-32">
+<!-- Author Section -->
+<div class="flex items-center justify-between mb-space-lg">
+<div class="flex items-center gap-space-md min-w-0">
+<div class="relative shrink-0">
+<img class="w-12 h-12 rounded-full object-cover" data-alt="Close-up portrait of Minh Thao, a warm smiling Vietnamese botanist and plant specialist in her late 20s, wearing an olive linen apron against a blurred backdrop of a lush sunlit indoor botanical nursery filled with succulents and warm natural glow." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAvIyh9Fi8HDwmhvuEAS3juNBvradd_prDya_FIIZKOd58MNWcw4E0e5K3Gbk9Yce-VHSY76zfhQFjEN7LGEYUHgx2omL29xgxx8XPmHRXRUqOddbw8Jsc4TEWS7cPVLGlQ3GtnvZGI7UnqLrTlpgWdA7IdKUpYKzzt_5hfMZEdTjFIB-6kJ3Tr3IzXUHDfuMJO4R_N7YH0VJ6p69mvPdE5xSmJSZucbo_lho4VKFChKRIydyeqFF6N"/>
+<div class="absolute -bottom-0.5 -right-0.5 w-4 h-4 bg-primary rounded-full flex items-center justify-center">
+<span class="material-symbols-outlined text-[10px] text-on-primary font-bold">check</span>
+</div>
+</div>
+<div class="min-w-0">
+<div class="flex items-center gap-space-xs">
+<h2 class="font-title-sm text-title-sm text-on-surface truncate">Minh Thảo</h2>
+<span class="bg-secondary-container/40 text-on-secondary-container text-caption font-caption px-1.5 py-0.5 rounded-full flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[11px]" style="font-variation-settings: 'FILL' 1;">eco</span>
+            Chuyên gia
+          </span>
+</div>
+<p class="font-caption text-caption text-tertiary truncate">Chuyên gia thực vật &amp; Lối sống xanh</p>
+<p class="font-caption text-caption text-outline truncate flex items-center gap-1 mt-0.5">
+<span>2 giờ trước</span>
+<span class="w-1 h-1 rounded-full bg-outline-variant"></span>
+<span class="text-secondary font-medium">Hội Sen Đá &amp; Bonsai Mini</span>
+</p>
+</div>
+</div>
+<!-- Follow / Profile Button (M37) -->
+<button class="shrink-0 bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm px-3.5 py-2 rounded-full transition-all flex items-center gap-1 active:scale-95 shadow-sm" id="followBtn" onclick="toggleFollowState()">
+<span class="material-symbols-outlined text-[16px] text-secondary" id="followIcon">check</span>
+<span id="followText">Đang theo dõi</span>
+</button>
+</div>
+<!-- Main Article Body Card -->
+<article class="bg-surface-container-lowest rounded-[19px] p-space-lg shadow-[0_8px_24px_-4px_rgba(22,115,72,0.06),0_2px_6px_-1px_rgba(0,0,0,0.02)] flex flex-col mb-space-lg">
+<h1 class="font-headline-md text-headline-md text-on-surface font-semibold mb-space-md leading-snug tracking-tight">
+      Kinh nghiệm phục hồi rễ sen đá bị thối sau đợt úng mưa và nhân giống lá thành công
+    </h1>
+<div class="flex flex-col gap-space-md font-body-md text-body-md text-on-surface-variant leading-relaxed">
+<p>
+        Mùa mưa vừa qua khiến không ít chậu sen đá bị vàng úng lá và teo gốc rễ. Đừng vội bỏ đi nhé mọi người! Với các bé rễ bị đen mềm, bước đầu tiên là nhổ cây dứt khoát, dùng dao lam đã khử trùng bằng cồn 70 độ cắt bỏ toàn bộ phần rễ và cuống thối cho đến khi lộ ra lõi thân trắng tinh.
+      </p>
+<p>
+        Sau đó, mình bôi một lớp mỏng vôi tôi hoặc bột quế tự nhiên lên vết cắt để sát khuẩn và làm khô nhanh. Đặt cây ở nơi râm mát, thoáng gió từ 3–5 ngày để hình thành lớp sẹo bảo vệ. Chỉ tưới nước nhẹ khi thấy đầu rễ hồng li ti đâm chồi. 
+      </p>
+</div>
+<!-- Article Featured Image -->
+<div class="mt-space-md relative rounded-[16px] overflow-hidden bg-surface-container">
+<img class="w-full h-64 object-cover" data-alt="A vibrant macro photograph of a healthy succulent rosette recovering in a warm terracotta pot, showcasing fresh pastel mint green leaves and delicate newly sprouted pinkish roots on organic airy soil, illuminated by soft morning sunlight in an aesthetic balcony garden." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBa9mK7Q3FVg3pT3eaCEa9kJPLdupfLM1pcwCIi9RG7UR_X6HLWxO9cT1rltR2nTIxdZPYsqfQKYUPWI1Elng50J05fAKjTTW8hmUkSLf8e_A8NCrDFbmeOw1l8dt2OITqBIEvuexrxzb-GmSi6t4YD_BgS_1bsdYMFQ7MYp9vfjO_W2K1qAKpxpNgGM3-d3IPCykiWv948b26CsXNqlG4CFOD1P-JILGBbyZd8zdIm82UMMBEsYjeh"/>
+<div class="absolute bottom-2.5 left-2.5 bg-on-surface/75 backdrop-blur-md px-2.5 py-1 rounded-full flex items-center gap-1.5 text-on-primary text-caption font-caption">
+<span class="material-symbols-outlined text-[14px]">psychiatry</span>
+<span>Mầm mới đâm rễ khỏe sau 12 ngày</span>
+</div>
+</div>
+<div class="mt-space-md font-body-md text-body-md text-on-surface-variant leading-relaxed">
+<p>
+        Còn các lá lành rụng ra, mình đặt nằm ngang trên mặt giá thể đất ẩm tơi xốp (tro trấu + đá perlite). Sau gần hai tuần, hầu hết lá mẹ đều đang trỗi mầm con cực kỳ cưng như hình trên! Chúc cả nhà chăm cây luôn xanh mướt! 🌿
+      </p>
+</div>
+<!-- Topic Tags -->
+<div class="flex flex-wrap gap-1.5 mt-space-md pt-space-sm">
+<span class="bg-surface-container-low text-secondary font-label-sm text-label-sm px-2.5 py-1 rounded-full">#ChămSenĐá</span>
+<span class="bg-surface-container-low text-secondary font-label-sm text-label-sm px-2.5 py-1 rounded-full">#CứuCâyÚng</span>
+<span class="bg-surface-container-low text-secondary font-label-sm text-label-sm px-2.5 py-1 rounded-full">#NhânGiốngLá</span>
+</div>
+</article>
+<!-- SPECIAL FEATURE: PUBLIC HOBBY IMPORTER CARD (M07/M08 Target) -->
+<section class="bg-[#E8F6ED] rounded-[19px] p-space-lg mb-space-lg shadow-[0_8px_20px_rgba(22,115,72,0.06)] relative overflow-hidden">
+<div class="flex items-start gap-space-md">
+<div class="w-12 h-12 rounded-2xl bg-surface-container-lowest shadow-sm flex items-center justify-center shrink-0 text-[24px]">
+        🌿
+      </div>
+<div class="flex-1 min-w-0">
+<div class="flex items-center gap-1.5 mb-0.5">
+<span class="bg-secondary/15 text-secondary text-caption font-caption px-2 py-0.5 rounded-full uppercase tracking-wider font-semibold">Khám phá sở thích</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-[#167348] font-semibold leading-tight">
+          Trồng Sen Đá &amp; Cây Cảnh Nội Thất
+        </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1 leading-snug">
+          Bạn cũng muốn bắt đầu theo đuổi sở thích xanh mát mẻ này? Lưu ngay lộ trình chăm cây mẫu cùng cộng đồng.
+        </p>
+</div>
+</div>
+<div class="mt-space-md pt-space-xs">
+<button class="w-full bg-[#279658] active:bg-[#167348] text-on-primary font-label-md text-label-md py-3 rounded-[14px] flex items-center justify-center gap-2 shadow-[0_8px_18px_rgba(39,150,88,0.32)] transition-all active:scale-[0.98]" id="importHobbyBtn" onclick="importHobbyAction()">
+<span class="material-symbols-outlined text-[20px]" id="importIcon">add_circle</span>
+<span id="importLabel">+ Thêm sở thích này vào tài khoản của tôi</span>
+</button>
+<div class="flex items-center justify-center gap-1.5 mt-2.5">
+<span class="material-symbols-outlined text-[13px] text-secondary">verified_user</span>
+<p class="font-caption text-caption text-secondary">Tích hợp sẵn lịch tưới nước &amp; gợi ý giá thể chu kỳ đầu</p>
+</div>
+</div>
+</section>
+<!-- Interaction Bar (Counters & Actions) -->
+<div class="bg-surface-container-lowest rounded-[19px] p-space-sm mb-space-lg shadow-sm flex items-center justify-between">
+<!-- Like Button -->
+<button class="flex-1 flex items-center justify-center gap-1.5 py-2.5 rounded-[14px] text-on-surface-variant hover:bg-surface-container transition-all active:scale-95" id="likeActionBtn" onclick="toggleLike()">
+<span class="material-symbols-outlined text-[20px] text-[#E0245E]" id="likeIcon" style="font-variation-settings: 'FILL' 1;">favorite</span>
+<span class="font-label-sm text-label-sm font-semibold text-on-surface" id="likeCount">142</span>
+</button>
+<!-- Comments Count Anchor -->
+<button class="flex-1 flex items-center justify-center gap-1.5 py-2.5 rounded-[14px] text-on-surface-variant hover:bg-surface-container transition-all active:scale-95">
+<span class="material-symbols-outlined text-[20px] text-tertiary">chat_bubble_outline</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">38</span>
+</button>
+<!-- Bookmark Post Button -->
+<button class="flex-1 flex items-center justify-center gap-1.5 py-2.5 rounded-[14px] text-[#167348] hover:bg-surface-container transition-all active:scale-95" id="bookmarkBtn" onclick="toggleBookmark()">
+<span class="material-symbols-outlined text-[20px]" id="bookmarkIcon" style="font-variation-settings: 'FILL' 1;">bookmark</span>
+<span class="font-label-sm text-label-sm font-medium" id="bookmarkLabel">Đã lưu</span>
+</button>
+<!-- Share Button -->
+<button class="flex-1 flex items-center justify-center gap-1.5 py-2.5 rounded-[14px] text-on-surface-variant hover:bg-surface-container transition-all active:scale-95" onclick="shareArticle()">
+<span class="material-symbols-outlined text-[20px] text-tertiary">share</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Chia sẻ</span>
+</button>
+</div>
+<!-- Comments Section -->
+<section class="flex flex-col gap-space-md mb-space-lg">
+<div class="flex items-center justify-between px-1">
+<h3 class="font-headline-md text-headline-md text-on-surface font-semibold flex items-center gap-2">
+<span>Bình luận</span>
+<span class="bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm px-2 py-0.5 rounded-full">38</span>
+</h3>
+<button class="text-secondary font-label-sm text-label-sm flex items-center gap-0.5">
+<span>Mới nhất</span>
+<span class="material-symbols-outlined text-[16px]">expand_more</span>
+</button>
+</div>
+<!-- Comment 1 -->
+<div class="bg-surface-container-lowest rounded-[19px] p-space-md shadow-sm flex flex-col gap-2">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<img class="w-8 h-8 rounded-full object-cover shrink-0" data-alt="Avatar portrait of an energetic young Vietnamese male gardener wearing a beige cap smiling outdoors with natural light and green leafy backdrop." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDHpYzesECWLz5GvtxnGF9w_n4fGRkd4qFprPRg3wqTXoAKmxMhjgCsBvb9kO74ryWZi84ejFpphBrW_PMUwyAyFbkyAPqD48JcMjSF6TzM6OhPgn50TdNOE4LoagW77gOFquavJK5zbES0-KMsIh42lTi3cwTaEwJoLZgIfjO3oFwHCtF7oNIyzoDzlrxKzKaeJSzwyBA3yj4xJbfFBMJlaQGQRimvDG7aywCxyfkbb0hW2GYO7bqU"/>
+<div>
+<span class="font-label-sm text-label-sm text-on-surface font-semibold">Hoàng Nam</span>
+<span class="text-caption font-caption text-outline ml-1.5">45 phút trước</span>
+</div>
+</div>
+<button class="text-outline hover:text-on-surface p-1">
+<span class="material-symbols-outlined text-[16px]">more_horiz</span>
+</button>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant pl-10 leading-relaxed">
+        Cảm ơn chị Thảo nhiều ạ! Đợt rồi vườn em bị dập nát sau trận giông, làm theo cách vôi bột của chị cứu được cả chậu sen đá kim cương quý giá luôn.
+      </p>
+<div class="flex items-center gap-4 pl-10 pt-1 text-outline font-label-sm text-label-sm">
+<button class="flex items-center gap-1 hover:text-secondary">
+<span class="material-symbols-outlined text-[15px]">favorite_border</span>
+<span>12</span>
+</button>
+<button class="hover:text-secondary">Trả lời</button>
+</div>
+</div>
+<!-- Comment 2 -->
+<div class="bg-surface-container-lowest rounded-[19px] p-space-md shadow-sm flex flex-col gap-2">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<img class="w-8 h-8 rounded-full object-cover shrink-0" data-alt="Avatar portrait of a friendly young Vietnamese woman with glasses wearing light yellow pastel casual wear smiling warm softly." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDCDhuzB0ddPsih_IllVP9HiXc5hOy8YzkUTd9481UG7sNkqqWjcgmFoJ7a2XB_6sDMiAKi0Zx_D77sMEWeGSsPK4aodzFBymc63p-aN4Z2_46huDPPmciOieCBWm8azRZeis-11GEwCi5ZdRgyiRyt_KR2vvis30rqtTULyufUXmnB1VwA46SumQZJ-XWLGCYImJzNkI9TTs-7KztnAf_Lp0roeqQ0mOU3JM-UuorlvvShywD-IaPi"/>
+<div>
+<span class="font-label-sm text-label-sm text-on-surface font-semibold">Lan Anh Nguyễn</span>
+<span class="text-caption font-caption text-outline ml-1.5">1 giờ trước</span>
+</div>
+</div>
+<button class="text-outline hover:text-on-surface p-1">
+<span class="material-symbols-outlined text-[16px]">more_horiz</span>
+</button>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant pl-10 leading-relaxed">
+        Chị cho em hỏi tỉ lệ trộn đá pumice với perlite thế nào để rễ con không bị sốc nhiệt khi trời chuyển nắng gắt vậy ạ?
+      </p>
+<div class="flex items-center gap-4 pl-10 pt-1 text-outline font-label-sm text-label-sm">
+<button class="flex items-center gap-1 hover:text-secondary">
+<span class="material-symbols-outlined text-[15px]">favorite_border</span>
+<span>4</span>
+</button>
+<button class="hover:text-secondary">Trả lời</button>
+</div>
+</div>
+<!-- View more comments -->
+<button class="w-full py-2.5 text-center text-secondary font-label-sm text-label-sm bg-surface-container-low hover:bg-surface-container rounded-[14px] transition-colors">
+      Xem thêm 36 bình luận khác...
+    </button>
+</section>
+<!-- Fixed Bottom Quick Comment Bar -->
+<div class="fixed bottom-0 left-0 right-0 z-40 bg-surface/90 backdrop-blur-xl px-margin py-3 border-t-0 shadow-[0_-8px_20px_rgba(0,0,0,0.04)] pb-[calc(env(safe-area-inset-bottom,0px)+12px)]">
+<div class="max-w-[390px] mx-auto flex items-center gap-space-sm">
+<div class="relative flex-1">
+<input class="w-full h-11 bg-surface-container-lowest rounded-[14px] pl-4 pr-10 font-body-sm text-body-sm text-on-surface placeholder:text-outline focus:outline-none shadow-sm focus:ring-2 focus:ring-primary/20 transition-all" id="commentInput" placeholder="Thêm cảm nghĩ hoặc hỏi kinh nghiệm..." type="text"/>
+<button class="absolute right-2.5 top-1/2 -translate-y-1/2 text-outline-variant hover:text-primary transition-colors">
+<span class="material-symbols-outlined text-[20px]">sentiment_satisfied</span>
+</button>
+</div>
+<button aria-label="Gửi bình luận" class="w-11 h-11 bg-primary active:bg-secondary rounded-[14px] flex items-center justify-center text-on-primary shadow-md active:scale-95 transition-all shrink-0" onclick="submitComment()">
+<span class="material-symbols-outlined text-[20px]">send</span>
+</button>
+</div>
+</div>
+<!-- Toast Feedback Notification -->
+<div class="fixed top-16 left-1/2 -translate-x-1/2 bg-inverse-surface text-inverse-on-surface text-label-sm font-label-sm px-4 py-2.5 rounded-full shadow-lg opacity-0 pointer-events-none transition-all duration-300 z-50 flex items-center gap-2" id="toastMessage">
+<span class="material-symbols-outlined text-[18px] text-primary-fixed" id="toastIcon">check_circle</span>
+<span id="toastText">Thao tác thành công</span>
+</div>
+</div>
+<script>
+  // Follow / Unfollow logic
+  let isFollowing = true;
+  function toggleFollowState() {
+    isFollowing = !isFollowing;
+    const btn = document.getElementById('followBtn');
+    const icon = document.getElementById('followIcon');
+    const text = document.getElementById('followText');
+
+    if (isFollowing) {
+      btn.className = 'shrink-0 bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm px-3.5 py-2 rounded-full transition-all flex items-center gap-1 active:scale-95 shadow-sm';
+      icon.textContent = 'check';
+      icon.className = 'material-symbols-outlined text-[16px] text-secondary';
+      text.textContent = 'Đang theo dõi';
+      showToast('Đang theo dõi tác giả Minh Thảo', 'check_circle');
+    } else {
+      btn.className = 'shrink-0 bg-primary text-on-primary font-label-sm text-label-sm px-3.5 py-2 rounded-full transition-all flex items-center gap-1 active:scale-95 shadow-sm';
+      icon.textContent = 'person_add';
+      icon.className = 'material-symbols-outlined text-[16px] text-on-primary';
+      text.textContent = 'Theo dõi';
+      showToast('Đã hủy theo dõi', 'info');
+    }
+  }
+
+  // Like logic
+  let isLiked = true;
+  let likes = 142;
+  function toggleLike() {
+    isLiked = !isLiked;
+    const icon = document.getElementById('likeIcon');
+    const count = document.getElementById('likeCount');
+
+    if (isLiked) {
+      likes++;
+      icon.style.fontVariationSettings = "'FILL' 1";
+      icon.className = 'material-symbols-outlined text-[20px] text-[#E0245E]';
+    } else {
+      likes--;
+      icon.style.fontVariationSettings = "'FILL' 0";
+      icon.className = 'material-symbols-outlined text-[20px] text-outline';
+    }
+    count.textContent = likes;
+  }
+
+  // Bookmark toggle
+  let isBookmarked = true;
+  function toggleBookmark() {
+    isBookmarked = !isBookmarked;
+    const icon = document.getElementById('bookmarkIcon');
+    const label = document.getElementById('bookmarkLabel');
+    const btn = document.getElementById('bookmarkBtn');
+
+    if (isBookmarked) {
+      icon.style.fontVariationSettings = "'FILL' 1";
+      btn.className = 'flex-1 flex items-center justify-center gap-1.5 py-2.5 rounded-[14px] text-[#167348] hover:bg-surface-container transition-all active:scale-95';
+      label.textContent = 'Đã lưu';
+      showToast('Đã lưu bài viết vào mục yêu thích', 'bookmark');
+    } else {
+      icon.style.fontVariationSettings = "'FILL' 0";
+      btn.className = 'flex-1 flex items-center justify-center gap-1.5 py-2.5 rounded-[14px] text-on-surface-variant hover:bg-surface-container transition-all active:scale-95';
+      label.textContent = 'Lưu bài';
+      showToast('Đã bỏ lưu bài viết', 'bookmark_border');
+    }
+  }
+
+  // Public Hobby Importer Button (M07/M08 transition demo)
+  let hobbyAdded = false;
+  function importHobbyAction() {
+    const btn = document.getElementById('importHobbyBtn');
+    const icon = document.getElementById('importIcon');
+    const label = document.getElementById('importLabel');
+
+    if (!hobbyAdded) {
+      hobbyAdded = true;
+      btn.classList.remove('bg-[#279658]');
+      btn.classList.add('bg-secondary');
+      icon.textContent = 'task_alt';
+      label.textContent = 'Đã thêm vào sở thích của bạn ✓';
+      showToast('Đã thêm thành công vào Danh mục sở thích (M07/M08)!', 'eco');
+    } else {
+      showToast('Sở thích này đã có trong hồ sơ của bạn', 'info');
+    }
+  }
+
+  // Quick Comment Submit
+  function submitComment() {
+    const input = document.getElementById('commentInput');
+    if (input.value.trim().length > 0) {
+      showToast('Bình luận của bạn đã được đăng!', 'chat');
+      input.value = '';
+    } else {
+      input.focus();
+    }
+  }
+
+  // Share action
+  function shareArticle() {
+    if (navigator.share) {
+      navigator.share({
+        title: 'Kinh nghiệm phục hồi rễ sen đá - Minh Thảo',
+        text: 'Chia sẻ kinh nghiệm làm vườn hữu cơ rất hữu ích!',
+        url: window.location.href,
+      }).catch(() => {});
+    } else {
+      showToast('Đã sao chép liên kết bài viết!', 'link');
+    }
+  }
+
+  // Toast Notification Helper
+  function showToast(message, iconName = 'check_circle') {
+    const toast = document.getElementById('toastMessage');
+    const toastText = document.getElementById('toastText');
+    const toastIcon = document.getElementById('toastIcon');
+
+    toastText.textContent = message;
+    toastIcon.textContent = iconName;
+
+    toast.classList.remove('opacity-0', 'pointer-events-none');
+    toast.classList.add('opacity-100');
+
+    setTimeout(() => {
+      toast.classList.remove('opacity-100');
+      toast.classList.add('opacity-0', 'pointer-events-none');
+    }, 2400);
+  }
+</script></main></body></html>

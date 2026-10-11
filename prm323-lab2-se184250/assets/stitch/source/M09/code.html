@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_stack" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "on-primary-fixed-variant": "#00522b", "secondary-fixed": "#9ef5bf", "tertiary-container": "#6a7870", "on-tertiary-fixed": "#121e19", "inverse-surface": "#2e3130", "surface-variant": "#e1e3e1", "secondary-container": "#9ef5bf", "on-secondary-fixed-variant": "#005230", "on-tertiary": "#ffffff", "on-primary-container": "#f6fff4", "on-tertiary-container": "#f5fff8", "outline": "#6e7a6f", "on-background": "#191c1b", "on-tertiary-fixed-variant": "#3d4a43", "primary-fixed": "#8ff8b0", "on-secondary-fixed": "#002110", "background": "#f9faf8", "on-primary-fixed": "#00210e", "on-surface-variant": "#3e4a40", "on-surface": "#191c1b", "tertiary": "#525f58", "outline-variant": "#bdcabd", "surface-dim": "#d9dad8", "error-container": "#ffdad6", "surface-container-lowest": "#ffffff", "inverse-primary": "#73db96", "secondary-fixed-dim": "#83d8a4", "tertiary-fixed-dim": "#bccac1", "on-error": "#ffffff", "inverse-on-surface": "#f0f1ef", "surface-bright": "#f9faf8", "surface-container-low": "#f3f4f2", "tertiary-fixed": "#d8e6dd", "secondary": "#096c42", "on-secondary": "#ffffff", "surface-container-high": "#e7e8e6", "primary": "#006a39", "error": "#ba1a1a", "on-secondary-container": "#157348", "surface-container": "#edeeec", "on-error-container": "#93000a", "primary-container": "#09864a", "surface-container-highest": "#e1e3e1", "on-primary": "#ffffff", "primary-fixed-dim": "#73db96", "surface": "#f9faf8", "surface-tint": "#006d3a" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "space-xl": "1.5rem", "margin": "1rem", "space-xs": "0.25rem", "gutter": "0.75rem", "space-md": "0.75rem", "space-sm": "0.5rem", "space-lg": "1rem" }, "fontFamily": { "label-sm": ["Inter"], "headline-md": ["Inter"], "label-md": ["Inter"], "headline-lg": ["Inter"], "body-sm": ["Inter"], "body-lg": ["Inter"], "headline-xl": ["Inter"], "body-md": ["Inter"], "title-sm": ["Inter"], "caption": ["Inter"] }, "fontSize": { "label-sm": ["12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "500" }], "headline-md": ["18px", { "lineHeight": "24px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "label-md": ["14px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600" }], "headline-lg": ["22px", { "lineHeight": "28px", "letterSpacing": "-0.015em", "fontWeight": "600" }], "body-sm": ["13px", { "lineHeight": "18px", "fontWeight": "400" }], "body-lg": ["16px", { "lineHeight": "24px", "fontWeight": "400" }], "headline-xl": ["28px", { "lineHeight": "36px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "body-md": ["14px", { "lineHeight": "20px", "fontWeight": "400" }], "title-sm": ["16px", { "lineHeight": "22px", "letterSpacing": "-0.005em", "fontWeight": "600" }], "caption": ["11px", { "lineHeight": "14px", "letterSpacing": "0.02em", "fontWeight": "500" }] } } } };</script><style>@layer base{html,body{margin:0;padding:0;background-color:#f9faf8;}body{overscroll-behavior-y:none;-webkit-tap-highlight-color:transparent;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}}::-webkit-scrollbar{display:none;}</style><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface font-body-md text-on-surface flex flex-col min-h-screen"><header class="fixed top-0 w-full z-50 pt-safe bg-surface/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="w-full max-w-[390px] mx-auto"><div class="h-11 px-margin flex items-center justify-between text-on-surface"><span class="font-label-md text-label-md font-semibold tracking-tight">09:41</span><div class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-[16px]">signal_cellular_alt</span><span class="material-symbols-outlined text-[16px]">wifi</span><span class="material-symbols-outlined text-[18px]">battery_full</span></div></div><div class="h-14 px-margin flex items-center justify-between gap-space-sm"><div class="flex items-center gap-space-sm flex-1 min-w-0"><button aria-label="Go back" class="w-11 h-11 flex items-center justify-center rounded-full text-on-surface hover:bg-surface-container-high transition-colors -ml-space-xs" onclick="history.back()"><span class="material-symbols-outlined text-[24px]">arrow_back</span></button><h1 class="font-title-sm text-title-sm text-on-surface truncate">New Task Entry</h1></div><div class="flex items-center gap-space-xs"><button aria-label="Contextual action" class="w-11 h-11 flex items-center justify-center rounded-full text-on-surface-variant hover:bg-surface-container-high transition-colors"><span class="material-symbols-outlined text-[22px]">more_vert</span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center ml-space-xs"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></div></header><main class="flex flex-col relative w-full max-w-[390px] mx-auto px-margin pt-[100px] pb-safe bg-surface"><div class="flex flex-col w-full pb-8">
+<!-- Interactive Top Action Sync Bar -->
+<div class="flex items-center justify-between mb-space-md py-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="inline-flex items-center px-space-sm py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-caption text-caption font-semibold">
+        Đang chỉnh sửa
+      </span>
+<span class="font-caption text-caption text-outline">#HOB-2048</span>
+</div>
+<button class="px-space-md py-1.5 rounded-full bg-primary text-on-primary font-label-sm text-label-sm font-semibold shadow-sm hover:opacity-95 active:scale-95 transition-all flex items-center gap-1" id="topSaveBtn" type="button">
+<span class="material-symbols-outlined text-[16px]">check</span>
+<span>Lưu thay đổi</span>
+</button>
+</div>
+<!-- Form Container -->
+<form class="flex flex-col gap-space-lg" id="editHobbyForm" onsubmit="event.preventDefault();">
+<!-- Section 1: Thông tin cơ bản & Live Preview Badge -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<label class="font-label-md text-label-md text-on-surface" for="hobbyName">Tên sở thích</label>
+<span class="font-caption text-caption text-outline" id="charCount">17/40</span>
+</div>
+<div class="relative flex items-center">
+<input class="w-full h-12 bg-surface-container-low rounded-lg px-space-md font-body-md text-body-md text-on-surface placeholder:text-outline focus:outline-none focus:bg-surface-container-lowest focus:shadow-[0_0_0_2px_#006a39] transition-all" id="hobbyName" maxlength="40" type="text" value="Luyện đàn Guitar"/>
+<div class="absolute right-3 text-primary">
+<span class="material-symbols-outlined text-[20px]">music_note</span>
+</div>
+</div>
+<!-- Preview Tag Card -->
+<div class="bg-surface-container-low rounded-lg p-space-md flex items-center gap-space-md">
+<div class="w-12 h-12 rounded-xl flex items-center justify-center bg-[#FFF4DC] text-[#8A6100] shadow-sm transition-transform active:scale-95" id="previewBadge">
+<span class="material-symbols-outlined text-[26px]" id="previewIcon">music_note</span>
+</div>
+<div class="flex flex-col min-w-0 flex-1">
+<span class="font-label-md text-label-md text-on-surface truncate" id="previewTitle">Luyện đàn Guitar</span>
+<span class="font-caption text-caption text-on-surface-variant flex items-center gap-1">
+<span class="inline-block w-2 h-2 rounded-full bg-primary"></span>
+            Mục tiêu: <span id="previewGoalText">45 phút/ngày</span>
+</span>
+</div>
+</div>
+</div>
+<!-- Section 2: Danh mục (Category Chips) -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<label class="font-label-md text-label-md text-on-surface">Danh mục</label>
+<span class="font-caption text-caption text-primary font-semibold">Đã chọn: Nghệ thuật</span>
+</div>
+<div class="grid grid-cols-2 gap-space-sm" id="categoryContainer">
+<!-- Active Chip -->
+<button class="cat-btn flex items-center gap-space-sm p-space-sm rounded-lg bg-primary-container text-on-primary-container font-label-sm text-label-sm font-semibold transition-all shadow-sm" data-cat="art" type="button">
+<span class="w-8 h-8 rounded-full bg-on-primary-container/15 flex items-center justify-center">
+<span class="material-symbols-outlined text-[18px]">palette</span>
+</span>
+<span class="truncate">Nghệ thuật &amp; Âm nhạc</span>
+</button>
+<button class="cat-btn flex items-center gap-space-sm p-space-sm rounded-lg bg-surface-container-low text-on-surface-variant font-label-sm text-label-sm font-medium hover:bg-surface-container transition-all" data-cat="health" type="button">
+<span class="w-8 h-8 rounded-full bg-surface-container-high flex items-center justify-center text-on-surface">
+<span class="material-symbols-outlined text-[18px]">fitness_center</span>
+</span>
+<span class="truncate">Sức khỏe &amp; Vận động</span>
+</button>
+<button class="cat-btn flex items-center gap-space-sm p-space-sm rounded-lg bg-surface-container-low text-on-surface-variant font-label-sm text-label-sm font-medium hover:bg-surface-container transition-all" data-cat="mind" type="button">
+<span class="w-8 h-8 rounded-full bg-surface-container-high flex items-center justify-center text-on-surface">
+<span class="material-symbols-outlined text-[18px]">self_improvement</span>
+</span>
+<span class="truncate">Tĩnh tâm &amp; Đọc sách</span>
+</button>
+<button class="cat-btn flex items-center gap-space-sm p-space-sm rounded-lg bg-surface-container-low text-on-surface-variant font-label-sm text-label-sm font-medium hover:bg-surface-container transition-all" data-cat="skills" type="button">
+<span class="w-8 h-8 rounded-full bg-surface-container-high flex items-center justify-center text-on-surface">
+<span class="material-symbols-outlined text-[18px]">terminal</span>
+</span>
+<span class="truncate">Học tập &amp; Kỹ năng</span>
+</button>
+</div>
+</div>
+<!-- Section 3: Biểu tượng & Bảng màu Pastel -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<label class="font-label-md text-label-md text-on-surface">Biểu tượng &amp; Sắc thái</label>
+<span class="font-caption text-caption text-outline">Phong cách Pastel</span>
+</div>
+<!-- Icon Selectors -->
+<div>
+<p class="font-caption text-caption text-outline mb-space-xs">Chọn biểu tượng nhận diện</p>
+<div class="flex items-center justify-between gap-space-xs overflow-x-auto pb-1" id="iconGroup">
+<button class="icon-selector w-11 h-11 rounded-lg bg-primary text-on-primary flex items-center justify-center shadow-sm transition-transform active:scale-95" data-icon="music_note" type="button">
+<span class="material-symbols-outlined text-[22px]">music_note</span>
+</button>
+<button class="icon-selector w-11 h-11 rounded-lg bg-surface-container-low text-on-surface-variant flex items-center justify-center hover:bg-surface-container transition-transform active:scale-95" data-icon="graphic_eq" type="button">
+<span class="material-symbols-outlined text-[22px]">graphic_eq</span>
+</button>
+<button class="icon-selector w-11 h-11 rounded-lg bg-surface-container-low text-on-surface-variant flex items-center justify-center hover:bg-surface-container transition-transform active:scale-95" data-icon="piano" type="button">
+<span class="material-symbols-outlined text-[22px]">piano</span>
+</button>
+<button class="icon-selector w-11 h-11 rounded-lg bg-surface-container-low text-on-surface-variant flex items-center justify-center hover:bg-surface-container transition-transform active:scale-95" data-icon="headphones" type="button">
+<span class="material-symbols-outlined text-[22px]">headphones</span>
+</button>
+<button class="icon-selector w-11 h-11 rounded-lg bg-surface-container-low text-on-surface-variant flex items-center justify-center hover:bg-surface-container transition-transform active:scale-95" data-icon="brush" type="button">
+<span class="material-symbols-outlined text-[22px]">brush</span>
+</button>
+<button class="icon-selector w-11 h-11 rounded-lg bg-surface-container-low text-on-surface-variant flex items-center justify-center hover:bg-surface-container transition-transform active:scale-95" data-icon="draw" type="button">
+<span class="material-symbols-outlined text-[22px]">draw</span>
+</button>
+</div>
+</div>
+<!-- Color Selectors -->
+<div>
+<p class="font-caption text-caption text-outline mb-space-xs">Sắc màu chủ đạo</p>
+<div class="grid grid-cols-4 gap-space-sm" id="colorGroup">
+<!-- Vàng Pastel (Active) -->
+<button class="color-selector flex flex-col items-center gap-1 p-2 rounded-lg bg-[#FFF4DC] shadow-sm ring-2 ring-[#8A6100] transition-all" data-color="#FFF4DC" data-textcolor="#8A6100" type="button">
+<div class="w-6 h-6 rounded-full bg-[#8A6100] flex items-center justify-center text-white">
+<span class="material-symbols-outlined text-[14px]">check</span>
+</div>
+<span class="font-caption text-caption text-[#8A6100] font-semibold">Vàng mật</span>
+</button>
+<!-- Xanh lục Pastel -->
+<button class="color-selector flex flex-col items-center gap-1 p-2 rounded-lg bg-[#E8F6ED] transition-all" data-color="#E8F6ED" data-textcolor="#167348" type="button">
+<div class="w-6 h-6 rounded-full bg-[#167348] opacity-80"></div>
+<span class="font-caption text-caption text-[#167348] font-medium">Bạc hà</span>
+</button>
+<!-- Tím Pastel -->
+<button class="color-selector flex flex-col items-center gap-1 p-2 rounded-lg bg-[#F1EAFC] transition-all" data-color="#F1EAFC" data-textcolor="#5D3891" type="button">
+<div class="w-6 h-6 rounded-full bg-[#5D3891] opacity-80"></div>
+<span class="font-caption text-caption text-[#5D3891] font-medium">Oải hương</span>
+</button>
+<!-- Xanh lam Pastel -->
+<button class="color-selector flex flex-col items-center gap-1 p-2 rounded-lg bg-[#E8F2FF] transition-all" data-color="#E8F2FF" data-textcolor="#1D5D9B" type="button">
+<div class="w-6 h-6 rounded-full bg-[#1D5D9B] opacity-80"></div>
+<span class="font-caption text-caption text-[#1D5D9B] font-medium">Biển hồ</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Section 4: Mục tiêu hàng ngày (Stepper) -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div>
+<label class="font-label-md text-label-md text-on-surface block">Mục tiêu luyện tập</label>
+<span class="font-caption text-caption text-outline">Duy trì mỗi ngày</span>
+</div>
+<div class="inline-flex items-center gap-1 px-space-sm py-1 rounded-full bg-secondary-container text-on-secondary-container font-caption text-caption font-semibold">
+<span class="material-symbols-outlined text-[14px]">local_fire_department</span>
+<span>Đã duy trì 12 ngày</span>
+</div>
+</div>
+<div class="flex items-center justify-between bg-surface-container-low rounded-xl p-space-sm">
+<button aria-label="Giảm 5 phút" class="w-12 h-12 rounded-lg bg-surface-container-lowest text-on-surface flex items-center justify-center shadow-sm active:scale-95 transition-transform" id="minusGoalBtn" type="button">
+<span class="material-symbols-outlined text-[24px]">remove</span>
+</button>
+<div class="flex flex-col items-center">
+<div class="flex items-baseline gap-1">
+<span class="font-headline-xl text-headline-xl text-primary font-bold" id="goalMinutesDisplay">45</span>
+<span class="font-label-md text-label-md text-on-surface-variant font-semibold">phút</span>
+</div>
+<span class="font-caption text-caption text-outline">khoảng ~3 bài tập ngón</span>
+</div>
+<button aria-label="Tăng 5 phút" class="w-12 h-12 rounded-lg bg-surface-container-lowest text-on-surface flex items-center justify-center shadow-sm active:scale-95 transition-transform" id="plusGoalBtn" type="button">
+<span class="material-symbols-outlined text-[24px]">add</span>
+</button>
+</div>
+</div>
+<!-- Section 5: Lịch lặp lại trong tuần -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<label class="font-label-md text-label-md text-on-surface">Lịch lặp lại</label>
+<span class="font-caption text-caption text-primary font-semibold" id="daysCountText">4 buổi / tuần</span>
+</div>
+<!-- Days Circles (T2, T4, T6, CN active) -->
+<div class="flex items-center justify-between gap-1" id="daysWrapper">
+<!-- T2 -->
+<button class="day-btn w-10 h-10 rounded-full bg-primary text-on-primary font-label-sm text-label-sm font-semibold flex items-center justify-center shadow-sm transition-transform active:scale-95" data-day="T2" type="button">
+          T2
+        </button>
+<!-- T3 -->
+<button class="day-btn w-10 h-10 rounded-full bg-surface-container-low text-on-surface-variant font-label-sm text-label-sm font-medium flex items-center justify-center hover:bg-surface-container transition-transform active:scale-95" data-day="T3" type="button">
+          T3
+        </button>
+<!-- T4 -->
+<button class="day-btn w-10 h-10 rounded-full bg-primary text-on-primary font-label-sm text-label-sm font-semibold flex items-center justify-center shadow-sm transition-transform active:scale-95" data-day="T4" type="button">
+          T4
+        </button>
+<!-- T5 -->
+<button class="day-btn w-10 h-10 rounded-full bg-surface-container-low text-on-surface-variant font-label-sm text-label-sm font-medium flex items-center justify-center hover:bg-surface-container transition-transform active:scale-95" data-day="T5" type="button">
+          T5
+        </button>
+<!-- T6 -->
+<button class="day-btn w-10 h-10 rounded-full bg-primary text-on-primary font-label-sm text-label-sm font-semibold flex items-center justify-center shadow-sm transition-transform active:scale-95" data-day="T6" type="button">
+          T6
+        </button>
+<!-- T7 -->
+<button class="day-btn w-10 h-10 rounded-full bg-surface-container-low text-on-surface-variant font-label-sm text-label-sm font-medium flex items-center justify-center hover:bg-surface-container transition-transform active:scale-95" data-day="T7" type="button">
+          T7
+        </button>
+<!-- CN -->
+<button class="day-btn w-10 h-10 rounded-full bg-primary text-on-primary font-label-sm text-label-sm font-semibold flex items-center justify-center shadow-sm transition-transform active:scale-95" data-day="CN" type="button">
+          CN
+        </button>
+</div>
+<p class="font-caption text-caption text-outline text-center">Gợi ý: Luyện tập cách ngày giúp cơ ngón tay hồi phục tự nhiên.</p>
+</div>
+<!-- Section 6: Lời nhắc nhở (Toggle Switch) -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex items-center justify-between">
+<div class="flex items-center gap-space-md">
+<div class="w-10 h-10 rounded-lg bg-surface-container-low flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[22px]">notifications_active</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface">Nhắc nhở hàng ngày</span>
+<span class="font-caption text-caption text-outline" id="reminderStatusText">Bật lúc 18:30 mỗi buổi tập</span>
+</div>
+</div>
+<!-- Toggle Button -->
+<button aria-checked="true" class="w-12 h-7 rounded-full bg-primary p-0.5 transition-colors relative flex items-center focus:outline-none" id="reminderToggle" role="switch" type="button">
+<span class="w-6 h-6 rounded-full bg-surface-container-lowest shadow-sm transform translate-x-5 transition-transform flex items-center justify-center" id="toggleCircle">
+<span class="material-symbols-outlined text-[14px] text-primary">alarm</span>
+</span>
+</button>
+</div>
+<!-- Section 7: Vùng nguy hiểm & Lưu trữ -->
+<div class="bg-error-container/40 rounded-xl p-space-lg flex flex-col gap-space-md">
+<div class="flex items-center gap-space-sm text-error">
+<span class="material-symbols-outlined text-[20px]">warning</span>
+<span class="font-label-md text-label-md font-semibold">Khu vực quản lý nâng cao</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+        Tạm ngừng theo dõi hoặc loại bỏ hoàn toàn dữ liệu thói quen này khỏi lịch trình tổng thể.
+      </p>
+<div class="flex flex-col gap-space-sm">
+<button class="w-full h-11 rounded-lg bg-surface-container-lowest text-on-surface font-label-md text-label-md font-semibold flex items-center justify-center gap-2 hover:bg-surface-container transition-all" id="archiveBtn" type="button">
+<span class="material-symbols-outlined text-[18px] text-outline">archive</span>
+<span>Lưu trữ sở thích này</span>
+</button>
+<button class="w-full h-11 rounded-lg bg-error text-on-error font-label-md text-label-md font-semibold flex items-center justify-center gap-2 hover:opacity-90 transition-all" id="deleteBtn" type="button">
+<span class="material-symbols-outlined text-[18px]">delete_forever</span>
+<span>Xóa vĩnh viễn sở thích</span>
+</button>
+</div>
+</div>
+<!-- Primary Action Button Bottom -->
+<div class="pt-space-xs">
+<button class="w-full h-12 rounded-xl bg-primary text-on-primary font-label-md text-label-md font-semibold shadow-md hover:bg-on-secondary-fixed-variant active:scale-[0.99] transition-all flex items-center justify-center gap-2" id="bottomSaveBtn" type="button">
+<span class="material-symbols-outlined text-[20px]">check_circle</span>
+<span>Lưu thay đổi</span>
+</button>
+</div>
+</form>
+<!-- Modal 1: Cảnh báo chưa lưu khi Back -->
+<div class="fixed inset-0 z-50 bg-inverse-surface/40 backdrop-blur-sm hidden items-center justify-center p-space-lg" id="unsavedModal">
+<div class="bg-surface-container-lowest w-full max-w-[340px] rounded-xl p-space-lg shadow-xl flex flex-col gap-space-md">
+<div class="w-12 h-12 rounded-full bg-surface-container-high text-on-surface flex items-center justify-center mx-auto">
+<span class="material-symbols-outlined text-[28px] text-primary">edit_note</span>
+</div>
+<div class="text-center flex flex-col gap-1">
+<h3 class="font-title-sm text-title-sm text-on-surface">Bạn có chắc muốn thoát?</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Các thay đổi bạn vừa điều chỉnh cho sở thích này sẽ bị mất nếu không lưu.</p>
+</div>
+<div class="flex flex-col gap-space-sm pt-space-xs">
+<button class="w-full h-11 rounded-lg bg-primary text-on-primary font-label-md text-label-md font-semibold" id="modalContinueBtn" type="button">
+          Tiếp tục chỉnh sửa
+        </button>
+<button class="w-full h-11 rounded-lg bg-surface-container-low text-on-surface-variant font-label-md text-label-md font-medium" id="modalDiscardBtn" type="button">
+          Rời đi không lưu
+        </button>
+</div>
+</div>
+</div>
+<!-- Modal 2: Cảnh báo xóa vĩnh viễn (Danger Zone) -->
+<div class="fixed inset-0 z-50 bg-inverse-surface/50 backdrop-blur-sm hidden items-center justify-center p-space-lg" id="deleteModal">
+<div class="bg-surface-container-lowest w-full max-w-[340px] rounded-xl p-space-lg shadow-xl flex flex-col gap-space-md">
+<div class="w-12 h-12 rounded-full bg-error-container text-error flex items-center justify-center mx-auto">
+<span class="material-symbols-outlined text-[28px]">delete_forever</span>
+</div>
+<div class="text-center flex flex-col gap-1">
+<h3 class="font-title-sm text-title-sm text-error">Xóa vĩnh viễn sở thích?</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+          Toàn bộ lịch sử bấm giờ tập trung, chuỗi 12 ngày và thành tựu của <strong>Luyện đàn Guitar</strong> sẽ bị xóa vĩnh viễn và không thể khôi phục.
+        </p>
+</div>
+<div class="flex flex-col gap-space-sm pt-space-xs">
+<button class="w-full h-11 rounded-lg bg-error text-on-error font-label-md text-label-md font-semibold" id="confirmDeleteBtn" type="button">
+          Xóa vĩnh viễn
+        </button>
+<button class="w-full h-11 rounded-lg bg-surface-container-low text-on-surface-variant font-label-md text-label-md font-medium" id="cancelDeleteBtn" type="button">
+          Hủy bỏ
+        </button>
+</div>
+</div>
+</div>
+<!-- Toast Notification Feedback -->
+<div class="fixed bottom-6 left-1/2 -translate-x-1/2 z-50 pointer-events-none opacity-0 translate-y-4 transition-all duration-300 w-[90%] max-w-[350px]" id="toastNotification">
+<div class="bg-inverse-surface text-inverse-on-surface px-space-md py-space-sm rounded-xl shadow-lg flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-primary-fixed text-[22px]">check_circle</span>
+<span class="font-label-sm text-label-sm font-medium flex-1" id="toastMessage">Đã cập nhật thành công!</span>
+</div>
+</div>
+</div>
+<script>
+  (function() {
+    let formChanged = false;
+    let goalMinutes = 45;
+    let reminderActive = true;
+
+    // References
+    const nameInput = document.getElementById('hobbyName');
+    const charCount = document.getElementById('charCount');
+    const previewTitle = document.getElementById('previewTitle');
+    const previewGoalText = document.getElementById('previewGoalText');
+    const goalDisplay = document.getElementById('goalMinutesDisplay');
+    const minusBtn = document.getElementById('minusGoalBtn');
+    const plusBtn = document.getElementById('plusGoalBtn');
+    const daysWrapper = document.getElementById('daysWrapper');
+    const daysCountText = document.getElementById('daysCountText');
+    const reminderToggle = document.getElementById('reminderToggle');
+    const toggleCircle = document.getElementById('toggleCircle');
+    const reminderStatusText = document.getElementById('reminderStatusText');
+    const topSaveBtn = document.getElementById('topSaveBtn');
+    const bottomSaveBtn = document.getElementById('bottomSaveBtn');
+    const unsavedModal = document.getElementById('unsavedModal');
+    const modalContinueBtn = document.getElementById('modalContinueBtn');
+    const modalDiscardBtn = document.getElementById('modalDiscardBtn');
+    const deleteBtn = document.getElementById('deleteBtn');
+    const archiveBtn = document.getElementById('archiveBtn');
+    const deleteModal = document.getElementById('deleteModal');
+    const confirmDeleteBtn = document.getElementById('confirmDeleteBtn');
+    const cancelDeleteBtn = document.getElementById('cancelDeleteBtn');
+    const toast = document.getElementById('toastNotification');
+    const toastMessage = document.getElementById('toastMessage');
+    const previewBadge = document.getElementById('previewBadge');
+    const previewIcon = document.getElementById('previewIcon');
+
+    // Track original state to alert on leave
+    nameInput.addEventListener('input', (e) => {
+      formChanged = true;
+      const val = e.target.value;
+      charCount.textContent = `${val.length}/40`;
+      previewTitle.textContent = val.trim() || 'Tên sở thích';
+    });
+
+    // Goal Stepper
+    minusBtn.addEventListener('click', () => {
+      if (goalMinutes > 10) {
+        goalMinutes -= 5;
+        updateGoal();
+      }
+    });
+
+    plusBtn.addEventListener('click', () => {
+      if (goalMinutes < 240) {
+        goalMinutes += 5;
+        updateGoal();
+      }
+    });
+
+    function updateGoal() {
+      formChanged = true;
+      goalDisplay.textContent = goalMinutes;
+      previewGoalText.textContent = `${goalMinutes} phút/ngày`;
+    }
+
+    // Days multi-selection
+    daysWrapper.addEventListener('click', (e) => {
+      const btn = e.target.closest('.day-btn');
+      if (!btn) return;
+      formChanged = true;
+      const isActive = btn.classList.contains('bg-primary');
+      if (isActive) {
+        btn.classList.remove('bg-primary', 'text-on-primary', 'font-semibold');
+        btn.classList.add('bg-surface-container-low', 'text-on-surface-variant', 'font-medium');
+      } else {
+        btn.classList.add('bg-primary', 'text-on-primary', 'font-semibold');
+        btn.classList.remove('bg-surface-container-low', 'text-on-surface-variant', 'font-medium');
+      }
+
+      const activeDays = daysWrapper.querySelectorAll('.day-btn.bg-primary').length;
+      daysCountText.textContent = `${activeDays} buổi / tuần`;
+    });
+
+    // Category Selector Single Pick
+    const catContainer = document.getElementById('categoryContainer');
+    catContainer.addEventListener('click', (e) => {
+      const btn = e.target.closest('.cat-btn');
+      if (!btn) return;
+      formChanged = true;
+      catContainer.querySelectorAll('.cat-btn').forEach(b => {
+        b.className = 'cat-btn flex items-center gap-space-sm p-space-sm rounded-lg bg-surface-container-low text-on-surface-variant font-label-sm text-label-sm font-medium hover:bg-surface-container transition-all';
+        const innerCircle = b.querySelector('span');
+        if (innerCircle) innerCircle.className = 'w-8 h-8 rounded-full bg-surface-container-high flex items-center justify-center text-on-surface';
+      });
+      btn.className = 'cat-btn flex items-center gap-space-sm p-space-sm rounded-lg bg-primary-container text-on-primary-container font-label-sm text-label-sm font-semibold transition-all shadow-sm';
+      const activeCircle = btn.querySelector('span');
+      if (activeCircle) activeCircle.className = 'w-8 h-8 rounded-full bg-on-primary-container/15 flex items-center justify-center';
+    });
+
+    // Icon Selector
+    const iconGroup = document.getElementById('iconGroup');
+    iconGroup.addEventListener('click', (e) => {
+      const btn = e.target.closest('.icon-selector');
+      if (!btn) return;
+      formChanged = true;
+      iconGroup.querySelectorAll('.icon-selector').forEach(b => {
+        b.className = 'icon-selector w-11 h-11 rounded-lg bg-surface-container-low text-on-surface-variant flex items-center justify-center hover:bg-surface-container transition-transform active:scale-95';
+      });
+      btn.className = 'icon-selector w-11 h-11 rounded-lg bg-primary text-on-primary flex items-center justify-center shadow-sm transition-transform active:scale-95';
+      const iconName = btn.dataset.icon;
+      previewIcon.textContent = iconName;
+    });
+
+    // Color Selector
+    const colorGroup = document.getElementById('colorGroup');
+    colorGroup.addEventListener('click', (e) => {
+      const btn = e.target.closest('.color-selector');
+      if (!btn) return;
+      formChanged = true;
+      colorGroup.querySelectorAll('.color-selector').forEach(b => {
+        b.classList.remove('shadow-sm', 'ring-2');
+        const check = b.querySelector('.material-symbols-outlined');
+        if (check) check.remove();
+      });
+      btn.classList.add('shadow-sm', 'ring-2');
+      const innerDot = btn.querySelector('div');
+      if (innerDot && !innerDot.querySelector('.material-symbols-outlined')) {
+        innerDot.classList.add('flex', 'items-center', 'justify-center', 'text-white');
+        innerDot.innerHTML = '<span class="material-symbols-outlined text-[14px]">check</span>';
+      }
+      const bg = btn.dataset.color;
+      const tc = btn.dataset.textcolor;
+      previewBadge.style.backgroundColor = bg;
+      previewBadge.style.color = tc;
+    });
+
+    // Reminder Switch
+    reminderToggle.addEventListener('click', () => {
+      formChanged = true;
+      reminderActive = !reminderActive;
+      if (reminderActive) {
+        reminderToggle.classList.remove('bg-surface-container-high');
+        reminderToggle.classList.add('bg-primary');
+        toggleCircle.classList.remove('translate-x-0');
+        toggleCircle.classList.add('translate-x-5');
+        reminderStatusText.textContent = 'Bật lúc 18:30 mỗi buổi tập';
+        toggleCircle.innerHTML = '<span class="material-symbols-outlined text-[14px] text-primary">alarm</span>';
+      } else {
+        reminderToggle.classList.remove('bg-primary');
+        reminderToggle.classList.add('bg-surface-container-high');
+        toggleCircle.classList.remove('translate-x-5');
+        toggleCircle.classList.add('translate-x-0');
+        reminderStatusText.textContent = 'Đang tắt thông báo';
+        toggleCircle.innerHTML = '<span class="material-symbols-outlined text-[14px] text-outline">alarm_off</span>';
+      }
+    });
+
+    // Toast helper
+    function showToast(msg) {
+      toastMessage.textContent = msg;
+      toast.classList.remove('opacity-0', 'translate-y-4');
+      toast.classList.add('opacity-100', 'translate-y-0');
+      setTimeout(() => {
+        toast.classList.remove('opacity-100', 'translate-y-0');
+        toast.classList.add('opacity-0', 'translate-y-4');
+      }, 2500);
+    }
+
+    // Save Handling
+    function handleSave() {
+      formChanged = false;
+      showToast('Đã cập nhật thành công!');
+      setTimeout(() => {
+        // Return back to M08 (or history fallback)
+        if (window.history.length > 1) {
+          window.history.back();
+        }
+      }, 1200);
+    }
+
+    topSaveBtn.addEventListener('click', handleSave);
+    bottomSaveBtn.addEventListener('click', handleSave);
+
+    // Header Back button detection and modal trigger
+    // Wire up standard back button if exists in app-shell
+    const shellBackBtn = document.querySelector('header button[aria-label="Go back"]');
+    if (shellBackBtn) {
+      shellBackBtn.onclick = function(e) {
+        if (formChanged) {
+          e.preventDefault();
+          e.stopPropagation();
+          unsavedModal.classList.remove('hidden');
+          unsavedModal.classList.add('flex');
+          return false;
+        }
+      };
+    }
+
+    modalContinueBtn.addEventListener('click', () => {
+      unsavedModal.classList.add('hidden');
+      unsavedModal.classList.remove('flex');
+    });
+
+    modalDiscardBtn.addEventListener('click', () => {
+      unsavedModal.classList.add('hidden');
+      unsavedModal.classList.remove('flex');
+      formChanged = false;
+      window.history.back();
+    });
+
+    // Danger Zone actions
+    deleteBtn.addEventListener('click', () => {
+      deleteModal.classList.remove('hidden');
+      deleteModal.classList.add('flex');
+    });
+
+    cancelDeleteBtn.addEventListener('click', () => {
+      deleteModal.classList.add('hidden');
+      deleteModal.classList.remove('flex');
+    });
+
+    confirmDeleteBtn.addEventListener('click', () => {
+      deleteModal.classList.add('hidden');
+      deleteModal.classList.remove('flex');
+      showToast('Đã xóa sở thích thành công');
+      setTimeout(() => {
+        window.history.back();
+      }, 1200);
+    });
+
+    archiveBtn.addEventListener('click', () => {
+      showToast('Đã lưu trữ sở thích này vào kho lưu trữ.');
+    });
+  })();
+</script></main></body></html>

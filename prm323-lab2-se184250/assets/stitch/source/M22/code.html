@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_stack" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100%;margin:0;padding:0;}body{overscroll-behavior-y:none;-webkit-tap-highlight-color:transparent;}.pb-safe{padding-bottom:calc(env(safe-area-inset-bottom,0px) + 1.5rem);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "on-error": "#ffffff", "surface-tint": "#006d3a", "surface-dim": "#d9dad8", "on-error-container": "#93000a", "on-background": "#191c1b", "on-primary-container": "#f6fff4", "primary": "#006a39", "on-primary": "#ffffff", "primary-fixed": "#8ff8b0", "error-container": "#ffdad6", "surface-container-highest": "#e1e3e1", "secondary-fixed": "#9ef5bf", "error": "#ba1a1a", "secondary": "#096c42", "background": "#f9faf8", "secondary-container": "#9ef5bf", "tertiary-fixed-dim": "#bccac1", "surface-variant": "#e1e3e1", "surface-container-low": "#f3f4f2", "on-secondary-container": "#157348", "on-tertiary-fixed": "#121e19", "on-tertiary-fixed-variant": "#3d4a43", "on-secondary-fixed-variant": "#005230", "primary-container": "#09864a", "tertiary-container": "#6a7870", "outline-variant": "#bdcabd", "on-surface-variant": "#3e4a40", "on-secondary-fixed": "#002110", "surface-container": "#edeeec", "on-primary-fixed-variant": "#00522b", "surface-container-lowest": "#ffffff", "on-secondary": "#ffffff", "on-surface": "#191c1b", "surface": "#f9faf8", "inverse-primary": "#73db96", "surface-container-high": "#e7e8e6", "inverse-on-surface": "#f0f1ef", "tertiary": "#525f58", "primary-fixed-dim": "#73db96", "on-primary-fixed": "#00210e", "surface-bright": "#f9faf8", "tertiary-fixed": "#d8e6dd", "on-tertiary": "#ffffff", "secondary-fixed-dim": "#83d8a4", "inverse-surface": "#2e3130", "on-tertiary-container": "#f5fff8", "outline": "#6e7a6f" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "gutter": "0.75rem", "space-xs": "0.25rem", "space-sm": "0.5rem", "space-lg": "1rem", "space-xl": "1.5rem", "space-md": "0.75rem", "margin": "1rem" }, "fontFamily": { "headline-md": ["Inter"], "headline-lg": ["Inter"], "headline-xl": ["Inter"], "body-md": ["Inter"], "body-sm": ["Inter"], "body-lg": ["Inter"], "caption": ["Inter"], "label-sm": ["Inter"], "title-sm": ["Inter"], "label-md": ["Inter"] }, "fontSize": { "headline-md": ["18px", { "lineHeight": "24px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "headline-lg": ["22px", { "lineHeight": "28px", "letterSpacing": "-0.015em", "fontWeight": "600" }], "headline-xl": ["28px", { "lineHeight": "36px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "body-md": ["14px", { "lineHeight": "20px", "fontWeight": "400" }], "body-sm": ["13px", { "lineHeight": "18px", "fontWeight": "400" }], "body-lg": ["16px", { "lineHeight": "24px", "fontWeight": "400" }], "caption": ["11px", { "lineHeight": "14px", "letterSpacing": "0.02em", "fontWeight": "500" }], "label-sm": ["12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "500" }], "title-sm": ["16px", { "lineHeight": "22px", "letterSpacing": "-0.005em", "fontWeight": "600" }], "label-md": ["14px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600" }] } } } };</script><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface text-on-surface antialiased flex flex-col min-h-screen"><header class="fixed top-0 w-full z-50 pt-safe bg-surface/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.03)]"><div class="h-14 px-margin flex items-center justify-between"><div class="flex items-center gap-space-xs"><button aria-label="Go back" class="w-11 h-11 flex items-center justify-center rounded-full text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low transition-colors active:scale-95" onclick="history.back()" type="button"><span class="material-symbols-outlined text-[22px]">arrow_back</span></button><h1 class="font-title-sm text-title-sm text-on-surface select-none">Journal Entry Detail</h1></div><div class="flex items-center gap-space-xs"><button aria-label="Options" class="w-11 h-11 flex items-center justify-center rounded-full text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low transition-colors active:scale-95" type="button"><span class="material-symbols-outlined text-[20px]">more_horiz</span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center ml-space-xs shadow-sm"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="flex flex-col relative w-full pt-14 pb-safe bg-surface px-margin min-h-screen"><div class="flex flex-col w-full pb-safe">
+<!-- Interactive Top Overflow Action Menu (Hidden by default, triggered via header button simulation) -->
+<div class="hidden absolute top-2 right-4 z-40 w-48 bg-surface-container-lowest rounded-xl shadow-xl py-space-xs transition-all duration-200" id="action-menu-dropdown">
+<button class="w-full flex items-center gap-space-sm px-space-md py-space-sm text-left text-on-surface hover:bg-surface-container-low transition-colors" onclick="goToEdit()" type="button">
+<span class="material-symbols-outlined text-primary text-[20px]">edit_note</span>
+<span class="font-label-md text-label-md">Sửa kỷ niệm</span>
+</button>
+<button class="w-full flex items-center gap-space-sm px-space-md py-space-sm text-left text-on-surface hover:bg-surface-container-low transition-colors" onclick="goToShare()" type="button">
+<span class="material-symbols-outlined text-secondary text-[20px]">share</span>
+<span class="font-label-md text-label-md">Chia sẻ (M34)</span>
+</button>
+<button class="w-full flex items-center gap-space-sm px-space-md py-space-sm text-left text-error hover:bg-error-container/30 transition-colors" onclick="openDeleteModal()" type="button">
+<span class="material-symbols-outlined text-error text-[20px]">delete_outline</span>
+<span class="font-label-md text-label-md">Xóa kỷ niệm</span>
+</button>
+</div>
+<!-- Hero Image Showcase with Ambient Organic Gradient Frame -->
+<section class="relative w-full rounded-xl overflow-hidden shadow-sm bg-surface-container-low group">
+<div class="relative w-full aspect-[4/3] overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105" data-alt="Close-up serene flat-lay photograph of an open vintage book with textured parchment paper resting next to a warm ceramic mug of herbal tea emitting soft gentle steam. Morning golden hour sunlight casts long soft shadows and a warm organic glow across a natural light oak table surface, evoking quiet focus, mindful reading, and serene lifestyle." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCom1p07apfOdA3XUK-hmCtrhApur0_j1HJS8nLwfeNQ2PNkigYVZUc5QMRkJx_AWh5MpJb4W9H1PLeUxXX8_SkG-btVpbjJi0EbyZ10aO79-caplGI7PZPlQIy8TVMH3tfb1_D6PvSQb284Y6YgKMSENszNp-2QDqqhQ59oChk_CZlARBPKWFYdMB4VQjAEPee1EaqiRyMKmqEAQrQuetyPeebipLbAHCWZyy5VF6wtDQ4IXyGAkfA"/>
+<!-- Soft Tonal Ambient Scrim -->
+<div class="absolute inset-0 bg-gradient-to-t from-surface via-surface/10 to-transparent"></div>
+<!-- Quick Zoom/Enlarge Interactive Pill -->
+<button aria-label="Xem ảnh lớn" class="absolute bottom-3 right-3 flex items-center gap-space-xs px-space-sm py-1 rounded-full bg-surface-container-lowest/80 backdrop-blur-md text-on-surface text-caption font-caption shadow-sm active:scale-95 transition-all" onclick="toggleImageEnlarge()" type="button">
+<span class="material-symbols-outlined text-[16px] text-primary">filter_vintage</span>
+<span>Khoảnh khắc tĩnh tại</span>
+</button>
+</div>
+</section>
+<!-- Hobby, Focus Session & Timestamp Badges Group -->
+<section class="flex flex-col gap-space-sm mt-space-md">
+<div class="flex flex-wrap items-center gap-space-xs">
+<!-- Hobby Badge (Soft Mint Green) -->
+<div class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-secondary-container text-on-secondary-container shadow-xs">
+<span class="material-symbols-outlined text-[17px]">auto_stories</span>
+<span class="font-label-sm text-label-sm font-semibold">Đọc 20 trang sách</span>
+</div>
+<!-- Focus Session Badge (Muted Sage/Pecan Tint) -->
+<div class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-tertiary-fixed text-on-tertiary-fixed">
+<span class="material-symbols-outlined text-[17px] text-primary">hourglass_bottom</span>
+<span class="font-label-sm text-label-sm">Phiên Focus #142 (25 phút)</span>
+</div>
+</div>
+<!-- Date & Time Meta -->
+<div class="flex items-center gap-space-xs text-on-surface-variant font-label-sm text-label-sm px-1">
+<span class="material-symbols-outlined text-[16px] text-tertiary">calendar_today</span>
+<span>Chủ Nhật, 11/10/2026</span>
+<span class="inline-block w-1 h-1 rounded-full bg-outline-variant mx-1"></span>
+<span class="material-symbols-outlined text-[16px] text-tertiary">schedule</span>
+<span>07:30 sáng</span>
+</div>
+</section>
+<!-- Reflection Story & Title Section -->
+<article class="flex flex-col gap-space-md mt-space-md bg-surface-container-lowest rounded-xl p-space-lg shadow-sm">
+<!-- Story Title -->
+<div class="flex flex-col gap-space-xs">
+<h2 class="font-headline-lg text-headline-lg text-on-surface leading-tight tracking-tight">
+        Hoàn thành chương 4: Triết học phương Đông
+      </h2>
+<div class="flex items-center gap-space-xs text-secondary font-caption text-caption">
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">spa</span>
+<span>Tâm trí sáng rõ sau phiên thức giấc bình minh</span>
+</div>
+</div>
+<!-- Poetic Inspirational Quote Callout Box -->
+<div class="relative bg-surface-container-low rounded-lg p-space-md overflow-hidden">
+<div class="absolute left-0 top-0 bottom-0 w-1.5 bg-primary rounded-r"></div>
+<div class="pl-space-sm flex flex-col gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[22px] opacity-70">format_quote</span>
+<blockquote class="font-body-md text-body-md text-on-surface italic leading-relaxed">
+          “Nước chảy chỗ trũng nhưng nuôi dưỡng vạn vật mà chẳng tranh giành. Giữ tâm thuần hậu như mặt nước phẳng lặng buổi sớm mai.”
+        </blockquote>
+<span class="font-caption text-caption text-on-surface-variant self-end">— Lão Tử, Đạo Đức Kinh</span>
+</div>
+</div>
+<!-- Narrative Paragraphs -->
+<div class="flex flex-col gap-space-sm font-body-md text-body-md text-on-surface leading-relaxed">
+<p>
+        Buổi sáng hôm nay bắt đầu thật nhẹ nhõm. Khi chuông kết thúc 25 phút của phiên Focus vang lên nhẹ như một tiếng chuông gió, tách trà mạn hoa cúc vẫn còn bốc làn khói ấm mỏng manh.
+      </p>
+<p>
+        Chương 4 đưa mình đi qua những chiêm nghiệm về sự buông bỏ và tính khiêm nhu. Việc dành riêng những khoảng khắc tĩnh lặng đầu ngày không chỉ giúp tích lũy tri thức, mà còn mở ra một không gian hít thở tĩnh tại trước khi bước vào nhịp sống thường nhật hối hả.
+      </p>
+</div>
+<!-- Emotional State & Organic Tag Badges -->
+<div class="pt-space-sm flex flex-col gap-space-xs">
+<span class="font-caption text-caption text-tertiary uppercase tracking-wider">Cảm xúc &amp; Thẻ gắn kết</span>
+<div class="flex flex-wrap gap-space-xs">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-surface-container text-on-surface font-label-sm text-label-sm hover:bg-surface-container-high transition-colors cursor-pointer">
+<span class="text-primary font-bold">#</span>BìnhYên
+        </span>
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-surface-container text-on-surface font-label-sm text-label-sm hover:bg-surface-container-high transition-colors cursor-pointer">
+<span class="text-primary font-bold">#</span>TậpTrung
+        </span>
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-surface-container text-on-surface font-label-sm text-label-sm hover:bg-surface-container-high transition-colors cursor-pointer">
+<span class="text-primary font-bold">#</span>TriếtHọc
+        </span>
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-secondary-container/60 text-on-secondary-container font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[14px]">favorite</span>
+          Hạnh phúc giản dị
+        </span>
+</div>
+</div>
+</article>
+<!-- Interactive Quick Stat Micro-Cards -->
+<section class="grid grid-cols-2 gap-space-md mt-space-md">
+<div class="flex items-center gap-space-sm p-space-md rounded-xl bg-surface-container-lowest shadow-sm">
+<div class="w-10 h-10 rounded-full bg-secondary-container flex items-center justify-center text-on-secondary-container">
+<span class="material-symbols-outlined text-[20px]">timer</span>
+</div>
+<div class="flex flex-col">
+<span class="font-caption text-caption text-on-surface-variant">Thời gian tập trung</span>
+<span class="font-headline-md text-headline-md text-on-surface">25:00</span>
+</div>
+</div>
+<div class="flex items-center gap-space-sm p-space-md rounded-xl bg-surface-container-lowest shadow-sm">
+<div class="w-10 h-10 rounded-full bg-primary-fixed flex items-center justify-center text-on-primary-fixed">
+<span class="material-symbols-outlined text-[20px]">menu_book</span>
+</div>
+<div class="flex flex-col">
+<span class="font-caption text-caption text-on-surface-variant">Tiến độ sách</span>
+<span class="font-headline-md text-headline-md text-on-surface">Trang 94-114</span>
+</div>
+</div>
+</section>
+<!-- Bottom Action Buttons Toolbar -->
+<section class="flex flex-col gap-space-sm mt-space-xl mb-space-lg">
+<!-- Primary CTA: Share to Community (M34) -->
+<button class="w-full h-12 flex items-center justify-center gap-space-sm bg-primary text-on-primary rounded-xl font-headline-md text-label-md shadow-md active:bg-primary-container active:scale-[0.99] transition-all" onclick="goToShare()" type="button">
+<span class="material-symbols-outlined text-[20px]">send</span>
+<span>Chia sẻ lên Cộng đồng</span>
+</button>
+<!-- Secondary Row: Edit (M20) & Delete with confirmation -->
+<div class="grid grid-cols-2 gap-space-md">
+<button class="h-12 flex items-center justify-center gap-space-xs bg-secondary-container text-on-secondary-container rounded-xl font-label-md text-label-md active:bg-secondary active:text-on-secondary transition-colors" onclick="goToEdit()" type="button">
+<span class="material-symbols-outlined text-[20px]">edit</span>
+<span>Chỉnh sửa</span>
+</button>
+<button class="h-12 flex items-center justify-center gap-space-xs bg-error-container/40 text-error rounded-xl font-label-md text-label-md hover:bg-error-container/70 active:scale-[0.98] transition-colors" onclick="openDeleteModal()" type="button">
+<span class="material-symbols-outlined text-[20px]">delete</span>
+<span>Xóa kỷ niệm</span>
+</button>
+</div>
+</section>
+<!-- Delete Confirmation Modal (Native Tailwind Overlay) -->
+<div class="fixed inset-0 z-50 hidden flex items-center justify-center px-space-lg bg-inverse-surface/40 backdrop-blur-sm transition-opacity duration-200" id="delete-modal">
+<div class="w-full max-w-sm bg-surface-container-lowest rounded-xl p-space-lg shadow-xl flex flex-col gap-space-md transform scale-95 transition-transform duration-200" id="delete-modal-card">
+<div class="flex items-center gap-space-md">
+<div class="w-12 h-12 rounded-full bg-error-container flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-error text-[26px]">warning</span>
+</div>
+<div class="flex flex-col">
+<h3 class="font-title-sm text-title-sm text-on-surface">Xóa kỷ niệm này?</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Khoảnh khắc đọc sách và ghi chép này sẽ biến mất vĩnh viễn khỏi nhật ký của bạn.</p>
+</div>
+</div>
+<div class="flex items-center justify-end gap-space-sm pt-space-xs">
+<button class="px-space-md py-2 rounded-lg text-on-surface font-label-md text-label-md hover:bg-surface-container transition-colors" onclick="closeDeleteModal()" type="button">
+          Hủy bỏ
+        </button>
+<button class="px-space-md py-2 rounded-lg bg-error text-on-error font-label-md text-label-md shadow-sm active:opacity-90 transition-opacity" onclick="confirmDelete()" type="button">
+          Xóa vĩnh viễn
+        </button>
+</div>
+</div>
+</div>
+<!-- Micro Interaction Toast Feedback Notification -->
+<div class="fixed bottom-24 left-1/2 -translate-x-1/2 z-50 hidden items-center gap-space-xs px-space-lg py-2.5 rounded-full bg-inverse-surface text-inverse-on-surface shadow-lg transition-all text-body-sm font-body-sm" id="toast-msg">
+<span class="material-symbols-outlined text-[18px] text-primary-fixed">check_circle</span>
+<span id="toast-text">Thao tác thành công</span>
+</div>
+</div>
+<script>
+  function showToast(message) {
+    const toast = document.getElementById('toast-msg');
+    const toastText = document.getElementById('toast-text');
+    if (!toast || !toastText) return;
+    toastText.innerText = message;
+    toast.classList.remove('hidden');
+    toast.classList.add('flex');
+    setTimeout(() => {
+      toast.classList.add('hidden');
+      toast.classList.remove('flex');
+    }, 2400);
+  }
+
+  function goToShare() {
+    showToast("Đang chuẩn bị chia sẻ đến Cộng đồng (M34)...");
+  }
+
+  function goToEdit() {
+    showToast("Đang mở màn hình Chỉnh sửa (M20)...");
+  }
+
+  function openDeleteModal() {
+    const modal = document.getElementById('delete-modal');
+    const card = document.getElementById('delete-modal-card');
+    if (!modal || !card) return;
+    modal.classList.remove('hidden');
+    setTimeout(() => {
+      card.classList.remove('scale-95');
+      card.classList.add('scale-100');
+    }, 10);
+  }
+
+  function closeDeleteModal() {
+    const modal = document.getElementById('delete-modal');
+    const card = document.getElementById('delete-modal-card');
+    if (!modal || !card) return;
+    card.classList.remove('scale-100');
+    card.classList.add('scale-95');
+    setTimeout(() => {
+      modal.classList.add('hidden');
+    }, 150);
+  }
+
+  function confirmDelete() {
+    closeDeleteModal();
+    showToast("Đã xóa kỷ niệm thành công.");
+  }
+
+  function toggleImageEnlarge() {
+    showToast("Đã lưu khoảnh khắc vào danh sách yêu thích!");
+  }
+
+  // Hook into the header's 3-dot button if present
+  document.addEventListener('DOMContentLoaded', () => {
+    const headerMoreBtn = document.querySelector('header button[aria-label="Options"]');
+    const dropdown = document.getElementById('action-menu-dropdown');
+    if (headerMoreBtn && dropdown) {
+      headerMoreBtn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        dropdown.classList.toggle('hidden');
+      });
+      document.addEventListener('click', (e) => {
+        if (!dropdown.contains(e.target) && !headerMoreBtn.contains(e.target)) {
+          dropdown.classList.add('hidden');
+        }
+      });
+    }
+  });
+</script></main></body></html>

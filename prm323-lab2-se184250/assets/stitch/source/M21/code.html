@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_stack" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100%;margin:0;padding:0;}body{overscroll-behavior-y:none;-webkit-tap-highlight-color:transparent;}.pb-safe{padding-bottom:calc(env(safe-area-inset-bottom,0px) + 1.5rem);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "on-error": "#ffffff", "surface-tint": "#006d3a", "surface-dim": "#d9dad8", "on-error-container": "#93000a", "on-background": "#191c1b", "on-primary-container": "#f6fff4", "primary": "#006a39", "on-primary": "#ffffff", "primary-fixed": "#8ff8b0", "error-container": "#ffdad6", "surface-container-highest": "#e1e3e1", "secondary-fixed": "#9ef5bf", "error": "#ba1a1a", "secondary": "#096c42", "background": "#f9faf8", "secondary-container": "#9ef5bf", "tertiary-fixed-dim": "#bccac1", "surface-variant": "#e1e3e1", "surface-container-low": "#f3f4f2", "on-secondary-container": "#157348", "on-tertiary-fixed": "#121e19", "on-tertiary-fixed-variant": "#3d4a43", "on-secondary-fixed-variant": "#005230", "primary-container": "#09864a", "tertiary-container": "#6a7870", "outline-variant": "#bdcabd", "on-surface-variant": "#3e4a40", "on-secondary-fixed": "#002110", "surface-container": "#edeeec", "on-primary-fixed-variant": "#00522b", "surface-container-lowest": "#ffffff", "on-secondary": "#ffffff", "on-surface": "#191c1b", "surface": "#f9faf8", "inverse-primary": "#73db96", "surface-container-high": "#e7e8e6", "inverse-on-surface": "#f0f1ef", "tertiary": "#525f58", "primary-fixed-dim": "#73db96", "on-primary-fixed": "#00210e", "surface-bright": "#f9faf8", "tertiary-fixed": "#d8e6dd", "on-tertiary": "#ffffff", "secondary-fixed-dim": "#83d8a4", "inverse-surface": "#2e3130", "on-tertiary-container": "#f5fff8", "outline": "#6e7a6f" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "gutter": "0.75rem", "space-xs": "0.25rem", "space-sm": "0.5rem", "space-lg": "1rem", "space-xl": "1.5rem", "space-md": "0.75rem", "margin": "1rem" }, "fontFamily": { "headline-md": ["Inter"], "headline-lg": ["Inter"], "headline-xl": ["Inter"], "body-md": ["Inter"], "body-sm": ["Inter"], "body-lg": ["Inter"], "caption": ["Inter"], "label-sm": ["Inter"], "title-sm": ["Inter"], "label-md": ["Inter"] }, "fontSize": { "headline-md": ["18px", { "lineHeight": "24px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "headline-lg": ["22px", { "lineHeight": "28px", "letterSpacing": "-0.015em", "fontWeight": "600" }], "headline-xl": ["28px", { "lineHeight": "36px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "body-md": ["14px", { "lineHeight": "20px", "fontWeight": "400" }], "body-sm": ["13px", { "lineHeight": "18px", "fontWeight": "400" }], "body-lg": ["16px", { "lineHeight": "24px", "fontWeight": "400" }], "caption": ["11px", { "lineHeight": "14px", "letterSpacing": "0.02em", "fontWeight": "500" }], "label-sm": ["12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "500" }], "title-sm": ["16px", { "lineHeight": "22px", "letterSpacing": "-0.005em", "fontWeight": "600" }], "label-md": ["14px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600" }] } } } };</script><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface text-on-surface antialiased flex flex-col min-h-screen"><header class="fixed top-0 w-full z-50 pt-safe bg-surface/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.03)]"><div class="h-14 px-margin flex items-center justify-between"><div class="flex items-center gap-space-xs"><button aria-label="Go back" class="w-11 h-11 flex items-center justify-center rounded-full text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low transition-colors active:scale-95" onclick="history.back()" type="button"><span class="material-symbols-outlined text-[22px]">arrow_back</span></button><h1 class="font-title-sm text-title-sm text-on-surface select-none">Memory Timeline Archive</h1></div><div class="flex items-center gap-space-xs"><button aria-label="Options" class="w-11 h-11 flex items-center justify-center rounded-full text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low transition-colors active:scale-95" type="button"><span class="material-symbols-outlined text-[20px]">more_horiz</span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center ml-space-xs shadow-sm"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="flex flex-col relative w-full pt-14 pb-safe bg-surface px-margin min-h-screen"><div class="flex flex-col w-full pb-32">
+<!-- Search & Filter Bar -->
+<div class="flex items-center justify-between gap-space-sm pt-space-xs pb-space-sm">
+<div class="flex-1 flex items-center bg-surface-container-lowest rounded-xl px-space-md py-space-xs shadow-sm">
+<span class="material-symbols-outlined text-outline text-[20px] mr-space-xs">search</span>
+<input class="w-full bg-transparent border-0 outline-none font-body-sm text-body-sm text-on-surface placeholder:text-outline" placeholder="Tìm kiếm cảm xúc, ngày, sở thích..." type="text"/>
+</div>
+<button aria-label="Bộ lọc nâng cao" class="w-10 h-10 flex items-center justify-center rounded-xl bg-surface-container-lowest text-on-surface-variant hover:text-primary active:scale-95 shadow-sm transition-all" type="button">
+<span class="material-symbols-outlined text-[20px]">tune</span>
+</button>
+</div>
+<!-- Summary & Time Pill Strip -->
+<div class="mt-space-xs bg-surface-container-lowest rounded-xl p-space-md shadow-sm">
+<div class="flex items-center justify-between mb-space-sm">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[20px]" style="font-variation-settings: 'FILL' 1;">auto_stories</span>
+<h2 class="font-title-sm text-title-sm text-on-surface font-semibold">48 khoảnh khắc đã ghi dấu</h2>
+</div>
+<span class="font-caption text-caption text-secondary font-medium bg-secondary-container/40 px-2 py-0.5 rounded-full">Năm 2024</span>
+</div>
+<!-- Timeline Month Scroller -->
+<div class="flex items-center gap-space-xs overflow-x-auto no-scrollbar py-0.5">
+<button class="px-space-md py-1 rounded-full font-caption text-caption bg-primary text-on-primary whitespace-nowrap shadow-sm">
+        Tất cả tháng
+      </button>
+<button class="px-space-md py-1 rounded-full font-caption text-caption bg-surface-container-low text-on-surface-variant hover:bg-surface-container whitespace-nowrap">
+        Tháng 10 (12)
+      </button>
+<button class="px-space-md py-1 rounded-full font-caption text-caption bg-surface-container-low text-on-surface-variant hover:bg-surface-container whitespace-nowrap">
+        Tháng 9 (18)
+      </button>
+<button class="px-space-md py-1 rounded-full font-caption text-caption bg-surface-container-low text-on-surface-variant hover:bg-surface-container whitespace-nowrap">
+        Tháng 8 (11)
+      </button>
+<button class="px-space-md py-1 rounded-full font-caption text-caption bg-surface-container-low text-on-surface-variant hover:bg-surface-container whitespace-nowrap">
+        Tháng 7 (7)
+      </button>
+</div>
+</div>
+<!-- Hobby Filter Chips & View Mode Toggle -->
+<div class="mt-space-md flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant font-medium">Lọc theo sở thích</span>
+<!-- Grid / Timeline Toggle -->
+<div class="flex items-center bg-surface-container p-0.5 rounded-lg" id="viewModeGroup">
+<button class="flex items-center justify-center p-1.5 rounded-md bg-surface-container-lowest text-primary shadow-sm transition-all" id="btnGridView" onclick="switchView('grid')" title="Dạng lưới ảnh">
+<span class="material-symbols-outlined text-[18px]">grid_view</span>
+</button>
+<button class="flex items-center justify-center p-1.5 rounded-md text-on-surface-variant hover:text-on-surface transition-all" id="btnTimelineView" onclick="switchView('timeline')" title="Dạng dòng thời gian">
+<span class="material-symbols-outlined text-[18px]">view_timeline</span>
+</button>
+</div>
+</div>
+<!-- Category Chips Horizontal Scroll -->
+<div class="flex items-center gap-space-xs overflow-x-auto no-scrollbar pb-1" id="categoryChips">
+<button class="chip-active px-3 py-1.5 rounded-full font-label-sm text-label-sm bg-primary text-on-primary whitespace-nowrap transition-all shadow-sm" onclick="filterHobby(this, 'all')">
+        🌱 Tất cả
+      </button>
+<button class="chip-inactive px-3 py-1.5 rounded-full font-label-sm text-label-sm bg-surface-container-lowest text-on-surface-variant hover:bg-surface-container whitespace-nowrap transition-all shadow-sm" onclick="filterHobby(this, 'reading')">
+        📖 Đọc sách
+      </button>
+<button class="chip-inactive px-3 py-1.5 rounded-full font-label-sm text-label-sm bg-surface-container-lowest text-on-surface-variant hover:bg-surface-container whitespace-nowrap transition-all shadow-sm" onclick="filterHobby(this, 'guitar')">
+        🎸 Guitar
+      </button>
+<button class="chip-inactive px-3 py-1.5 rounded-full font-label-sm text-label-sm bg-surface-container-lowest text-on-surface-variant hover:bg-surface-container whitespace-nowrap transition-all shadow-sm" onclick="filterHobby(this, 'painting')">
+        🎨 Hội họa
+      </button>
+<button class="chip-inactive px-3 py-1.5 rounded-full font-label-sm text-label-sm bg-surface-container-lowest text-on-surface-variant hover:bg-surface-container whitespace-nowrap transition-all shadow-sm" onclick="filterHobby(this, 'writing')">
+        ✍️ Viết lách
+      </button>
+</div>
+</div>
+<!-- View 1: Grid Mode (Masonry Style 2-Columns) -->
+<div class="mt-space-md grid grid-cols-2 gap-gutter transition-opacity duration-300" id="galleryGridView">
+<!-- Col 1 -->
+<div class="flex flex-col gap-gutter">
+<!-- Item 1: Đọc sách -->
+<article class="memory-card group flex flex-col bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm active:scale-[0.98] transition-all cursor-pointer" data-hobby="reading" onclick="navigateToDetail('M22-1')">
+<div class="relative w-full aspect-[4/5] bg-surface-container-high overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Close up photography of an open vintage book resting on an organic linen table with dry autumn leaves and soft amber morning sunlight casting tranquil shadows. Serene green calming atmosphere, shot with 35mm lens." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD4MUS4lP7NtUMZPT2U_OGCVZAvA2zRM2kxw1279Vqw7i4C4Tn35kYk9WY49V5UGfQhOdXbqRX18kLwrBfoF8w2jI2GB1lUlbIX_gIOmMeFFqublNvjHmJIjnjzvIDY8yu1ziCO3EIVSRM7J7ZM3oelDp2gPqN8MBGUoOA7SOeq3qG7yXDyPVwNN0t_GUAZdqqr5d6f1bfrXyom3izpVjS2A7bOKDsR-5BxfJ7JotfdmbvZe2R8DFsp"/>
+<div class="absolute top-2 left-2 bg-surface-container-lowest/90 backdrop-blur-md px-2 py-0.5 rounded-md flex items-center gap-1 shadow-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+<span class="font-caption text-caption text-on-surface font-semibold">Đọc sách</span>
+</div>
+<button class="absolute top-2 right-2 w-7 h-7 rounded-full bg-surface-container-lowest/80 backdrop-blur-sm flex items-center justify-center text-on-surface-variant hover:text-error active:scale-90 transition-all shadow-sm" onclick="event.stopPropagation(); toggleHeart(this)" type="button">
+<span class="material-symbols-outlined text-[16px]">favorite</span>
+</button>
+</div>
+<div class="p-space-sm flex flex-col gap-0.5">
+<span class="font-caption text-caption text-primary font-medium">Hôm nay, 11/10</span>
+<p class="font-body-sm text-body-sm text-on-surface line-clamp-2 font-medium">
+            Trang 184 - Đoạn thơ về sự tĩnh lặng giữa buổi sáng mùa thu...
+          </p>
+</div>
+</article>
+<!-- Item 3: Bàn làm việc ngập nắng -->
+<article class="memory-card group flex flex-col bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm active:scale-[0.98] transition-all cursor-pointer" data-hobby="writing" onclick="navigateToDetail('M22-3')">
+<div class="relative w-full aspect-square bg-surface-container-high overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Sunlit minimalist wooden desk with an open diary, brass fountain pen, ceramic cup of matcha tea, soft warm shadows from house plants, peaceful organic atmosphere." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCBDAGaBfh4JKkS0oVpSOEMCAxJF9wGUcTd1uw1tvn0zYM1QKrA9RvlpuyBj4C_etLAMsU6lehCOhxBIzqx3EeffNbN26M4S_P9Ic2Deghuih6LC0-w8OypHyZdmbap3kgXBYF05VHljkSeMBxCT2zK2mNMvy0vc8Pvk8AOzh9__zuGbKqwwnu0XATx06FGuWb2r55t2QCbSc20uFwgCHOs8GyiTKYrys5PfmWdnV3Avu57RtCGnm_T"/>
+<div class="absolute top-2 left-2 bg-surface-container-lowest/90 backdrop-blur-md px-2 py-0.5 rounded-md flex items-center gap-1 shadow-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+<span class="font-caption text-caption text-on-surface font-semibold">Viết lách</span>
+</div>
+<button class="absolute top-2 right-2 w-7 h-7 rounded-full bg-surface-container-lowest/80 backdrop-blur-sm flex items-center justify-center text-on-surface-variant hover:text-error active:scale-90 transition-all shadow-sm" onclick="event.stopPropagation(); toggleHeart(this)" type="button">
+<span class="material-symbols-outlined text-[16px]">favorite</span>
+</button>
+</div>
+<div class="p-space-sm flex flex-col gap-0.5">
+<span class="font-caption text-caption text-on-surface-variant">06/10/2024</span>
+<p class="font-body-sm text-body-sm text-on-surface line-clamp-2 font-medium">
+            Ghi chép vài dòng biết ơn sau tách trà xanh ấm áp.
+          </p>
+</div>
+</article>
+</div>
+<!-- Col 2 -->
+<div class="flex flex-col gap-gutter">
+<!-- Item 2: Cây đàn guitar -->
+<article class="memory-card group flex flex-col bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm active:scale-[0.98] transition-all cursor-pointer" data-hobby="guitar" onclick="navigateToDetail('M22-2')">
+<div class="relative w-full aspect-square bg-surface-container-high overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Acoustic wooden guitar resting gently by a sun-drenched windowsill with monstera leaves, soft lens flare, serene warm organic tones, intimate and quiet mood." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBqVTJ4ovB_Gz6xwsn5jU1o2hZF993eGTFM5eklBIBzHQDR4v3ShWq_LxoJV3416zjGvsp263ma4IXcxfU1C6LT--IF0aSGa-ZkvfQKlV4ZU5-Moac_9tRx-Ag-zBnuz-D5zZzhkRTTawNkqBfysTW8A3S7-sW-PBYL4Ca3hz-Aj4QuTwkhW9GS4D3Y2fQ0RFpJJ1EEWOzAbOcZCANn0gc8wJFbKWoRrlzOJFHOmD5RwRwvLHA5pvlX"/>
+<div class="absolute top-2 left-2 bg-surface-container-lowest/90 backdrop-blur-md px-2 py-0.5 rounded-md flex items-center gap-1 shadow-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+<span class="font-caption text-caption text-on-surface font-semibold">Guitar</span>
+</div>
+<button class="absolute top-2 right-2 w-7 h-7 rounded-full bg-surface-container-lowest/80 backdrop-blur-sm flex items-center justify-center text-primary active:scale-90 transition-all shadow-sm" onclick="event.stopPropagation(); toggleHeart(this)" type="button">
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">favorite</span>
+</button>
+</div>
+<div class="p-space-sm flex flex-col gap-0.5">
+<span class="font-caption text-caption text-on-surface-variant">09/10/2024</span>
+<p class="font-body-sm text-body-sm text-on-surface line-clamp-2 font-medium">
+            Tập trọn vẹn hợp âm bài Sunflowers chiều nay.
+          </p>
+</div>
+</article>
+<!-- Item 4: Hội họa -->
+<article class="memory-card group flex flex-col bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm active:scale-[0.98] transition-all cursor-pointer" data-hobby="painting" onclick="navigateToDetail('M22-4')">
+<div class="relative w-full aspect-[4/5] bg-surface-container-high overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Watercolor palette and a small botanical painting of green eucalyptus branches on textured cotton paper, artistic aesthetic, serene light reflections." src="https://lh3.googleusercontent.com/aida-public/AB6AXuChkYI2AL28TTjjBQAVpmxe2DsknbVu_iqr_wH_55-l5n65d4p_3PzOiUvlpXZzYq5fBVXcwUBXRvm2eE39sOo-bjnik6-QNF7hX2b9SUETx8LVvZ8An2u4RxTdd2VY8Sc50q4gZevovs7INE0epl7kTdJ_a1P2NjPXYsvby4LudNUyNwe2b0S8L5z4S_buPKdJSKUm6y2hAqwgm6zJ3B8urejJrfJs8OqkKn2BtDJiyJzuvpIwGUix"/>
+<div class="absolute top-2 left-2 bg-surface-container-lowest/90 backdrop-blur-md px-2 py-0.5 rounded-md flex items-center gap-1 shadow-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-primary-container"></span>
+<span class="font-caption text-caption text-on-surface font-semibold">Hội họa</span>
+</div>
+<button class="absolute top-2 right-2 w-7 h-7 rounded-full bg-surface-container-lowest/80 backdrop-blur-sm flex items-center justify-center text-on-surface-variant hover:text-error active:scale-90 transition-all shadow-sm" onclick="event.stopPropagation(); toggleHeart(this)" type="button">
+<span class="material-symbols-outlined text-[16px]">favorite</span>
+</button>
+</div>
+<div class="p-space-sm flex flex-col gap-0.5">
+<span class="font-caption text-caption text-on-surface-variant">02/10/2024</span>
+<p class="font-body-sm text-body-sm text-on-surface line-clamp-2 font-medium">
+            Bức vẽ cành lá bạch đàn đầu tay, màu nước loang êm dịu.
+          </p>
+</div>
+</article>
+</div>
+</div>
+<!-- View 2: Timeline Mode (Hidden by default) -->
+<div class="hidden mt-space-md flex-col gap-space-lg transition-opacity duration-300" id="galleryTimelineView">
+<!-- Day Group 1 -->
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-center gap-space-xs">
+<span class="w-2 h-2 rounded-full bg-primary"></span>
+<span class="font-title-sm text-title-sm text-on-surface font-semibold">Hôm nay - 11 tháng 10, 2024</span>
+</div>
+<div class="bg-surface-container-lowest rounded-xl p-space-sm flex gap-space-md shadow-sm active:scale-[0.99] transition-all cursor-pointer" onclick="navigateToDetail('M22-1')">
+<div class="w-24 h-24 rounded-lg overflow-hidden shrink-0 bg-surface-container-high">
+<img class="w-full h-full object-cover" data-alt="Open book pages close-up with morning sunlight and dried botanical markers, calm aesthetic photography." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDtNET60Y3Ipj2R5Hx32YULAKcSe_FIKbJHhW7oezSDBIoY-LH_iRRFArukI_JAGAPn8e1kwl56ZYqplysLoB-51rWEnXZO2pAq7bKjlX_DOtwnzEKaipxrc9QEaPitKhgDfSkeRqNafedsSCah5Ls7YlPqgyWDXJ7OXD8sz1J6qe8a7gp9xBbP7w3si5tN9deMZp08rUe1nBkCuuKD0tYy3RjWwfsTx6PMF-jyUQQfR2pUUS9AtdJp"/>
+</div>
+<div class="flex-1 flex flex-col justify-between py-0.5">
+<div>
+<div class="flex items-center justify-between">
+<span class="font-caption text-caption text-secondary font-semibold">Đọc sách • 45 phút</span>
+<span class="font-caption text-caption text-outline">08:15</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface font-medium line-clamp-2 mt-0.5">
+              Trang 184 - Đoạn thơ về sự tĩnh lặng giữa buổi sáng mùa thu...
+            </p>
+</div>
+<div class="flex items-center gap-1 text-on-surface-variant">
+<span class="material-symbols-outlined text-[15px]">location_on</span>
+<span class="font-caption text-caption text-outline">Góc ban công nhà</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Day Group 2 -->
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-center gap-space-xs">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+<span class="font-title-sm text-title-sm text-on-surface font-semibold">09 tháng 10, 2024</span>
+</div>
+<div class="bg-surface-container-lowest rounded-xl p-space-sm flex gap-space-md shadow-sm active:scale-[0.99] transition-all cursor-pointer" onclick="navigateToDetail('M22-2')">
+<div class="w-24 h-24 rounded-lg overflow-hidden shrink-0 bg-surface-container-high">
+<img class="w-full h-full object-cover" data-alt="Acoustic wooden guitar against sunny window with plant shadows, serene organic tones." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCaYIOz0B46ngEc3TTfNOKpZRYqg92BCXS8ah8107HRVBDYFbetakPu78M3KxuSG1rZ2_ETNhCvV5Uh5sG1oetFBIr_vcsv-IzfugOEVHANKdujj-BNfC3ZHUF-rbAGqI9by2CPuI6hza_UfZJLfoLE1kwF9uxZHjwVTnlat8BEVieYvsjwWTC841edsW2xV-ZMyZapRKKM-f452JI6-FWuBUHLYqlF16QeJCZRWtyhpxv-ihea8X_x"/>
+</div>
+<div class="flex-1 flex flex-col justify-between py-0.5">
+<div>
+<div class="flex items-center justify-between">
+<span class="font-caption text-caption text-secondary font-semibold">Guitar • 30 phút</span>
+<span class="font-caption text-caption text-outline">16:40</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface font-medium line-clamp-2 mt-0.5">
+              Tập trọn vẹn hợp âm bài Sunflowers chiều nay, các đầu ngón tay đã bớt đau.
+            </p>
+</div>
+<div class="flex items-center gap-1 text-on-surface-variant">
+<span class="material-symbols-outlined text-[15px]">music_note</span>
+<span class="font-caption text-caption text-outline">Fingerstyle cơ bản</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Day Group 3 -->
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-center gap-space-xs">
+<span class="w-2 h-2 rounded-full bg-tertiary"></span>
+<span class="font-title-sm text-title-sm text-on-surface font-semibold">06 tháng 10, 2024</span>
+</div>
+<div class="bg-surface-container-lowest rounded-xl p-space-sm flex gap-space-md shadow-sm active:scale-[0.99] transition-all cursor-pointer" onclick="navigateToDetail('M22-3')">
+<div class="w-24 h-24 rounded-lg overflow-hidden shrink-0 bg-surface-container-high">
+<img class="w-full h-full object-cover" data-alt="Sunlit minimalist desk with tea cup and journal notebook, warm golden hour atmosphere." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDw06nTAh-yWj3jUCN9OGSeGuorFICNXDS_DDz2REsUzewuRaI-TMWNnE5IJ-T63aZKtYNeTsbXv7AyF03qxX4FgpxEdBWGvHOVMykgwU-KCaevBxk2Y66wcvVUmCUagnPsgXB4EHQ8ewZk4Yqt44zZUebPeV1BcDalHFefjCxtk6hz_TKC3n0vsjqqJP-8aZiOXZXnqeZWg3MmKj9entES82TQm28vUZPAcdMRjcV6USvCz6sh-iso"/>
+</div>
+<div class="flex-1 flex flex-col justify-between py-0.5">
+<div>
+<div class="flex items-center justify-between">
+<span class="font-caption text-caption text-secondary font-semibold">Viết lách • 25 phút</span>
+<span class="font-caption text-caption text-outline">09:30</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface font-medium line-clamp-2 mt-0.5">
+              Ghi chép vài dòng biết ơn sau tách trà xanh ấm áp.
+            </p>
+</div>
+<div class="flex items-center gap-1 text-on-surface-variant">
+<span class="material-symbols-outlined text-[15px]">edit_note</span>
+<span class="font-caption text-caption text-outline">Nhật ký bình yên</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Empty State Placeholder (Hidden by default, triggered on empty filter) -->
+<div class="hidden flex-col items-center justify-center py-space-xl text-center" id="galleryEmptyState">
+<div class="w-16 h-16 rounded-full bg-surface-container-low flex items-center justify-center text-outline mb-space-sm">
+<span class="material-symbols-outlined text-[32px]">photo_library</span>
+</div>
+<h3 class="font-title-sm text-title-sm text-on-surface font-medium">Chưa có kỷ niệm nào ở đây</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1 max-w-[240px]">
+      Hãy ghi dấu khoảnh khắc bình yên tiếp theo của bạn ngay hôm nay.
+    </p>
+</div>
+<!-- Floating Action Button: Add New Memory (Links to M19) -->
+<div class="fixed bottom-24 right-4 z-40">
+<button aria-label="Thêm kỷ niệm mới" class="flex items-center gap-space-xs bg-primary text-on-primary pl-4 pr-5 h-12 rounded-full shadow-[0_8px_20px_rgba(0,106,57,0.3)] active:scale-95 transition-all" onclick="navigateToAddMemory()" type="button">
+<span class="material-symbols-outlined text-[22px]">add_photo_alternate</span>
+<span class="font-label-md text-label-md font-semibold tracking-wide">Thêm kỷ niệm</span>
+</button>
+</div>
+</div>
+<script>
+  // Navigation functions to related screens M19 & M22
+  function navigateToAddMemory() {
+    // Lead to M19 screen for creating new memory
+    window.location.hash = '#m19-create-memory';
+    console.log('Navigating to M19: Tạo kỷ niệm mới');
+  }
+
+  function navigateToDetail(memoryId) {
+    // Lead to M22 screen for memory details
+    window.location.hash = '#m22-memory-detail-' + memoryId;
+    console.log('Navigating to M22: Chi tiết kỷ niệm ID = ' + memoryId);
+  }
+
+  // Favorite toggle interaction
+  function toggleHeart(button) {
+    const icon = button.querySelector('.material-symbols-outlined');
+    const isFilled = icon.style.fontVariationSettings?.includes("'FILL' 1");
+    if (isFilled) {
+      icon.style.fontVariationSettings = "'FILL' 0";
+      button.classList.remove('text-primary');
+      button.classList.add('text-on-surface-variant');
+    } else {
+      icon.style.fontVariationSettings = "'FILL' 1";
+      button.classList.remove('text-on-surface-variant');
+      button.classList.add('text-primary');
+    }
+  }
+
+  // Toggle View Modes (Grid vs Timeline)
+  function switchView(mode) {
+    const gridView = document.getElementById('galleryGridView');
+    const timelineView = document.getElementById('galleryTimelineView');
+    const btnGrid = document.getElementById('btnGridView');
+    const btnTimeline = document.getElementById('btnTimelineView');
+
+    if (mode === 'grid') {
+      gridView.classList.remove('hidden');
+      timelineView.classList.add('hidden');
+      
+      btnGrid.className = 'flex items-center justify-center p-1.5 rounded-md bg-surface-container-lowest text-primary shadow-sm transition-all';
+      btnTimeline.className = 'flex items-center justify-center p-1.5 rounded-md text-on-surface-variant hover:text-on-surface transition-all';
+    } else {
+      gridView.classList.add('hidden');
+      timelineView.classList.remove('hidden');
+      
+      btnTimeline.className = 'flex items-center justify-center p-1.5 rounded-md bg-surface-container-lowest text-primary shadow-sm transition-all';
+      btnGrid.className = 'flex items-center justify-center p-1.5 rounded-md text-on-surface-variant hover:text-on-surface transition-all';
+    }
+  }
+
+  // Filter cards by Hobby
+  function filterHobby(selectedBtn, hobbyKey) {
+    const chips = document.querySelectorAll('#categoryChips button');
+    chips.forEach(btn => {
+      btn.className = 'chip-inactive px-3 py-1.5 rounded-full font-label-sm text-label-sm bg-surface-container-lowest text-on-surface-variant hover:bg-surface-container whitespace-nowrap transition-all shadow-sm';
+    });
+    selectedBtn.className = 'chip-active px-3 py-1.5 rounded-full font-label-sm text-label-sm bg-primary text-on-primary whitespace-nowrap transition-all shadow-sm';
+
+    const cards = document.querySelectorAll('.memory-card');
+    let visibleCount = 0;
+
+    cards.forEach(card => {
+      if (hobbyKey === 'all' || card.getAttribute('data-hobby') === hobbyKey) {
+        card.style.display = 'flex';
+        visibleCount++;
+      } else {
+        card.style.display = 'none';
+      }
+    });
+
+    const emptyState = document.getElementById('galleryEmptyState');
+    if (visibleCount === 0 && hobbyKey !== 'all') {
+      emptyState.classList.remove('hidden');
+      emptyState.classList.add('flex');
+    } else {
+      emptyState.classList.add('hidden');
+      emptyState.classList.remove('flex');
+    }
+  }
+</script></main></body></html>

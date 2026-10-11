@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+
+<html lang="vi"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_stack" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "on-secondary-container": "#157348", "secondary-container": "#9ef5bf", "secondary-fixed-dim": "#83d8a4", "secondary-fixed": "#9ef5bf", "primary-fixed": "#8ff8b0", "surface-container-low": "#f3f4f2", "on-tertiary-fixed-variant": "#3d4a43", "inverse-primary": "#73db96", "inverse-surface": "#2e3130", "surface": "#f9faf8", "surface-tint": "#006d3a", "on-tertiary-container": "#f5fff8", "primary": "#006a39", "on-secondary": "#ffffff", "tertiary": "#525f58", "surface-bright": "#f9faf8", "surface-container": "#edeeec", "on-primary-container": "#f6fff4", "surface-variant": "#e1e3e1", "on-secondary-fixed-variant": "#005230", "on-error-container": "#93000a", "tertiary-fixed": "#d8e6dd", "error": "#ba1a1a", "surface-container-highest": "#e1e3e1", "on-secondary-fixed": "#002110", "on-tertiary-fixed": "#121e19", "surface-dim": "#d9dad8", "on-surface-variant": "#3e4a40", "on-primary-fixed": "#00210e", "tertiary-fixed-dim": "#bccac1", "inverse-on-surface": "#f0f1ef", "background": "#f9faf8", "primary-container": "#09864a", "error-container": "#ffdad6", "outline-variant": "#bdcabd", "on-error": "#ffffff", "surface-container-high": "#e7e8e6", "tertiary-container": "#6a7870", "on-primary-fixed-variant": "#00522b", "on-primary": "#ffffff", "on-background": "#191c1b", "on-surface": "#191c1b", "outline": "#6e7a6f", "on-tertiary": "#ffffff", "primary-fixed-dim": "#73db96", "surface-container-lowest": "#ffffff", "secondary": "#096c42" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "space-lg": "1rem", "space-sm": "0.5rem", "space-xl": "1.5rem", "space-xs": "0.25rem", "margin": "1rem", "space-md": "0.75rem", "gutter": "0.75rem" }, "fontFamily": { "caption": ["Inter"], "title-sm": ["Inter"], "body-md": ["Inter"], "headline-md": ["Inter"], "headline-lg": ["Inter"], "label-sm": ["Inter"], "body-sm": ["Inter"], "body-lg": ["Inter"], "headline-xl": ["Inter"], "label-md": ["Inter"] }, "fontSize": { "caption": ["11px", { "lineHeight": "14px", "letterSpacing": "0.02em", "fontWeight": "500" }], "title-sm": ["16px", { "lineHeight": "22px", "letterSpacing": "-0.005em", "fontWeight": "600" }], "body-md": ["14px", { "lineHeight": "20px", "fontWeight": "400" }], "headline-md": ["18px", { "lineHeight": "24px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "headline-lg": ["22px", { "lineHeight": "28px", "letterSpacing": "-0.015em", "fontWeight": "600" }], "label-sm": ["12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "500" }], "body-sm": ["13px", { "lineHeight": "18px", "fontWeight": "400" }], "body-lg": ["16px", { "lineHeight": "24px", "fontWeight": "400" }], "headline-xl": ["28px", { "lineHeight": "36px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "label-md": ["14px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600" }] } } } };</script><style>@layer base { html, body { width: 100%; margin: 0; padding: 0; background-color: #f9faf8; } body { overscroll-behavior-y: none; -webkit-tap-highlight-color: transparent; } .pb-safe { padding-bottom: env(safe-area-inset-bottom, 0px); } .pt-safe { padding-top: env(safe-area-inset-top, 0px); } main > :first-child { margin-top: 0 !important; } main > :last-child { margin-bottom: 0 !important; } } ::-webkit-scrollbar { display: none; }</style><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased min-h-screen flex flex-col selection:bg-secondary-container selection:text-on-secondary-container"><header class="fixed top-0 w-full z-50 pt-safe bg-surface/85 backdrop-blur-xl shadow-[0_4px_20px_-2px_rgba(25,33,28,0.03)]"><div class="h-16 px-margin flex items-center justify-between gap-space-sm"><div class="flex items-center gap-space-sm min-w-0 flex-1"><button aria-label="Quay lại" class="w-11 h-11 -ml-1.5 rounded-full flex items-center justify-center text-on-surface hover:bg-surface-container active:bg-surface-variant transition-colors flex-shrink-0" onclick="history.back()" type="button"><span class="material-symbols-outlined text-[24px]">arrow_back</span></button><h1 class="font-headline-md text-headline-md text-on-surface truncate tracking-tight">Cai Dat Tai Khoan</h1></div><div class="flex items-center gap-space-xs flex-shrink-0"><button aria-label="Tác vụ phụ" class="w-11 h-11 rounded-full flex items-center justify-center text-tertiary hover:text-on-surface hover:bg-surface-container active:bg-surface-variant transition-colors" type="button"><span class="material-symbols-outlined text-[22px]">more_vert</span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shadow-[0_2px_8px_rgba(0,106,57,0.2)] flex-shrink-0"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="flex-1 flex flex-col relative w-full pt-16 pb-safe px-margin bg-surface"><div class="flex flex-col w-full pb-32 space-y-space-xl">
+<!-- Profile Snippet (Card Base bo 19px) -->
+<section class="w-full bg-surface-container-lowest rounded-[19px] p-space-lg shadow-sm">
+<div class="flex items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-md min-w-0">
+<div class="relative w-14 h-14 rounded-full overflow-hidden flex-shrink-0 bg-surface-container-high">
+<img class="w-full h-full object-cover" data-alt="A warm and friendly portrait of a young Vietnamese creative person smiling gently, soft natural morning sunlight, clean studio background with minimal green houseplants, organic lifestyle aesthetic, soft pastel tones" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAfdsv6dLVCtHxnSiihoTJhpFVBxx_DmATHkHwIpXMdn0sBiM5KdH-s2_uvZCzADDXriaQgSf-bUeZ4WT5St3dlAbvlA7Xu8K8k20ZqjWnDWLEa3WqjbsmYImWPXb3AN-lRLcCk-TbqaDAOTXcCZ5wZU2MwF-7NO-nknFEMf-f_MmIfVjyyjjw3bwaqqavNuWzpEmWbkN2sO2Rupq0n6sI1yQ0IQFeNt_FKOFmxRyHU0OrUGgeLG7yT"/>
+<div class="absolute bottom-0 right-0 w-3.5 h-3.5 bg-primary rounded-full ring-2 ring-surface-container-lowest flex items-center justify-center">
+<span class="w-1.5 h-1.5 bg-surface-container-lowest rounded-full"></span>
+</div>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-space-xs">
+<h2 class="font-title-sm text-title-sm text-on-surface truncate">Minh Nguyễn</h2>
+<span class="material-symbols-outlined text-primary text-[18px]" style="font-variation-settings: 'FILL' 1;">verified</span>
+</div>
+<p class="font-body-sm text-body-sm text-tertiary truncate">@minh_craft</p>
+</div>
+</div>
+<button class="flex items-center gap-space-xs px-space-md py-space-sm bg-surface-container-low hover:bg-surface-container active:scale-95 transition-all rounded-[14px] text-primary flex-shrink-0" onclick="window.location.hash = '#m38'" type="button">
+<span class="font-label-sm text-label-sm">Sửa hồ sơ</span>
+<span class="material-symbols-outlined text-[16px]">chevron_right</span>
+</button>
+</div>
+</section>
+<!-- Nhóm 1: Tài khoản & Kết nối -->
+<section class="space-y-space-sm">
+<div class="flex items-center gap-space-xs px-space-xs">
+<span class="material-symbols-outlined text-primary text-[18px]">manage_accounts</span>
+<h3 class="font-label-md text-label-md text-on-surface">Tài khoản &amp; Kết nối</h3>
+</div>
+<div class="w-full bg-surface-container-lowest rounded-[19px] p-space-sm shadow-sm flex flex-col space-y-1">
+<!-- Item: Nền tảng nhạc -->
+<button class="w-full flex items-center justify-between p-space-md rounded-[14px] hover:bg-surface-container-low active:bg-surface-container transition-all text-left" onclick="window.location.hash = '#m41'" type="button">
+<div class="flex items-center gap-space-md min-w-0">
+<div class="w-10 h-10 rounded-[12px] bg-secondary-container/40 flex items-center justify-center flex-shrink-0 text-on-secondary-container">
+<span class="material-symbols-outlined text-[20px]">headphones</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-title-sm text-title-sm text-on-surface truncate">Nền tảng nhạc</span>
+<span class="font-caption text-caption text-tertiary truncate">Spotify, YouTube Music</span>
+</div>
+</div>
+<div class="flex items-center gap-space-xs flex-shrink-0">
+<span class="px-space-sm py-0.5 rounded-full bg-secondary-container/70 text-on-secondary-container font-caption text-caption flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+            Đã kết nối
+          </span>
+<span class="material-symbols-outlined text-tertiary text-[20px]">chevron_right</span>
+</div>
+</button>
+<!-- Item: Thông báo & Lời nhắc -->
+<button class="w-full flex items-center justify-between p-space-md rounded-[14px] hover:bg-surface-container-low active:bg-surface-container transition-all text-left" onclick="window.location.hash = '#m42'" type="button">
+<div class="flex items-center gap-space-md min-w-0">
+<div class="w-10 h-10 rounded-[12px] bg-surface-container flex items-center justify-center flex-shrink-0 text-primary">
+<span class="material-symbols-outlined text-[20px]">notifications_active</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-title-sm text-title-sm text-on-surface truncate">Thông báo &amp; Lời nhắc</span>
+<span class="font-caption text-caption text-tertiary truncate">Âm thanh, giờ yên tĩnh</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-tertiary text-[20px] flex-shrink-0">chevron_right</span>
+</button>
+<!-- Item: Quyền riêng tư & Dữ liệu -->
+<button class="w-full flex items-center justify-between p-space-md rounded-[14px] hover:bg-surface-container-low active:bg-surface-container transition-all text-left" onclick="window.location.hash = '#m43'" type="button">
+<div class="flex items-center gap-space-md min-w-0">
+<div class="w-10 h-10 rounded-[12px] bg-surface-container flex items-center justify-center flex-shrink-0 text-primary">
+<span class="material-symbols-outlined text-[20px]">security</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-title-sm text-title-sm text-on-surface truncate">Quyền riêng tư &amp; Dữ liệu</span>
+<span class="font-caption text-caption text-tertiary truncate">Ai có thể xem hồ sơ của bạn</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-tertiary text-[20px] flex-shrink-0">chevron_right</span>
+</button>
+</div>
+</section>
+<!-- Nhóm 2: Tùy chọn ứng dụng -->
+<section class="space-y-space-sm">
+<div class="flex items-center gap-space-xs px-space-xs">
+<span class="material-symbols-outlined text-primary text-[18px]">tune</span>
+<h3 class="font-label-md text-label-md text-on-surface">Tùy chọn ứng dụng</h3>
+</div>
+<div class="w-full bg-surface-container-lowest rounded-[19px] p-space-sm shadow-sm flex flex-col space-y-1">
+<!-- Item: Âm thanh & Rung Haptic -->
+<div class="w-full flex items-center justify-between p-space-md rounded-[14px]">
+<div class="flex items-center gap-space-md min-w-0">
+<div class="w-10 h-10 rounded-[12px] bg-surface-container flex items-center justify-center flex-shrink-0 text-primary">
+<span class="material-symbols-outlined text-[20px]">vibration</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-title-sm text-title-sm text-on-surface truncate">Âm thanh &amp; Rung</span>
+<span class="font-caption text-caption text-tertiary truncate">Phản hồi xúc giác mềm dịu</span>
+</div>
+</div>
+<!-- Toggle Switch -->
+<button aria-checked="true" class="w-11 h-6 rounded-full bg-primary flex items-center p-0.5 transition-colors cursor-pointer flex-shrink-0" id="haptic-toggle" onclick="
+            const isChecked = this.getAttribute('aria-checked') === 'true';
+            this.setAttribute('aria-checked', !isChecked);
+            const thumb = this.querySelector('span');
+            if (isChecked) {
+              this.classList.remove('bg-primary');
+              this.classList.add('bg-surface-variant');
+              thumb.classList.remove('translate-x-5');
+              thumb.classList.add('translate-x-0');
+            } else {
+              this.classList.remove('bg-surface-variant');
+              this.classList.add('bg-primary');
+              thumb.classList.remove('translate-x-0');
+              thumb.classList.add('translate-x-5');
+            }
+          " role="switch" type="button">
+<span class="w-5 h-5 rounded-full bg-surface-container-lowest shadow-sm transform translate-x-5 transition-transform duration-200"></span>
+</button>
+</div>
+<!-- Item: Giao diện & Chủ đề -->
+<button class="w-full flex items-center justify-between p-space-md rounded-[14px] hover:bg-surface-container-low active:bg-surface-container transition-all text-left" type="button">
+<div class="flex items-center gap-space-md min-w-0">
+<div class="w-10 h-10 rounded-[12px] bg-surface-container flex items-center justify-center flex-shrink-0 text-primary">
+<span class="material-symbols-outlined text-[20px]">palette</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-title-sm text-title-sm text-on-surface truncate">Giao diện &amp; Chủ đề</span>
+<span class="font-caption text-caption text-tertiary truncate">Màu sắc trực quan tổng thể</span>
+</div>
+</div>
+<div class="flex items-center gap-space-xs flex-shrink-0">
+<span class="font-body-sm text-body-sm text-tertiary">Serene Light</span>
+<span class="material-symbols-outlined text-tertiary text-[20px]">chevron_right</span>
+</div>
+</button>
+<!-- Item: Ngôn ngữ -->
+<button class="w-full flex items-center justify-between p-space-md rounded-[14px] hover:bg-surface-container-low active:bg-surface-container transition-all text-left" type="button">
+<div class="flex items-center gap-space-md min-w-0">
+<div class="w-10 h-10 rounded-[12px] bg-surface-container flex items-center justify-center flex-shrink-0 text-primary">
+<span class="material-symbols-outlined text-[20px]">language</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-title-sm text-title-sm text-on-surface truncate">Ngôn ngữ</span>
+<span class="font-caption text-caption text-tertiary truncate">Hệ thống &amp; Hiển thị</span>
+</div>
+</div>
+<div class="flex items-center gap-space-xs flex-shrink-0">
+<span class="font-body-sm text-body-sm text-tertiary">Tiếng Việt</span>
+<span class="material-symbols-outlined text-tertiary text-[20px]">chevron_right</span>
+</div>
+</button>
+</div>
+</section>
+<!-- Nhóm 3: Hỗ trợ & Khác -->
+<section class="space-y-space-sm">
+<div class="flex items-center gap-space-xs px-space-xs">
+<span class="material-symbols-outlined text-primary text-[18px]">help_center</span>
+<h3 class="font-label-md text-label-md text-on-surface">Hỗ trợ &amp; Khác</h3>
+</div>
+<div class="w-full bg-surface-container-lowest rounded-[19px] p-space-sm shadow-sm flex flex-col space-y-1">
+<!-- Item: Hướng dẫn sử dụng & Khám phá -->
+<button class="w-full flex items-center justify-between p-space-md rounded-[14px] hover:bg-surface-container-low active:bg-surface-container transition-all text-left" onclick="window.location.hash = '#m44'" type="button">
+<div class="flex items-center gap-space-md min-w-0">
+<div class="w-10 h-10 rounded-[12px] bg-surface-container flex items-center justify-center flex-shrink-0 text-primary">
+<span class="material-symbols-outlined text-[20px]">explore</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-title-sm text-title-sm text-on-surface truncate">Hướng dẫn &amp; Khám phá</span>
+<span class="font-caption text-caption text-tertiary truncate">Bí quyết tận hưởng trọn vẹn</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-tertiary text-[20px] flex-shrink-0">chevron_right</span>
+</button>
+<!-- Item: Điều khoản & Chính sách -->
+<button class="w-full flex items-center justify-between p-space-md rounded-[14px] hover:bg-surface-container-low active:bg-surface-container transition-all text-left" type="button">
+<div class="flex items-center gap-space-md min-w-0">
+<div class="w-10 h-10 rounded-[12px] bg-surface-container flex items-center justify-center flex-shrink-0 text-primary">
+<span class="material-symbols-outlined text-[20px]">description</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-title-sm text-title-sm text-on-surface truncate">Điều khoản &amp; Chính sách</span>
+<span class="font-caption text-caption text-tertiary truncate">Bảo vệ quyền lợi người dùng</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-tertiary text-[20px] flex-shrink-0">chevron_right</span>
+</button>
+<!-- Item: Khôi phục dữ liệu Demo -->
+<button class="w-full flex items-center justify-between p-space-md rounded-[14px] hover:bg-surface-container-low active:bg-surface-container transition-all text-left" id="open-reset-modal" onclick="document.getElementById('reset-modal').classList.remove('hidden')" type="button">
+<div class="flex items-center gap-space-md min-w-0">
+<div class="w-10 h-10 rounded-[12px] bg-tertiary-fixed flex items-center justify-center flex-shrink-0 text-on-tertiary-fixed-variant">
+<span class="material-symbols-outlined text-[20px]">restart_alt</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-title-sm text-title-sm text-on-surface truncate">Khôi phục dữ liệu Demo</span>
+<span class="font-caption text-caption text-tertiary truncate">Tải lại dự án thủ công mẫu</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-tertiary text-[20px] flex-shrink-0">replay</span>
+</button>
+</div>
+</section>
+<!-- Footer Actions: Đăng xuất & App Version -->
+<section class="flex flex-col items-center justify-center pt-space-md space-y-space-md">
+<button class="w-full h-12 flex items-center justify-center gap-space-sm bg-error-container/60 hover:bg-error-container text-on-error-container font-label-md text-label-md rounded-[14px] transition-colors active:scale-[0.98]" onclick="if(confirm('Bạn có chắc chắn muốn đăng xuất?')) { window.location.reload(); }" type="button">
+<span class="material-symbols-outlined text-[20px]">logout</span>
+<span>Đăng xuất tài khoản</span>
+</button>
+<div class="flex flex-col items-center space-y-1">
+<div class="flex items-center gap-1.5 text-tertiary">
+<span class="material-symbols-outlined text-[14px]">eco</span>
+<span class="font-caption text-caption font-semibold">Hobby Flow</span>
+</div>
+<p class="font-caption text-caption text-tertiary">Phiên bản v2.4.0 (Build 2026)</p>
+</div>
+</section>
+<!-- Modal Xác nhận Khôi phục Dữ liệu Demo -->
+<div aria-modal="true" class="fixed inset-0 z-50 flex items-center justify-center p-space-lg bg-inverse-surface/40 backdrop-blur-sm hidden" id="reset-modal" role="dialog">
+<div class="w-full max-w-xs bg-surface-container-lowest rounded-[24px] p-space-xl shadow-xl flex flex-col items-center text-center space-y-space-md animate-in fade-in zoom-in duration-200">
+<div class="w-14 h-14 rounded-full bg-secondary-container/60 flex items-center justify-center text-on-secondary-container">
+<span class="material-symbols-outlined text-[28px]">autorenew</span>
+</div>
+<div class="space-y-space-xs">
+<h3 class="font-headline-md text-headline-md text-on-surface">Khôi phục Demo?</h3>
+<p class="font-body-sm text-body-sm text-tertiary">
+          Hệ thống sẽ thêm lại các thói quen, giai điệu và dự án mẫu truyền cảm hứng ban đầu. Dữ liệu cá nhân hiện tại không bị xóa.
+        </p>
+</div>
+<div class="flex flex-col w-full gap-space-sm pt-space-xs">
+<button class="w-full h-11 bg-primary hover:bg-primary-container text-on-primary font-label-md text-label-md rounded-[14px] transition-colors" onclick="
+            document.getElementById('reset-modal').classList.add('hidden');
+            const alert = document.getElementById('toast-success');
+            alert.classList.remove('translate-y-24', 'opacity-0');
+            setTimeout(() =&gt; { alert.classList.add('translate-y-24', 'opacity-0'); }, 3000);
+          " type="button">
+          Xác nhận khôi phục
+        </button>
+<button class="w-full h-11 bg-surface-container-low hover:bg-surface-container text-tertiary font-label-md text-label-md rounded-[14px] transition-colors" onclick="document.getElementById('reset-modal').classList.add('hidden')" type="button">
+          Để sau
+        </button>
+</div>
+</div>
+</div>
+<!-- Toast Thông báo thành công -->
+<div class="fixed bottom-24 left-1/2 -translate-x-1/2 z-50 flex items-center gap-space-sm px-space-lg py-space-md rounded-full bg-inverse-surface text-inverse-on-surface shadow-lg translate-y-24 opacity-0 transition-all duration-300 pointer-events-none" id="toast-success">
+<span class="material-symbols-outlined text-secondary-container text-[20px]" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span class="font-body-sm text-body-sm">Đã làm mới dữ liệu khám phá mẫu!</span>
+</div>
+</div></main></body></html>
